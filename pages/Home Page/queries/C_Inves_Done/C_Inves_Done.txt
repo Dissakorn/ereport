@@ -1,0 +1,3 @@
+SELECT COUNT(*) AS cases_done_investigation
+FROM "case"
+WHERE inves_status = 7;

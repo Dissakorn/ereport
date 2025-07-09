@@ -1,0 +1,3 @@
+SELECT COUNT(*) AS cases_prelim_incomplete
+FROM "case"
+WHERE prelim_status > 0 AND prelim_status < 8;

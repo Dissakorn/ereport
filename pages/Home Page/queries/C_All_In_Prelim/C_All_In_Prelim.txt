@@ -1,0 +1,3 @@
+SELECT COUNT(*) AS cases_prelim_more_than_0
+FROM "case"
+WHERE prelim_status > 0;

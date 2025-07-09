@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "676e2c1104b16518b088fe23_6a37341a-3304-4193-abd1-c35622c1f761",
+  "id": "Settings_JSObject6",
+  "unpublishedCollection": {
+    "name": "JSObject6",
+    "pageId": "Settings",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

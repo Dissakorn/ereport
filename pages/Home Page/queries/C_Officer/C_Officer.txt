@@ -1,0 +1,3 @@
+SELECT COUNT(*) AS cases_result_7
+FROM "case"
+WHERE inves_result = 7;

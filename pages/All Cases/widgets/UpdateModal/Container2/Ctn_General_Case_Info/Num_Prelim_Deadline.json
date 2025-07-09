@@ -1,0 +1,55 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "3g15fdaev6",
+  "leftColumn": 12,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 16,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "originalBottomRow": 5,
+  "originalTopRow": 0,
+  "overflow": "NONE",
+  "parentColumnSpace": 10.716850280761719,
+  "parentId": "v6wo1t54gq",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 18,
+  "shouldTruncate": false,
+  "text": "{{ \n  (() => {\n    const thaiMonths = {\n      'Jan': 'ม.ค.',\n      'Feb': 'ก.พ.',\n      'Mar': 'มี.ค.',\n      'Apr': 'เม.ย.',\n      'May': 'พ.ค.',\n      'Jun': 'มิ.ย.',\n      'Jul': 'ก.ค.',\n      'Aug': 'ส.ค.',\n      'Sep': 'ก.ย.',\n      'Oct': 'ต.ค.',\n      'Nov': 'พ.ย.',\n      'Dec': 'ธ.ค.'\n    };\n\n    const date = new Date(data_table.selectedRow.prelim_deadline);\n    const day = date.getDate().toString().padStart(2, '0');\n    const monthShort = date.toLocaleDateString('en-UK', { month: 'short' });\n    const monthThai = thaiMonths[monthShort] || monthShort;\n    const yearBE2Digit = (date.getFullYear() + 543).toString().slice(-2);\n\n    return `${day} ${monthThai} ${yearBE2Digit}`;\n  })()\n}}\n",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 0,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "qtb3i1lqow",
+  "widgetName": "Num_Prelim_Deadline"
+}

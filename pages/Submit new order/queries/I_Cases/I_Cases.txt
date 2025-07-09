@@ -1,0 +1,135 @@
+INSERT INTO "case" (
+	case_type,
+	reference,
+	case_number,
+	year,
+	lead_date,
+	case_number_date,
+	case_num_date_show,
+	offense_base,
+	num_book,
+	num_book_date,
+	received_number,
+	received_date,
+	source,
+	pacc_tracking_number,
+	responsible_district,
+	prelim_extension,
+	inves_extension,
+	prelim_status,
+	prelim_result,
+	inves_status,
+	inves_result,
+	prelim_deadline,
+	prelim_round,
+	prelim_session,
+	inves_deadline,
+	inves_round,
+	inves_session,
+	currency_id,
+	damage_value
+)
+VALUES (
+	-- Case Type
+	{{ Boolean_Spinoff.isChecked ? 3 : 1 }},
+
+	-- Reference
+	{{ Boolean_Spinoff.isChecked ? `'${Sel_Spinoff.selectedOptionValue}'` : null }},
+
+	-- Case Number
+	{{ (Inp_Case_Num.text && Inp_Case_Year.text) 
+	? `${Inp_Case_Num.text}/${Inp_Case_Year.text}` 
+	: `${Inp_Case_Num.text}/${moment().year() + 543}` }},
+
+	-- Year
+	{{Inp_Case_Year.text}},
+	
+	-- Lead Date
+	{{ Inp_Case_Num_Date.selectedDate 
+	? `'${moment(Inp_Case_Num_Date.selectedDate).format("YYYY-MM-DD")}'` 
+	: null }},
+
+	-- Case Number Date
+	{{ Inp_Num_Date.selectedDate 
+	? `'${moment(Inp_Num_Date.selectedDate).format("YYYY-MM-DD")}'` 
+	: null }},
+
+	-- Case Number Date Show
+	{{ Inp_Num_Date.selectedDate 
+	? `'${moment(Inp_Num_Date.selectedDate).format("YYYY-MM-DD")}'` 
+	: null }},
+	
+	-- Offense Base
+	'{{ Sel_Corr_Category.selectedOptionValue }}',
+
+	-- Book Number
+	{{ Inp_Book_Num.text }},
+
+	-- Book Date
+	{{ Inp_Book_Date.selectedDate 
+	? `'${moment(Inp_Book_Date.selectedDate).format("YYYY-MM-DD")}'` 
+	: null }},
+
+	-- Received Number
+	'{{ Inp_Receive_Num.text }}',
+
+	-- Received Date
+	{{ Inp_Lead_Date.selectedDate 
+	? `'${moment(Inp_Lead_Date.selectedDate).format("YYYY-MM-DD")}'` 
+	: null }},
+
+	-- Source
+	'{{ Sel_Case_Origin.selectedOptionValue }}',
+
+	-- PACC Tracking Number
+	'{{ Inp_Nacc_Num.text }}',
+
+	-- Responsible District
+	'{{ Sel_District.selectedOptionValue }}',
+
+	-- Prelim Extension
+	FALSE,
+
+	-- Inves Extension
+	FALSE,
+
+	-- Prelim Status
+	2,
+
+	-- Prelim Result
+	0,
+
+	-- Inves Status
+	0,
+
+	-- Inves Result
+	0,
+
+	-- Prelim Deadline: Case Number Date + appsmith.store.prelim_deadline days
+	{{ Inp_Num_Date.selectedDate && appsmith.store.prelim_deadline 
+	? `'${moment(Inp_Num_Date.selectedDate).add(appsmith.store.prelim_deadline, 'days').format("YYYY-MM-DD")}'`
+	: null }},
+
+	-- Prelim Round
+	1,
+
+	-- Prelim Session
+	'1',
+
+	-- Inves Deadline: Case Number Date + appsmith.store.invest_deadline days
+	{{ Inp_Num_Date.selectedDate && appsmith.store.invest_deadline 
+	? `'${moment(Inp_Num_Date.selectedDate).add(appsmith.store.invest_deadline, 'days').format("YYYY-MM-DD")}'`
+	: null }},
+
+	-- Inves Round
+	1,
+
+	-- Inves Session
+	'1',
+
+	-- Currency ID
+	1,
+	
+	-- Damage Value
+	{{Inp_Damage_Value.text}}
+);

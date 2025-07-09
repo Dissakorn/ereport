@@ -1,0 +1,3 @@
+SELECT division_id as value, name as label
+FROM division
+ORDER BY division_id;

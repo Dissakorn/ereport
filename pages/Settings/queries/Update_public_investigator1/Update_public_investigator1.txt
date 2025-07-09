@@ -1,0 +1,1 @@
+UPDATE public.investigator SET "name"= '{{Tbl_Investigator.updatedRow.name}}', "division_id"= '{{Tbl_Investigator.updatedRow.division_id}}', "status"= '{{Tbl_Investigator.updatedRow.status}}' WHERE "investigator_id"= {{Tbl_Investigator.updatedRow.investigator_id}};

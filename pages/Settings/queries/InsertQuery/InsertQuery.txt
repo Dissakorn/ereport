@@ -1,0 +1,26 @@
+INSERT INTO public."user" (
+	"username",
+	"name",
+	"email",
+	"division_id",
+	"user_type_id",
+	"password",
+	"password_hash",
+	"salt",
+	"is_first_login",
+	"is_temp_password",
+	"last_password_change"
+)
+VALUES (
+	'{{insert_form.formData.username}}',
+	'{{insert_form.formData.name}}',
+	'{{insert_form.formData.email}}',
+	'{{insert_form.formData.division_id}}',
+	'{{insert_form.formData.user_type_id}}',
+	'{{insert_form.formData.password}}',
+	'{{insert_form.formData.password_hash}}',
+	'{{insert_form.formData.salt}}',
+	'{{insert_form.formData.is_first_login}}',
+	'{{insert_form.formData.is_temp_password}}',
+	'{{insert_form.formData.last_password_change}}'
+);

@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "676e2c1104b16518b088fe23_b456ef2f-2675-464b-bb39-2c6743393399",
+  "id": "ChangePasswordPage_functions",
+  "unpublishedCollection": {
+    "name": "functions",
+    "pageId": "ChangePasswordPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "defaultTab",
+        "value": "'Sign In'"
+      }
+    ]
+  }
+}

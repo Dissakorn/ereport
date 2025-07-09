@@ -1,0 +1,81 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "0.375rem",
+  "bottomRow": 43,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( data_table.selectedRow.prelim_result))(Sel_Prelim_Result.options, Sel_Prelim_Result.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "defaultOptionValue"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": "{{\n  (() => {\n    return Inp_Prelim_Letter.text.len>0 ? true : false;\n  })()\n}}",
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "{{\n(() => {\n\treturn (Sel_Prelim_Status.selectedOptionValue >= 9) ? true : false;\n})()\n}}\n",
+  "key": "b30dtcq19d",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "มติไต่สวนเบื้องต้น",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 14,
+  "mobileLeftColumn": 9,
+  "mobileRightColumn": 29,
+  "mobileTopRow": 7,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{ResultChange.handlePrelimResultChange();}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 43,
+  "originalTopRow": 36,
+  "parentColumnSpace": 1.640625,
+  "parentId": "4vo25a0ywq",
+  "parentRowSpace": 10,
+  "placeholderText": "โปรดเลือก",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 31,
+  "serverSideFiltering": false,
+  "sourceData": "{{R_PRELIM_RESULT.data.map( (obj) =>{ return  {'label': obj.name, 'value': obj.result_type_id } })}}",
+  "topRow": 36,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "ogkqmv9gbt",
+  "widgetName": "Sel_Prelim_Result"
+}

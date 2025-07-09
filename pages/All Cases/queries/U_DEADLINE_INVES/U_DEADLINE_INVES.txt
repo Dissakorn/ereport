@@ -1,0 +1,4 @@
+UPDATE public."case"
+SET inves_deadline = COALESCE(inves_deadline, CURRENT_DATE) + INTERVAL '365 days',
+    inves_extension = TRUE
+WHERE case_id = {{data_table.selectedRow.case_id}};

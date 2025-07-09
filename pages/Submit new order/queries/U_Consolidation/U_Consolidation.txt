@@ -1,0 +1,6 @@
+UPDATE "case"
+SET
+    reference = '{{Sel_Main_Case.selectedOptionValue}}',
+    case_type = 2
+WHERE
+    case_id = '{{Sel_Sub_Case.selectedOptionValue}}';

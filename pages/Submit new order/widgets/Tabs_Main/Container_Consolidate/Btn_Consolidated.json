@@ -1,0 +1,58 @@
+{
+  "animateLoading": true,
+  "borderRadius": "0.5rem",
+  "bottomRow": 22,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "SECONDARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{Sel_Sub_Case.selectedOptionValue == ''}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "7l6id2vjrt",
+  "leftColumn": 24,
+  "minWidth": 120,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 22,
+  "mobileRightColumn": 38,
+  "mobileTopRow": 18,
+  "needsErrorInfo": false,
+  "onClick": "{{JSObject2.myFun2();}}",
+  "parentColumnSpace": 15.1630859375,
+  "parentId": "fmaxl0bk9r",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 40,
+  "text": "รวมคดี",
+  "topRow": 18,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "7khs6u8qc3",
+  "widgetName": "Btn_Consolidated"
+}

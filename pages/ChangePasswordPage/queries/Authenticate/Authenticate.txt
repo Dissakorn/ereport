@@ -1,0 +1,1 @@
+SELECT * FROM public."user" where username = {{Input_Username.text}} AND password = {{Input_CurrentPassword.text}};

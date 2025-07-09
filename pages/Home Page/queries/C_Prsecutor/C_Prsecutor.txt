@@ -1,0 +1,4 @@
+SELECT COUNT(*) AS cases_with_prosecutor_letter
+FROM "case"
+WHERE inves_prosecutor_letter IS NOT NULL 
+  AND inves_prosecutor_letter != '';

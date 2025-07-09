@@ -1,0 +1,20 @@
+SELECT 
+  c.case_id,
+  c.case_number,
+  c.prelim_deadline,
+  c.prelim_status,
+  c.prelim_result,
+	c.responsible_district,
+	c.prelim_investigator
+FROM public.case c
+WHERE 
+  c.prelim_result != 2
+  AND c.prelim_status != 8
+  AND c.prelim_deadline IS NOT NULL
+  AND c.prelim_deadline < CURRENT_DATE
+  AND (
+    COALESCE({{ Slc_Division.selectedOptionValue }}, 0) = 0
+    OR CAST(c.responsible_district AS INTEGER) = {{ Slc_Division.selectedOptionValue }}
+  )
+ORDER BY 
+  c.year, c.case_number;

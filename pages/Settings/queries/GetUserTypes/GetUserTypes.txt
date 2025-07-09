@@ -1,0 +1,3 @@
+SELECT user_type_id as value, name as label
+FROM user_type
+ORDER BY user_type_id;

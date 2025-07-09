@@ -1,0 +1,3 @@
+SELECT COUNT(*) AS cases_done_prelim
+FROM "case"
+WHERE prelim_status = 9;

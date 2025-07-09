@@ -1,0 +1,8 @@
+SELECT
+  *
+FROM
+  public.division
+WHERE
+	division_id>0
+order by
+	division_id asc

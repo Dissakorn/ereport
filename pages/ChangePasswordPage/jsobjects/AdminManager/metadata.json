@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "676e2c1104b16518b088fe23_45dfdeda-552e-4942-9d73-a2e9eb75029c",
+  "id": "ChangePasswordPage_AdminManager",
+  "unpublishedCollection": {
+    "name": "AdminManager",
+    "pageId": "ChangePasswordPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

@@ -1,0 +1,8 @@
+SELECT u.user_id, u.name, u.email, u.username, 
+       d.name as division_name, ut.name as type_name, 
+       u.is_first_login, u.is_temp_password,
+       u.created_at
+FROM "user" u
+LEFT JOIN division d ON u.division_id = d.division_id
+LEFT JOIN user_type ut ON u.user_type_id = ut.user_type_id
+ORDER BY u.created_at DESC;

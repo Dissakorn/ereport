@@ -1,0 +1,1 @@
+SELECT * FROM public."division" where division_id = {{appsmith.store.division_id}};

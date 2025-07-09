@@ -1,0 +1,56 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "0.375rem",
+  "bottomRow": 11,
+  "boxShadow": "none",
+  "defaultOptionValue": "GREEN",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "q50snt2wkm",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "ประเภท",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 17,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 59,
+  "mobileLeftColumn": 20,
+  "mobileRightColumn": 40,
+  "mobileTopRow": 52,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "parentColumnSpace": 16.40625,
+  "parentId": "ltiz4g1c26",
+  "parentRowSpace": 10,
+  "placeholderText": "เลือกประเภท",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 35,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"การเดินทางไปราชการ\",\n    \"code\": \"1\"\n  },\n  {\n    \"name\": \"การเบิกเบี้ยประชุม\",\n    \"code\": \"2\"\n  },\n  {\n    \"name\": \"ค่าพัฒนาสัมพันธ์\",\n    \"code\": \"3\"\n  },\n  {\n    \"name\": \"ค่าพยาน\",\n    \"code\": \"4\"\n  }\n\t\n]",
+  "topRow": 4,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "ws8umdgz7k",
+  "widgetName": "Inp_prelim_budget_type"
+}

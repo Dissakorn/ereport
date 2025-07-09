@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "676e2c1104b16518b088fe23_c2de23ec-923b-4276-b129-38b806b89c21",
+  "id": "ChangePasswordPage_check",
+  "unpublishedCollection": {
+    "name": "check",
+    "pageId": "ChangePasswordPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

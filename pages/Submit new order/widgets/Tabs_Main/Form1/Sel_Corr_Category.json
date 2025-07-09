@@ -1,0 +1,56 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "0.375rem",
+  "bottomRow": 54,
+  "boxShadow": "none",
+  "defaultOptionValue": "15",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "qfxm56px90",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 43,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 24,
+  "mobileLeftColumn": 43,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 17,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "parentColumnSpace": 13.6689453125,
+  "parentId": "2w47hpxjfw",
+  "parentRowSpace": 10,
+  "placeholderText": "เลือกอายุความ",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 60,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"10\",\n    \"code\": \"10\"\n  },\n\t{\n    \"name\": \"15\",\n    \"code\": \"15\"\n  },\n\t{\n    \"name\": \"20\",\n    \"code\": \"20\"\n  }\n]\n",
+  "topRow": 50,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "6bkpepom4d",
+  "widgetName": "Sel_Corr_Category"
+}

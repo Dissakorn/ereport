@@ -1,0 +1,3 @@
+SELECT COUNT(*) AS cases_in_investigation
+FROM "case"
+WHERE inves_status != 0;

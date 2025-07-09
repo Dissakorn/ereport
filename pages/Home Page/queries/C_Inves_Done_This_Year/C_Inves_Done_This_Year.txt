@@ -1,0 +1,3 @@
+SELECT COUNT(*) AS cases_done_investigation_current_year
+FROM "case"
+WHERE inves_status = 7 AND EXTRACT(YEAR FROM inves_result_date) = {{ Sel_Year_Of_Int.selectedOptionValue}}-543;

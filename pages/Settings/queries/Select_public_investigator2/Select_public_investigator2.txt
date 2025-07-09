@@ -1,0 +1,12 @@
+SELECT
+  *
+FROM
+  public.investigator
+WHERE
+  "name" ilike '%{{Tbl_Investigator.searchText}}%'
+ORDER BY
+  "{{Tbl_Investigator.sortOrder.column || 'investigator_id'}}" {{Tbl_Investigator.sortOrder.order !== "desc" ? "" : "DESC"}}
+LIMIT
+  {{Tbl_Investigator.pageSize}}
+OFFSET
+  {{Tbl_Investigator.pageOffset}}

@@ -1,0 +1,3 @@
+SELECT COUNT(*) AS cases_result_not_0_or_1
+FROM "case"
+WHERE inves_result NOT IN (0, 1);

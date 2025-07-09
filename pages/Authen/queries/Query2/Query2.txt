@@ -1,0 +1,3 @@
+SELECT username, password, password_hash, salt, is_temp_password, is_first_login 
+FROM "user" 
+WHERE username = {{Input_Username.text}};

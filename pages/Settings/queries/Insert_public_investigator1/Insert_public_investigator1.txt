@@ -1,0 +1,1 @@
+INSERT INTO public.investigator ("name","division_id","status") VALUES ('{{Inp_Inv_Name.text}}','{{appsmith.store.division_id}}',TRUE)

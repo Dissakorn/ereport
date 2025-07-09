@@ -1,0 +1,3 @@
+SELECT COUNT(*) as count 
+FROM "user" 
+WHERE username = {{Input_Admin_Username.text}};

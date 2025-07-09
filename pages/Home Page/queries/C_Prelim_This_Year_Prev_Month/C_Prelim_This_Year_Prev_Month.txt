@@ -1,0 +1,16 @@
+SELECT COUNT(*) AS cases_in_prelim_last_year_month
+FROM "case"
+WHERE 
+  (EXTRACT(YEAR FROM case_number_date) = 
+    CASE 
+      WHEN {{ Sel_Month_Of_Int.selectedOptionValue }} = 1 
+      THEN {{ Sel_Year_Of_Int.selectedOptionValue }} - 1 
+      ELSE {{ Sel_Year_Of_Int.selectedOptionValue }} 
+    END)
+  AND 
+  (EXTRACT(MONTH FROM case_number_date) = 
+    CASE 
+      WHEN {{ Sel_Month_Of_Int.selectedOptionValue }} = 1 
+      THEN 12 
+      ELSE {{ Sel_Month_Of_Int.selectedOptionValue }} - 1 
+    END);

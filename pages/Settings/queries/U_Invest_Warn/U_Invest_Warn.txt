@@ -1,0 +1,2 @@
+UPDATE public."settings" SET
+    "invest_warning" = {{Sel_Warning_Inves.text}}

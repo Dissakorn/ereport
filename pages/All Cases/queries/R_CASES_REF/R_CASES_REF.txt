@@ -1,0 +1,3 @@
+SELECT * 
+FROM public."case" 
+WHERE reference = {{data_table.selectedRow.case_number}};

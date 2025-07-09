@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "676e2c1104b16518b088fe23_560f25d6-5823-46f3-bbb8-e8f9c116e623",
+  "id": "Authen_check",
+  "unpublishedCollection": {
+    "name": "check",
+    "pageId": "Authen",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

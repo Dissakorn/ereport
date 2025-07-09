@@ -1,0 +1,42 @@
+SELECT 
+    c.*,
+    c.commmand_number_date AS วันที่ออกคำสั่ง,
+    ct.name AS ประเภทของคดี,
+    d.name AS สำนักที่รับผิดชอบ,
+    cr.name AS หน่วยเงิน,
+    sp.name AS สถานะแสวง,
+    rp.name AS มติแสวง,
+    si.name AS สถานะไต่,
+    ri.name AS มติไต่
+FROM 
+    public."case" c
+JOIN 
+    public.case_type ct 
+    ON CAST(c.case_type AS INTEGER) = ct.case_type_id
+JOIN 
+    public.division d 
+    ON CAST(c.responsible_district AS INTEGER) = d.division_id
+JOIN 
+    public.currency cr 
+    ON CAST(c.currency_id AS INTEGER) = cr.currency_id
+JOIN 
+    public.status_prelim sp 
+    ON CAST(c.prelim_status AS INTEGER) = sp.status_id
+JOIN 
+    public.result_prelim rp 
+    ON CAST(c.prelim_result AS INTEGER) = rp.result_type_id
+JOIN 
+    public.status_inves si 
+    ON CAST(c.inves_status AS INTEGER) = si.status_id
+JOIN 
+    public.result_inves ri 
+    ON CAST(c.inves_result AS INTEGER) = ri.result_type_id
+WHERE
+    (
+        '{{ Slc_Division.selectedOptionValue }}' = '' 
+        OR '{{ Slc_Division.selectedOptionValue }}' IS NULL
+        OR {{ Slc_Division.selectedOptionValue }} = 0
+        OR CAST(c.responsible_district AS INTEGER) = {{ Slc_Division.selectedOptionValue }}
+    )
+ORDER BY 
+    c.received_date DESC NULLS LAST;

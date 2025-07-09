@@ -1,0 +1,4 @@
+SELECT * 
+FROM public."case" 
+WHERE case_type = 2 
+  AND reference = {{ data_table.selectedRow.case_number }};

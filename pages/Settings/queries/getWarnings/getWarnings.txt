@@ -1,0 +1,1 @@
+SELECT * FROM public."settings" LIMIT 10;

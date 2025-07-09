@@ -1,0 +1,14 @@
+INSERT INTO "user" (name, email, username, password, password_hash, salt, division_id, user_type_id, is_first_login, is_temp_password, created_at)
+VALUES (
+    {{this.params.name}},
+    {{this.params.email || null}},
+    {{this.params.username}},
+    {{this.params.tempPassword}},
+    {{this.params.tempHash}},
+    {{this.params.tempSalt}},
+    {{this.params.divisionId}},
+    {{this.params.userTypeId}},
+    TRUE,
+    TRUE,
+    CURRENT_TIMESTAMP
+);

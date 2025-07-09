@@ -1,0 +1,4 @@
+SELECT COUNT(*) AS cases_with_judgment
+FROM "case"
+WHERE judgment IS NOT NULL 
+  AND judgment != '';

@@ -1,0 +1,1 @@
+INSERT INTO public.division ("name") VALUES ('{{(Tbl_Division.newRow || {}).name}}')

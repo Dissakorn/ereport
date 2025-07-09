@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "676e2c1104b16518b088fe23_5535467e-b837-4ee8-9309-63a120a5a16a",
+  "id": "All Cases_JSObject6",
+  "unpublishedCollection": {
+    "name": "JSObject6",
+    "pageId": "All Cases",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

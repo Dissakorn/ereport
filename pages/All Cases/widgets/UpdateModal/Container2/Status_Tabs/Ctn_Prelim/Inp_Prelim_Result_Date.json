@@ -1,0 +1,78 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "0.375rem",
+  "bottomRow": 43,
+  "boxShadow": "none",
+  "closeOnSelection": true,
+  "dateFormat": "DD/MM/YYYY",
+  "datePickerType": "DATE_PICKER",
+  "defaultDate": "{{data_table.selectedRow.prelim_result_date}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "defaultDate"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "dateFormat"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "defaultDate"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "firstDayOfWeek": 0,
+  "isDisabled": "{{\n  (() => {\n    return Inp_Prelim_Letter.text.len>0 ? true : false;\n  })()\n}}",
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "{{\n(() => {\n\treturn (Sel_Prelim_Status.selectedOptionValue >= 9) ? true : false;\n})()\n}}",
+  "key": "qyd8xjfvs9",
+  "label": "วันที่มีมติ",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 40,
+  "maxDate": "2121-12-31T18:29:00.000Z",
+  "maxDynamicHeight": 9000,
+  "minDate": "1920-12-31T18:30:00.000Z",
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 43,
+  "mobileLeftColumn": 39,
+  "mobileRightColumn": 59,
+  "mobileTopRow": 36,
+  "needsErrorInfo": false,
+  "originalBottomRow": 43,
+  "originalTopRow": 36,
+  "parentColumnSpace": 7.757568359375,
+  "parentId": "4vo25a0ywq",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 55,
+  "shortcuts": false,
+  "timePrecision": "minute",
+  "topRow": 36,
+  "type": "DATE_PICKER_WIDGET2",
+  "version": 2,
+  "widgetId": "89pq2khtvp",
+  "widgetName": "Inp_Prelim_Result_Date"
+}

@@ -1,0 +1,3 @@
+SELECT COUNT(*) AS cases_done_prelim
+FROM "case"
+WHERE prelim_status = 9 AND EXTRACT(YEAR FROM prelim_result_date) = {{ Sel_Year_Of_Int.selectedOptionValue }}-543;

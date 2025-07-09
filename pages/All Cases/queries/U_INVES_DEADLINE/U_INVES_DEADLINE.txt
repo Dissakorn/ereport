@@ -1,0 +1,6 @@
+UPDATE public."case"
+SET
+    commmand_number_date = {{ Inp_Order_Num_Date.selectedDate ? `'${moment(Inp_Order_Num_Date.selectedDate).format("YYYY-MM-DD")}'` : null }},
+    inves_deadline = {{ Inp_Order_Num_Date.selectedDate ? `'${moment(Inp_Order_Num_Date.selectedDate).add(3, 'years').format("YYYY-MM-DD")}'` : null }}
+WHERE
+    case_id = {{ data_table.selectedRow.case_id || 0 }};

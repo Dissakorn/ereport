@@ -1,0 +1,13 @@
+UPDATE public."user" SET
+		"username" = '{{update_form.fieldState.username.isVisible ? update_form.formData.username : update_form.sourceData.username}}',
+		"name" = '{{update_form.fieldState.name.isVisible ? update_form.formData.name : update_form.sourceData.name}}',
+    "email" = '{{update_form.fieldState.email.isVisible ? update_form.formData.email : update_form.sourceData.email}}',
+		"division_id" = '{{update_form.fieldState.division_id.isVisible ? update_form.formData.division_id : update_form.sourceData.division_id}}',
+		"user_type_id" = '{{update_form.fieldState.user_type_id.isVisible ? update_form.formData.user_type_id : update_form.sourceData.user_type_id}}',
+		"password" = '{{update_form.fieldState.password.isVisible ? update_form.formData.password : update_form.sourceData.password}}',
+		"password_hash" = '{{update_form.fieldState.password_hash.isVisible ? update_form.formData.password_hash : update_form.sourceData.password_hash}}',
+		"salt" = '{{update_form.fieldState.salt.isVisible ? update_form.formData.salt : update_form.sourceData.salt}}',
+		"is_first_login" = '{{update_form.fieldState.is_first_login.isVisible ? update_form.formData.is_first_login : update_form.sourceData.is_first_login}}',
+		"is_temp_password" = '{{update_form.fieldState.is_temp_password.isVisible ? update_form.formData.is_temp_password : update_form.sourceData.is_temp_password}}',
+		"last_password_change" = '{{update_form.fieldState.last_password_change.isVisible ? update_form.formData.last_password_change : update_form.sourceData.last_password_change}}'
+	WHERE "user_id" = {{data_table.selectedRow.user_id}};

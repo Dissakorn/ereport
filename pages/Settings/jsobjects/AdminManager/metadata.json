@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "676e2c1104b16518b088fe23_d5884c76-ce1e-4586-8c55-481a12fef42f",
+  "id": "Settings_AdminManager",
+  "unpublishedCollection": {
+    "name": "AdminManager",
+    "pageId": "Settings",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

@@ -1,0 +1,3 @@
+SELECT COUNT(*) AS cases_inves_incomplete
+FROM "case"
+WHERE inves_status > 0 AND inves_status < 7;

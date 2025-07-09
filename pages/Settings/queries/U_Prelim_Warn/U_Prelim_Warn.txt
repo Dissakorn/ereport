@@ -1,0 +1,2 @@
+UPDATE public."settings" SET
+    "prelim_warning" = {{Sel_Warning_Prelim.text}}

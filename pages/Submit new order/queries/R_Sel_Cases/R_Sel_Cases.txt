@@ -1,0 +1,9 @@
+SELECT 
+    case_id, 
+    case_number
+FROM 
+    public."case" 
+WHERE 
+    CAST(case_type AS INT) = 1
+ORDER BY 
+    case_number_date DESC;

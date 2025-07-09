@@ -1,0 +1,1 @@
+UPDATE public.division SET "name"= '{{Tbl_Division.updatedRow.name}}' WHERE "division_id"= {{Tbl_Division.updatedRow.division_id}};
