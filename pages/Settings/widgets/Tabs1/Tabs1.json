@@ -207,9 +207,6 @@
     },
     {
       "key": "tabsObj.taby11unwqwv4.isVisible"
-    },
-    {
-      "key": "tabsObj.tab7u8jb2hm34.isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -219,9 +216,6 @@
     },
     {
       "key": "tabsObj.taby11unwqwv4.isVisible"
-    },
-    {
-      "key": "tabsObj.tab7u8jb2hm34.isVisible"
     }
   ],
   "dynamicTriggerPathList": [],
@@ -270,7 +264,7 @@
       "id": "tab7u8jb2hm34",
       "index": 3,
       "isDuplicateLabel": false,
-      "isVisible": "{{appsmith.store.user_type_id == 99}}",
+      "isVisible": true,
       "label": "สร้างผู้ใช้ใหม่",
       "widgetId": "w1u4mfotvq"
     },

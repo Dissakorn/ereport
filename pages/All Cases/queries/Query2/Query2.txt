@@ -1,0 +1,33 @@
+SELECT 
+    -- Count of cases expiring within 1 year
+    COUNT(CASE 
+        WHEN (c.lead_date + INTERVAL '1 year' * CAST(c.offense_base AS INTEGER)) <= (CURRENT_DATE + INTERVAL '1 year')
+        THEN 1 
+    END) as critical_cases_1_year,
+    
+    -- Count of cases expiring within 3 years (but more than 1 year)
+    COUNT(CASE 
+        WHEN (c.lead_date + INTERVAL '1 year' * CAST(c.offense_base AS INTEGER)) <= (CURRENT_DATE + INTERVAL '3 years')
+        AND (c.lead_date + INTERVAL '1 year' * CAST(c.offense_base AS INTEGER)) > (CURRENT_DATE + INTERVAL '1 year')
+        THEN 1 
+    END) as warning_cases_3_years,
+    
+    -- Total active cases with expiration dates
+    COUNT(*) as total_active_cases
+FROM 
+    "case" c
+WHERE 
+    -- Only cases with lead_date (not null)
+    c.lead_date IS NOT NULL
+    -- Only cases with valid offense_base
+    AND c.offense_base IS NOT NULL 
+    AND c.offense_base != ''
+    -- Cases not yet expired
+    AND (c.lead_date + INTERVAL '1 year' * CAST(c.offense_base AS INTEGER)) > CURRENT_DATE
+    -- Division filter
+    AND (
+        '{{ Slc_Division.selectedOptionValue }}' = '' 
+        OR '{{ Slc_Division.selectedOptionValue }}' IS NULL
+        OR {{ Slc_Division.selectedOptionValue }} = 0
+        OR CAST(c.responsible_district AS INTEGER) = {{ Slc_Division.selectedOptionValue }}
+    );

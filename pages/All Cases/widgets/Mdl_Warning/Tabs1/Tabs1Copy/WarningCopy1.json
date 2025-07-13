@@ -31,20 +31,20 @@
     }
   },
   "columnOrder": [
-    "case_id",
     "case_number",
     "prelim_deadline",
+    "customColumn1",
+    "responsible_district",
+    "case_id",
     "prelim_status",
     "prelim_result",
-    "responsible_district",
-    "prelim_investigator",
-    "customColumn1"
+    "prelim_investigator"
   ],
-  "columnUpdatedAt": 1751538112480,
+  "columnUpdatedAt": 1752313618152,
   "columnWidthMap": {
-    "case_number": 167,
-    "customColumn1": 251,
-    "prelim_deadline": 162,
+    "case_number": 147,
+    "customColumn1": 188,
+    "prelim_deadline": 148,
     "responsible_district": 111
   },
   "customIsLoading": false,

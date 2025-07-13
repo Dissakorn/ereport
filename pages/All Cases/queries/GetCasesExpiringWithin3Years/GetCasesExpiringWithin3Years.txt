@@ -1,0 +1,50 @@
+SELECT 
+    c.case_id,
+    c.case_number,
+    c.prelim_deadline,
+    c.lead_date,
+    c.offense_base,
+    c.responsible_district,
+    c.prelim_investigator,
+    (c.lead_date + INTERVAL '1 year' * CAST(c.offense_base AS INTEGER)) as expiration_date,
+    (c.lead_date + INTERVAL '1 year' * CAST(c.offense_base AS INTEGER)) - CURRENT_DATE as days_until_expiration,
+    -- Add classification columns for table filtering
+    CASE 
+        WHEN (c.lead_date + INTERVAL '1 year' * CAST(c.offense_base AS INTEGER)) <= (CURRENT_DATE + INTERVAL '1 year')
+        THEN 'CRITICAL'
+        WHEN (c.lead_date + INTERVAL '1 year' * CAST(c.offense_base AS INTEGER)) <= (CURRENT_DATE + INTERVAL '3 years')
+        THEN 'WARNING'
+        ELSE 'NORMAL'
+    END as urgency_level,
+    -- Calculate years remaining for easy filtering
+    ROUND(
+        EXTRACT(EPOCH FROM (c.lead_date + INTERVAL '1 year' * CAST(c.offense_base AS INTEGER)) - CURRENT_DATE) / 
+        (365.25 * 24 * 3600), 2
+    ) as years_remaining,
+    -- Add days remaining for sorting
+    EXTRACT(DAY FROM (c.lead_date + INTERVAL '1 year' * CAST(c.offense_base AS INTEGER)) - CURRENT_DATE) as days_remaining
+FROM 
+    "case" c
+WHERE 
+    c.lead_date IS NOT NULL
+    AND c.offense_base IS NOT NULL 
+    AND c.offense_base != ''
+    AND c.offense_base ~ '^[0-9]+$'
+    -- Only cases expiring within 3 years (not yet expired)
+    AND (c.lead_date + INTERVAL '1 year' * CAST(c.offense_base AS INTEGER)) <= (CURRENT_DATE + INTERVAL '3 years')
+    AND (c.lead_date + INTERVAL '1 year' * CAST(c.offense_base AS INTEGER)) > CURRENT_DATE
+    -- SIMPLIFIED DIVISION FILTER
+    AND (
+        -- If no division selected (null, empty, or 0), show all records
+        COALESCE({{Slc_Division.selectedOptionValue || 0}}::INTEGER, 0) = 0
+        OR 
+        -- If division is selected, match it with responsible_district (with safe conversion)
+        (
+            c.responsible_district IS NOT NULL 
+            AND c.responsible_district != ''
+            AND c.responsible_district ~ '^[0-9]+$'
+            AND CAST(c.responsible_district AS INTEGER) = {{Slc_Division.selectedOptionValue || 0}}::INTEGER
+        )
+    )
+ORDER BY 
+    (c.lead_date + INTERVAL '1 year' * CAST(c.offense_base AS INTEGER)) ASC;
