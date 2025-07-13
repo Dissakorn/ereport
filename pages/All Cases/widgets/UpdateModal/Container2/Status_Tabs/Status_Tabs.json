@@ -234,6 +234,96 @@
       "version": 1,
       "widgetId": "u5bes4k1l4",
       "widgetName": "Canvas21"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 630,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "h9ax6p47oj",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 670,
+      "minWidth": 450,
+      "mobileBottomRow": 671,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 1020,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "mpt82dmevw",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 1020,
+      "tabId": "tabesv3fvpzim",
+      "tabName": "ประวัติการแก้ไขทั้งหมด",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "drzqnlk793",
+      "widgetName": "Canvas23"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 630,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "h9ax6p47oj",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 670,
+      "minWidth": 450,
+      "mobileBottomRow": 671,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 1020,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "mpt82dmevw",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 1020,
+      "tabId": "tablts0ze31sq",
+      "tabName": "ประวัติการแก้ไข",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "s9096wot8x",
+      "widgetName": "Canvas24"
     }
   ],
   "defaultTab": "{{ data_table.selectedRow.case_type === '2' ? 'รวมเรื่อง' : 'จัดการสถานะ' }}",
@@ -289,7 +379,7 @@
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 64,
-  "shouldScrollContents": false,
+  "shouldScrollContents": true,
   "shouldShowTabs": true,
   "tabsObj": {
     "tab1": {
@@ -310,12 +400,29 @@
       "positioning": "vertical",
       "widgetId": "27m4z34f64"
     },
+    "tabesv3fvpzim": {
+      "id": "tabesv3fvpzim",
+      "index": 6,
+      "isDuplicateLabel": false,
+      "isVisible": true,
+      "label": "ประวัติการแก้ไขทั้งหมด",
+      "widgetId": "drzqnlk793"
+    },
     "tabgjwr6k2yeg": {
       "id": "tabgjwr6k2yeg",
       "index": 4,
+      "isDuplicateLabel": false,
       "isVisible": true,
       "label": "ข้อมูลทั่วไป",
       "widgetId": "u5bes4k1l4"
+    },
+    "tablts0ze31sq": {
+      "id": "tablts0ze31sq",
+      "index": 5,
+      "isDuplicateLabel": false,
+      "isVisible": true,
+      "label": "ประวัติการแก้ไข",
+      "widgetId": "s9096wot8x"
     },
     "tabmi9zbynf2m": {
       "id": "tabmi9zbynf2m",

@@ -5,16 +5,13 @@
   "borderRadius": "0.375rem",
   "bottomRow": 22,
   "boxShadow": "none",
-  "defaultText": "{{ moment().year() + 543 }}",
+  "defaultText": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "isDisabled"
-    },
-    {
-      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",

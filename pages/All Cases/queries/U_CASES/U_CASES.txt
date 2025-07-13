@@ -1,3 +1,5 @@
+SELECT set_config('app.current_user', '{{appsmith.store.name}}', true);
+
 UPDATE public."case" 
 SET
   "prelim_status" = {{ Sel_Prelim_Status.selectedOptionValue || 0 }},
@@ -9,7 +11,7 @@ SET
   "book_sign_date_213" = {{ Inp_213_Book_Sign_Date.selectedDate 
     ? "'" + moment(Inp_213_Book_Sign_Date.selectedDate).format("YYYY-MM-DD") + "'" 
     : null }},
-  "prelim_round" = '{{ Inp_Prelim_Round.text || '' }}',
+  "prelim_round" = '{{ Inp_Prelim_Round.text || 0 }}',
   "prelim_session" = '{{ Inp_Prelim_Session.text || '' }}',
   "prelim_letter" = '{{ Inp_Prelim_Letter.text || '' }}',
   "prelim_evidence" = '{{ Inp_Prelim_Evidence.text || '' }}',
@@ -19,7 +21,7 @@ SET
     : null }},
   "command_type" = {{ Sel_Order_Type.selectedOptionValue || 0 }},
   "command_number" = '{{ Inp_Order_Num.text || '' }}',
-  "command_year" = '{{ Inp_Order_Year.text || '' }}',
+  "command_year" = '{{ Inp_Order_Year.text || null }}',
   "book_num_644" = '{{ Inp_644_Book_Num.text || '' }}',
   "book_date_644" = {{ Inp_644_Book_Date.selectedDate 
     ? "'" + moment(Inp_644_Book_Date.selectedDate).format("YYYY-MM-DD") + "'" 
