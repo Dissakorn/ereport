@@ -27,9 +27,11 @@
   "columnOrder": [
     "case_number",
     "prelim_investigator",
+    "customColumn5",
     "book_date_213",
     "customColumn1",
     "xn__m3cbj0e6ak2k7a",
+    "customColumn4",
     "book_date_644",
     "inves_investigator",
     "xn__12cs3aliicn5d8cyb2bdwxl73a",
@@ -107,7 +109,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1752441220514,
+  "columnUpdatedAt": 1752480633868,
   "columnWidthMap": {
     "book_date_644": 177,
     "case_number": 100,
@@ -441,6 +443,18 @@
     },
     {
       "key": "primaryColumns.customColumn3.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn4.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn5.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn5.cellBackground"
+    },
+    {
+      "key": "primaryColumns.customColumn4.cellBackground"
     }
   ],
   "dynamicPropertyPathList": [
@@ -500,6 +514,18 @@
     },
     {
       "key": "primaryColumns.customColumn1.textColor"
+    },
+    {
+      "key": "primaryColumns.customColumn5.cellBackground"
+    },
+    {
+      "key": "primaryColumns.customColumn5.textColor"
+    },
+    {
+      "key": "primaryColumns.customColumn4.textColor"
+    },
+    {
+      "key": "primaryColumns.customColumn4.cellBackground"
     }
   ],
   "dynamicTriggerPathList": [
@@ -547,7 +573,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (\n(() => {\n  const currentTime = new Date();\n  const settings = getSettings.data[0];\n  \n  if (currentRow.case_type == 2) {\n    return '#eeefef';\n  }\n  \n  if (currentRow.prelim_result !== 2) {\n    const prelimDeadline = new Date(currentRow.prelim_deadline);\n    const daysUntilPrelimDeadline = Math.ceil((prelimDeadline - currentTime) / (1000 * 60 * 60 * 24));\n    \n    if (currentRow.prelim_status == 8 || (currentRow.prelim_result !== 0 && currentRow.prelim_result !== 1)) {\n      return '#27ae60';\n    }\n    if (daysUntilPrelimDeadline <= settings.prelim_warning && daysUntilPrelimDeadline >= 0) {\n      return '#fff3cd';\n    }\n    if (daysUntilPrelimDeadline < 0) {\n      return '#d9534f';\n    }\n    return '#ffffff';\n  }\n  \n  const invesDeadline = new Date(currentRow.inves_deadline);\n  const daysUntilInvesDeadline = Math.ceil((invesDeadline - currentTime) / (1000 * 60 * 60 * 24));\n  \n  if (currentRow.inves_status == 7) {\n    return '#27ae60';\n  }\n  if (daysUntilInvesDeadline <= settings.inves_warning && daysUntilInvesDeadline >= 0) {\n    return '#fff3cd';\n  }\n  if (daysUntilInvesDeadline < 0) {\n    return '#d9534f';\n  }\n  return '#ffffff';\n})()\n)) : \n(() => {\n  const currentTime = new Date();\n  const settings = getSettings.data[0];\n  \n  if (currentRow.case_type == 2) {\n    return '#eeefef';\n  }\n  \n  if (currentRow.prelim_result !== 2) {\n    const prelimDeadline = new Date(currentRow.prelim_deadline);\n    const daysUntilPrelimDeadline = Math.ceil((prelimDeadline - currentTime) / (1000 * 60 * 60 * 24));\n    \n    if (currentRow.prelim_status == 8 || (currentRow.prelim_result !== 0 && currentRow.prelim_result !== 1)) {\n      return '#27ae60';\n    }\n    if (daysUntilPrelimDeadline <= settings.prelim_warning && daysUntilPrelimDeadline >= 0) {\n      return '#fff3cd';\n    }\n    if (daysUntilPrelimDeadline < 0) {\n      return '#d9534f';\n    }\n    return '#ffffff';\n  }\n  \n  const invesDeadline = new Date(currentRow.inves_deadline);\n  const daysUntilInvesDeadline = Math.ceil((invesDeadline - currentTime) / (1000 * 60 * 60 * 24));\n  \n  if (currentRow.inves_status == 7) {\n    return '#27ae60';\n  }\n  if (daysUntilInvesDeadline <= settings.inves_warning && daysUntilInvesDeadline >= 0) {\n    return '#fff3cd';\n  }\n  if (daysUntilInvesDeadline < 0) {\n    return '#d9534f';\n  }\n  return '#ffffff';\n})()\n })()}}",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"book_date_213\"])) : book_date_213 })()}}",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (\ncurrentRow[\"book_date_213\"]\n)) : \ncurrentRow[\"book_date_213\"]\n })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -563,7 +589,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "วันที่เลขาลงนาม 213",
       "notation": "standard",
       "originalId": "book_date_213",
@@ -581,7 +607,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (\n(() => {\n  const currentTime = new Date();\n  const settings = getSettings.data[0];\n  \n  if (currentRow.case_type == 2) {\n    return '#eeefef';\n  }\n  \n  if (currentRow.prelim_result !== 2) {\n    const prelimDeadline = new Date(currentRow.prelim_deadline);\n    const daysUntilPrelimDeadline = Math.ceil((prelimDeadline - currentTime) / (1000 * 60 * 60 * 24));\n    \n    if (currentRow.prelim_status == 8 || (currentRow.prelim_result !== 0 && currentRow.prelim_result !== 1)) {\n      return '#27ae60';\n    }\n    if (daysUntilPrelimDeadline <= settings.prelim_warning && daysUntilPrelimDeadline >= 0) {\n      return '#fff3cd';\n    }\n    if (daysUntilPrelimDeadline < 0) {\n      return '#d9534f';\n    }\n    return '#ffffff';\n  }\n  \n  const invesDeadline = new Date(currentRow.inves_deadline);\n  const daysUntilInvesDeadline = Math.ceil((invesDeadline - currentTime) / (1000 * 60 * 60 * 24));\n  \n  if (currentRow.inves_status == 7) {\n    return '#27ae60';\n  }\n  if (daysUntilInvesDeadline <= settings.inves_warning && daysUntilInvesDeadline >= 0) {\n    return '#fff3cd';\n  }\n  if (daysUntilInvesDeadline < 0) {\n    return '#d9534f';\n  }\n  return '#ffffff';\n})()\n)) : \n(() => {\n  const currentTime = new Date();\n  const settings = getSettings.data[0];\n  \n  if (currentRow.case_type == 2) {\n    return '#eeefef';\n  }\n  \n  if (currentRow.prelim_result !== 2) {\n    const prelimDeadline = new Date(currentRow.prelim_deadline);\n    const daysUntilPrelimDeadline = Math.ceil((prelimDeadline - currentTime) / (1000 * 60 * 60 * 24));\n    \n    if (currentRow.prelim_status == 8 || (currentRow.prelim_result !== 0 && currentRow.prelim_result !== 1)) {\n      return '#27ae60';\n    }\n    if (daysUntilPrelimDeadline <= settings.prelim_warning && daysUntilPrelimDeadline >= 0) {\n      return '#fff3cd';\n    }\n    if (daysUntilPrelimDeadline < 0) {\n      return '#d9534f';\n    }\n    return '#ffffff';\n  }\n  \n  const invesDeadline = new Date(currentRow.inves_deadline);\n  const daysUntilInvesDeadline = Math.ceil((invesDeadline - currentTime) / (1000 * 60 * 60 * 24));\n  \n  if (currentRow.inves_status == 7) {\n    return '#27ae60';\n  }\n  if (daysUntilInvesDeadline <= settings.inves_warning && daysUntilInvesDeadline >= 0) {\n    return '#fff3cd';\n  }\n  if (daysUntilInvesDeadline < 0) {\n    return '#d9534f';\n  }\n  return '#ffffff';\n})()\n })()}}",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"book_date_644\"])) : book_date_644 })()}}",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (\ncurrentRow[\"book_date_644\"]\n)) : \ncurrentRow[\"book_date_644\"]\n })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -597,7 +623,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "วันที่หนังสือรายงาน 644",
       "notation": "standard",
       "originalId": "book_date_644",
@@ -1184,6 +1210,76 @@
       "originalId": "customColumn3",
       "sticky": "",
       "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn4": {
+      "alias": "วันที่หนังสือรายงาน 644",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "buttonStyle": "rgb(3, 179, 101)",
+      "cellBackground": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (\n(() => {\n  const currentTime = new Date();\n  const settings = getSettings.data[0];\n  if (currentRow.case_type == 2) {\n    return '#eeefef';\n  }\n  if (currentRow.prelim_result !== 2) {\n    const prelimDeadline = new Date(currentRow.prelim_deadline);\n    const daysUntilPrelimDeadline = Math.ceil((prelimDeadline - currentTime) / (1000 * 60 * 60 * 24));\n    if (currentRow.prelim_status == 8 || (currentRow.prelim_result !== 0 && currentRow.prelim_result !== 1)) {\n      return '#27ae60';\n    }\n    if (daysUntilPrelimDeadline <= settings.prelim_warning && daysUntilPrelimDeadline >= 0) {\n      return '#fff3cd';\n    }\n    if (daysUntilPrelimDeadline < 0) {\n      return '#d9534f';\n    }\n    return '#ffffff';\n  }\n  const invesDeadline = new Date(currentRow.inves_deadline);\n  const daysUntilInvesDeadline = Math.ceil((invesDeadline - currentTime) / (1000 * 60 * 60 * 24));\n  if (currentRow.inves_status == 7) {\n    return '#27ae60';\n  }\n  if (daysUntilInvesDeadline <= settings.inves_warning && daysUntilInvesDeadline >= 0) {\n    return '#fff3cd';\n  }\n  if (daysUntilInvesDeadline < 0) {\n    return '#d9534f';\n  }\n  return '#ffffff';\n})()\n)) : \n(() => {\n  const currentTime = new Date();\n  const settings = getSettings.data[0];\n  if (currentRow.case_type == 2) {\n    return '#eeefef';\n  }\n  if (currentRow.prelim_result !== 2) {\n    const prelimDeadline = new Date(currentRow.prelim_deadline);\n    const daysUntilPrelimDeadline = Math.ceil((prelimDeadline - currentTime) / (1000 * 60 * 60 * 24));\n    if (currentRow.prelim_status == 8 || (currentRow.prelim_result !== 0 && currentRow.prelim_result !== 1)) {\n      return '#27ae60';\n    }\n    if (daysUntilPrelimDeadline <= settings.prelim_warning && daysUntilPrelimDeadline >= 0) {\n      return '#fff3cd';\n    }\n    if (daysUntilPrelimDeadline < 0) {\n      return '#d9534f';\n    }\n    return '#ffffff';\n  }\n  const invesDeadline = new Date(currentRow.inves_deadline);\n  const daysUntilInvesDeadline = Math.ceil((invesDeadline - currentTime) / (1000 * 60 * 60 * 24));\n  if (currentRow.inves_status == 7) {\n    return '#27ae60';\n  }\n  if (daysUntilInvesDeadline <= settings.inves_warning && daysUntilInvesDeadline >= 0) {\n    return '#fff3cd';\n  }\n  if (daysUntilInvesDeadline < 0) {\n    return '#d9534f';\n  }\n  return '#ffffff';\n})()\n })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (\n  (() => {\n    if (!currentRow[\"book_date_644\"] || currentRow[\"book_date_644\"] === \"\") {\n      return \"-\";\n    }\n    const date = new Date(currentRow[\"book_date_644\"]);\n    const day = String(date.getDate()).padStart(2, '0');\n    const month = String(date.getMonth() + 1).padStart(2, '0');\n    const year = date.getFullYear() + 543; // Convert to B.E. (Buddhist Era)\n    return `${day}/${month}/${year}`;\n  })()\n)) : \n  (() => {\n    if (!currentRow[\"book_date_644\"] || currentRow[\"book_date_644\"] === \"\") {\n      return \"-\";\n    }\n    const date = new Date(currentRow[\"book_date_644\"]);\n    const day = String(date.getDate()).padStart(2, '0');\n    const month = String(date.getMonth() + 1).padStart(2, '0');\n    const year = date.getFullYear() + 543; // Convert to B.E. (Buddhist Era)\n    return `${day}/${month}/${year}`;\n  })()\n })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "CENTER",
+      "id": "customColumn4",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "วันที่หนังสือรายงาน 644",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "originalId": "customColumn4",
+      "sticky": "",
+      "textColor": "(() => {\n  const getTextColor = (bgColor) => {\n    // Convert hex color to RGB\n    const r = parseInt(bgColor.substring(1, 3), 16);\n    const g = parseInt(bgColor.substring(3, 5), 16);\n    const b = parseInt(bgColor.substring(5, 7), 16);\n    // Calculate luminance using relative luminance formula\n    const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;\n    // Return white text for dark backgrounds and black text for light backgrounds\n    return luminance > 0.5 ? '#000000' : '#ffffff';\n  };\n  \n  const currentTime = new Date();\n  \n  // Special Case: Case type is 2\n  if (currentRow.case_type == 2) {\n    const bgColor = '#eeefef'; // Grey for \"consolidated\" cases\n    return getTextColor(bgColor);\n  }\n  \n  // Preliminary State: If still in prelim state (inves_status == 0)\n  if (currentRow.inves_status == 0) {\n    const prelimDeadline = new Date(currentRow.prelim_deadline);\n    // Condition 1: Prelim complete\n    if (currentRow.prelim_status == 8) {\n      const bgColor = '#27ae60'; // Green\n      return getTextColor(bgColor);\n    }\n    // Condition 2: Prelim late\n    if (currentTime > prelimDeadline) {\n      const bgColor = '#d9534f'; // Red\n      return getTextColor(bgColor);\n    }\n    // Condition 3: Prelim ongoing\n    const bgColor = '#ffffff'; // White\n    return getTextColor(bgColor);\n  }\n  \n  // Investigation State\n  const invesDeadline = new Date(currentRow.inves_deadline);\n  // Condition 4: Investigation complete\n  if (currentRow.inves_status == 7) {\n    const bgColor = '#27ae60'; // Green\n    return getTextColor(bgColor);\n  }\n  // Condition 5: Investigation late\n  if (currentTime > invesDeadline && currentRow.inves_status != 0) {\n    const bgColor = '#d9534f'; // Red\n    return getTextColor(bgColor);\n  }\n  // Condition 6: Investigation ongoing\n  const bgColor = '#ffffff'; // White\n  return getTextColor(bgColor);\n})()",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn5": {
+      "alias": "วันที่เลขาลงนาม  213",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "buttonStyle": "rgb(3, 179, 101)",
+      "cellBackground": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (\n(() => {\n  const currentTime = new Date();\n  const settings = getSettings.data[0];\n  if (currentRow.case_type == 2) {\n    return '#eeefef';\n  }\n  if (currentRow.prelim_result !== 2) {\n    const prelimDeadline = new Date(currentRow.prelim_deadline);\n    const daysUntilPrelimDeadline = Math.ceil((prelimDeadline - currentTime) / (1000 * 60 * 60 * 24));\n    if (currentRow.prelim_status == 8 || (currentRow.prelim_result !== 0 && currentRow.prelim_result !== 1)) {\n      return '#27ae60';\n    }\n    if (daysUntilPrelimDeadline <= settings.prelim_warning && daysUntilPrelimDeadline >= 0) {\n      return '#fff3cd';\n    }\n    if (daysUntilPrelimDeadline < 0) {\n      return '#d9534f';\n    }\n    return '#ffffff';\n  }\n  const invesDeadline = new Date(currentRow.inves_deadline);\n  const daysUntilInvesDeadline = Math.ceil((invesDeadline - currentTime) / (1000 * 60 * 60 * 24));\n  if (currentRow.inves_status == 7) {\n    return '#27ae60';\n  }\n  if (daysUntilInvesDeadline <= settings.inves_warning && daysUntilInvesDeadline >= 0) {\n    return '#fff3cd';\n  }\n  if (daysUntilInvesDeadline < 0) {\n    return '#d9534f';\n  }\n  return '#ffffff';\n})()\n)) : \n(() => {\n  const currentTime = new Date();\n  const settings = getSettings.data[0];\n  if (currentRow.case_type == 2) {\n    return '#eeefef';\n  }\n  if (currentRow.prelim_result !== 2) {\n    const prelimDeadline = new Date(currentRow.prelim_deadline);\n    const daysUntilPrelimDeadline = Math.ceil((prelimDeadline - currentTime) / (1000 * 60 * 60 * 24));\n    if (currentRow.prelim_status == 8 || (currentRow.prelim_result !== 0 && currentRow.prelim_result !== 1)) {\n      return '#27ae60';\n    }\n    if (daysUntilPrelimDeadline <= settings.prelim_warning && daysUntilPrelimDeadline >= 0) {\n      return '#fff3cd';\n    }\n    if (daysUntilPrelimDeadline < 0) {\n      return '#d9534f';\n    }\n    return '#ffffff';\n  }\n  const invesDeadline = new Date(currentRow.inves_deadline);\n  const daysUntilInvesDeadline = Math.ceil((invesDeadline - currentTime) / (1000 * 60 * 60 * 24));\n  if (currentRow.inves_status == 7) {\n    return '#27ae60';\n  }\n  if (daysUntilInvesDeadline <= settings.inves_warning && daysUntilInvesDeadline >= 0) {\n    return '#fff3cd';\n  }\n  if (daysUntilInvesDeadline < 0) {\n    return '#d9534f';\n  }\n  return '#ffffff';\n})()\n })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (\n  (() => {\n    if (!currentRow[\"book_date_213\"] || currentRow[\"book_date_213\"] === \"\") {\n      return \"-\";\n    }\n    const date = new Date(currentRow[\"book_date_213\"]);\n    const day = String(date.getDate()).padStart(2, '0');\n    const month = String(date.getMonth() + 1).padStart(2, '0');\n    const year = date.getFullYear() + 543; // Convert to B.E. (Buddhist Era)\n    return `${day}/${month}/${year}`;\n  })()\n)) : \n  (() => {\n    if (!currentRow[\"book_date_213\"] || currentRow[\"book_date_213\"] === \"\") {\n      return \"-\";\n    }\n    const date = new Date(currentRow[\"book_date_213\"]);\n    const day = String(date.getDate()).padStart(2, '0');\n    const month = String(date.getMonth() + 1).padStart(2, '0');\n    const year = date.getFullYear() + 543; // Convert to B.E. (Buddhist Era)\n    return `${day}/${month}/${year}`;\n  })()\n })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "CENTER",
+      "id": "customColumn5",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "วันที่เลขาลงนาม  213",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "originalId": "customColumn5",
+      "sticky": "",
+      "textColor": "(() => {\n  const getTextColor = (bgColor) => {\n    // Convert hex color to RGB\n    const r = parseInt(bgColor.substring(1, 3), 16);\n    const g = parseInt(bgColor.substring(3, 5), 16);\n    const b = parseInt(bgColor.substring(5, 7), 16);\n    // Calculate luminance using relative luminance formula\n    const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;\n    // Return white text for dark backgrounds and black text for light backgrounds\n    return luminance > 0.5 ? '#000000' : '#ffffff';\n  };\n  \n  const currentTime = new Date();\n  \n  // Special Case: Case type is 2\n  if (currentRow.case_type == 2) {\n    const bgColor = '#eeefef'; // Grey for \"consolidated\" cases\n    return getTextColor(bgColor);\n  }\n  \n  // Preliminary State: If still in prelim state (inves_status == 0)\n  if (currentRow.inves_status == 0) {\n    const prelimDeadline = new Date(currentRow.prelim_deadline);\n    // Condition 1: Prelim complete\n    if (currentRow.prelim_status == 8) {\n      const bgColor = '#27ae60'; // Green\n      return getTextColor(bgColor);\n    }\n    // Condition 2: Prelim late\n    if (currentTime > prelimDeadline) {\n      const bgColor = '#d9534f'; // Red\n      return getTextColor(bgColor);\n    }\n    // Condition 3: Prelim ongoing\n    const bgColor = '#ffffff'; // White\n    return getTextColor(bgColor);\n  }\n  \n  // Investigation State\n  const invesDeadline = new Date(currentRow.inves_deadline);\n  // Condition 4: Investigation complete\n  if (currentRow.inves_status == 7) {\n    const bgColor = '#27ae60'; // Green\n    return getTextColor(bgColor);\n  }\n  // Condition 5: Investigation late\n  if (currentTime > invesDeadline && currentRow.inves_status != 0) {\n    const bgColor = '#d9534f'; // Red\n    return getTextColor(bgColor);\n  }\n  // Condition 6: Investigation ongoing\n  const bgColor = '#ffffff'; // White\n  return getTextColor(bgColor);\n})()",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},

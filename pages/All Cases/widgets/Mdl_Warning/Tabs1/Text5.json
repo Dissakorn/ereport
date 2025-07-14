@@ -41,7 +41,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 41,
   "shouldTruncate": false,
-  "text": "ภายใน 1 ปี ({{(GetCasesExpiringWithin3Years.data.filter(row => row.urgency_level === \"CRITICAL\")).length}})",
+  "text": "ภายใน 3 เดือน ({{(GetCasesExpiringWithin3Years.data.filter(row => row.urgency_level === \"CRITICAL\")).length}})",
   "textAlign": "CENTER",
   "textColor": "#231F20",
   "topRow": 0,

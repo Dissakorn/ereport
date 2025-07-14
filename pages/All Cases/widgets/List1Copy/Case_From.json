@@ -29,7 +29,7 @@
   "parentId": "78ck8p7x5q",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 23,
+  "rightColumn": 22,
   "text": "คดีทั้งหมด {{R_USER_DIVISION.data[0].name}}",
   "textAlign": "LEFT",
   "textColor": "#003B4A",

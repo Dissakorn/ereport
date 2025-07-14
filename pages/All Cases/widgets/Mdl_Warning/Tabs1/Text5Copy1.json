@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 25,
+  "bottomRow": 45,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -41,13 +41,13 @@
   "responsiveBehavior": "fill",
   "rightColumn": 41,
   "shouldTruncate": false,
-  "text": "ภายใน 6 เดือน ({{(GetCasesExpiringWithin3Years.data.filter(row => row.urgency_level === \"CRITICAL\")).length}})",
+  "text": "ภายใน 1 ปี ({{(GetCasesExpiringWithin3Years.data.filter(row => row.urgency_level === \"CRITICAL\")).length}})",
   "textAlign": "CENTER",
   "textColor": "#231F20",
-  "topRow": 21,
+  "topRow": 41,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "3hzjemguyc",
-  "widgetName": "Text5Copy"
+  "widgetId": "f2huzvfeio",
+  "widgetName": "Text5Copy1"
 }

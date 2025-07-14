@@ -143,6 +143,51 @@
       "version": 1,
       "widgetId": "77n0f3rtxl",
       "widgetName": "Canvas22"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 640,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "j2bx1at99y",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 680,
+      "minWidth": 450,
+      "mobileBottomRow": 681,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 444,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "whsgqad5s4",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 444,
+      "tabId": "tabb89laxbe0w",
+      "tabName": "หมดอายุความ",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "qg6dege30j",
+      "widgetName": "Canvas25"
     }
   ],
   "defaultTab": "Tab 1",
@@ -190,7 +235,7 @@
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 64,
-  "shouldScrollContents": false,
+  "shouldScrollContents": true,
   "shouldShowTabs": true,
   "tabsObj": {
     "tab1": {
@@ -215,6 +260,13 @@
       "isVisible": true,
       "label": "อายุความ",
       "widgetId": "77n0f3rtxl"
+    },
+    "tabb89laxbe0w": {
+      "id": "tabb89laxbe0w",
+      "index": 3,
+      "isVisible": true,
+      "label": "หมดอายุความ",
+      "widgetId": "qg6dege30j"
     }
   },
   "topRow": 0,

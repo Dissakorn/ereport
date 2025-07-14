@@ -6,21 +6,30 @@ SELECT
     c.offense_base,
     c.responsible_district,
     c.prelim_investigator,
+    c.inves_investigator,
     (c.lead_date + INTERVAL '1 year' * CAST(c.offense_base AS INTEGER)) as expiration_date,
     (c.lead_date + INTERVAL '1 year' * CAST(c.offense_base AS INTEGER)) - CURRENT_DATE as days_until_expiration,
-    -- Add classification columns for table filtering
+    -- Add classification columns for table filtering with 3 warning levels
     CASE 
-        WHEN (c.lead_date + INTERVAL '1 year' * CAST(c.offense_base AS INTEGER)) <= (CURRENT_DATE + INTERVAL '1 year')
+        WHEN (c.lead_date + INTERVAL '1 year' * CAST(c.offense_base AS INTEGER)) <= CURRENT_DATE
+        THEN 'EXPIRED'
+        WHEN (c.lead_date + INTERVAL '1 year' * CAST(c.offense_base AS INTEGER)) <= (CURRENT_DATE + INTERVAL '3 months')
         THEN 'CRITICAL'
-        WHEN (c.lead_date + INTERVAL '1 year' * CAST(c.offense_base AS INTEGER)) <= (CURRENT_DATE + INTERVAL '3 years')
-        THEN 'WARNING'
-        ELSE 'NORMAL'
+        WHEN (c.lead_date + INTERVAL '1 year' * CAST(c.offense_base AS INTEGER)) <= (CURRENT_DATE + INTERVAL '6 months')
+        THEN 'HIGH'
+        WHEN (c.lead_date + INTERVAL '1 year' * CAST(c.offense_base AS INTEGER)) <= (CURRENT_DATE + INTERVAL '1 year')
+        THEN 'MEDIUM'
     END as urgency_level,
     -- Calculate years remaining for easy filtering
     ROUND(
         EXTRACT(EPOCH FROM (c.lead_date + INTERVAL '1 year' * CAST(c.offense_base AS INTEGER)) - CURRENT_DATE) / 
         (365.25 * 24 * 3600), 2
     ) as years_remaining,
+    -- Calculate months remaining for easier understanding
+    ROUND(
+        EXTRACT(EPOCH FROM (c.lead_date + INTERVAL '1 year' * CAST(c.offense_base AS INTEGER)) - CURRENT_DATE) / 
+        (30.44 * 24 * 3600), 1
+    ) as months_remaining,
     -- Add days remaining for sorting
     EXTRACT(DAY FROM (c.lead_date + INTERVAL '1 year' * CAST(c.offense_base AS INTEGER)) - CURRENT_DATE) as days_remaining
 FROM 
@@ -30,9 +39,17 @@ WHERE
     AND c.offense_base IS NOT NULL 
     AND c.offense_base != ''
     AND c.offense_base ~ '^[0-9]+$'
-    -- Only cases expiring within 3 years (not yet expired)
-    AND (c.lead_date + INTERVAL '1 year' * CAST(c.offense_base AS INTEGER)) <= (CURRENT_DATE + INTERVAL '3 years')
-    AND (c.lead_date + INTERVAL '1 year' * CAST(c.offense_base AS INTEGER)) > CURRENT_DATE
+    -- Only cases expiring within 1 year (including expired cases)
+    AND (c.lead_date + INTERVAL '1 year' * CAST(c.offense_base AS INTEGER)) <= (CURRENT_DATE + INTERVAL '1 year')
+    -- Exclude completed cases (only show cases that are NOT done)
+    AND c.case_type != '2'  -- Changed to string comparison
+    AND NOT (
+        -- Exclude cases where prelim is done
+        (c.prelim_status = 8 OR (c.prelim_result IS NOT NULL AND c.prelim_result NOT IN (0, 1, 2)))
+        AND 
+        -- AND investigation is done (if prelim_result = 2, meaning it goes to investigation)
+        (c.prelim_result != 2 OR c.inves_status = 7)
+    )
     -- SIMPLIFIED DIVISION FILTER
     AND (
         -- If no division selected (null, empty, or 0), show all records

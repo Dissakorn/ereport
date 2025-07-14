@@ -7,7 +7,7 @@
   "closeOnSelection": true,
   "dateFormat": "DD/MM/YYYY",
   "datePickerType": "DATE_PICKER",
-  "defaultDate": "{{data_table.selectedRow.commmand_number_date}}",
+  "defaultDate": "{{data_table.selectedRow.book_date_644}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -29,9 +29,6 @@
     },
     {
       "key": "isDisabled"
-    },
-    {
-      "key": "dateFormat"
     },
     {
       "key": "isVisible"

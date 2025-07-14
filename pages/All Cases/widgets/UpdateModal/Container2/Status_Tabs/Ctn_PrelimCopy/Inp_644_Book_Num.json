@@ -5,7 +5,7 @@
   "borderRadius": "0.375rem",
   "bottomRow": 36,
   "boxShadow": "none",
-  "defaultText": "{{data_table.selectedRow.inves_evidence}}",
+  "defaultText": "{{data_table.selectedRow.book_num_644}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

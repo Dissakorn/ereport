@@ -23,9 +23,9 @@ SET
   "command_number" = '{{ Inp_Order_Num.text || '' }}',
   "command_year" = '{{ Inp_Order_Year.text || null }}',
   "book_num_644" = '{{ Inp_644_Book_Num.text || '' }}',
-  "book_date_644" = {{ Inp_644_Book_Date.selectedDate 
-    ? "'" + moment(Inp_644_Book_Date.selectedDate).format("YYYY-MM-DD") + "'" 
-    : null }},
+	"book_date_644" = {{ Inp_644_Book_Date.selectedDate 
+  ? "'" + moment(Inp_644_Book_Date.selectedDate).format("YYYY-MM-DD") + "'" 
+  : null }},
   "inves_status" = {{ Sel_Inves_Status.selectedOptionValue || 0 }},
   "inves_result" = {{ Sel_Inves_Result.selectedOptionValue || 0 }},
   "inves_round" = {{ Inp_Inves_Round.text || 0 }},
