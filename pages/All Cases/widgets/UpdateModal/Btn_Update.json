@@ -25,7 +25,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{U_CASES.run().then(() => {\n  closeModal('');\n  R_CASES.run();\n});}}",
+  "onClick": "{{U_CASES.run().then(() => {\n  U_CASES_2.run();\n  closeModal(UpdateModal.name);\n  R_CASES.run();\n});}}",
   "originalBottomRow": 54,
   "originalTopRow": 50,
   "parentId": "tfv6j9z1gu",
