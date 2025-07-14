@@ -210,51 +210,6 @@
       "flexLayers": [],
       "isLoading": false,
       "isVisible": true,
-      "key": "ns07qvdcxu",
-      "leftColumn": 0,
-      "maxDynamicHeight": 9000,
-      "minDynamicHeight": 4,
-      "minHeight": 670,
-      "minWidth": 450,
-      "mobileBottomRow": 671,
-      "mobileLeftColumn": 0,
-      "mobileRightColumn": 1020,
-      "mobileTopRow": 1,
-      "needsErrorInfo": false,
-      "parentColumnSpace": 1,
-      "parentId": "mpt82dmevw",
-      "parentRowSpace": 1,
-      "renderMode": "CANVAS",
-      "responsiveBehavior": "fill",
-      "rightColumn": 1020,
-      "tabId": "tabgjwr6k2yeg",
-      "tabName": "ข้อมูลทั่วไป",
-      "topRow": 1,
-      "type": "CANVAS_WIDGET",
-      "version": 1,
-      "widgetId": "u5bes4k1l4",
-      "widgetName": "Canvas21"
-    },
-    {
-      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 630,
-      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-      "canExtend": false,
-      "containerStyle": "none",
-      "detachFromLayout": true,
-      "dynamicBindingPathList": [
-        {
-          "key": "borderRadius"
-        },
-        {
-          "key": "boxShadow"
-        }
-      ],
-      "dynamicHeight": "AUTO_HEIGHT",
-      "dynamicTriggerPathList": [],
-      "flexLayers": [],
-      "isLoading": false,
-      "isVisible": true,
       "key": "h9ax6p47oj",
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
@@ -324,6 +279,51 @@
       "version": 1,
       "widgetId": "s9096wot8x",
       "widgetName": "Canvas24"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 630,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "qf7nswhk73",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 670,
+      "minWidth": 450,
+      "mobileBottomRow": 671,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 1020,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "mpt82dmevw",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 1020,
+      "tabId": "taba6bfbf7ep4",
+      "tabName": "ข้อมูลทั่วไป",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "h1rsyp0t8c",
+      "widgetName": "Canvas27"
     }
   ],
   "defaultTab": "{{ data_table.selectedRow.case_type === '2' ? 'รวมเรื่อง' : 'จัดการสถานะ' }}",
@@ -379,7 +379,7 @@
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 64,
-  "shouldScrollContents": true,
+  "shouldScrollContents": false,
   "shouldShowTabs": true,
   "tabsObj": {
     "tab1": {
@@ -393,12 +393,20 @@
     },
     "tab2": {
       "id": "tab2",
-      "index": 2,
+      "index": 3,
       "isDuplicateLabel": false,
       "isVisible": "{{ data_table.selectedRow.case_type == 2}}",
       "label": "รวมเรื่อง",
       "positioning": "vertical",
       "widgetId": "27m4z34f64"
+    },
+    "taba6bfbf7ep4": {
+      "id": "taba6bfbf7ep4",
+      "index": 1,
+      "isDuplicateLabel": false,
+      "isVisible": true,
+      "label": "ข้อมูลทั่วไป",
+      "widgetId": "h1rsyp0t8c"
     },
     "tabesv3fvpzim": {
       "id": "tabesv3fvpzim",
@@ -407,14 +415,6 @@
       "isVisible": true,
       "label": "ประวัติการแก้ไขทั้งหมด",
       "widgetId": "drzqnlk793"
-    },
-    "tabgjwr6k2yeg": {
-      "id": "tabgjwr6k2yeg",
-      "index": 4,
-      "isDuplicateLabel": false,
-      "isVisible": true,
-      "label": "ข้อมูลทั่วไป",
-      "widgetId": "u5bes4k1l4"
     },
     "tablts0ze31sq": {
       "id": "tablts0ze31sq",
@@ -426,7 +426,7 @@
     },
     "tabmi9zbynf2m": {
       "id": "tabmi9zbynf2m",
-      "index": 3,
+      "index": 4,
       "isDuplicateLabel": false,
       "isVisible": "{{ data_table.selectedRow.case_type != 2 }}",
       "label": "เรื่องที่ถูกรวม",
@@ -434,7 +434,7 @@
     },
     "tabyp8wkmf1ro": {
       "id": "tabyp8wkmf1ro",
-      "index": 1,
+      "index": 2,
       "isDuplicateLabel": false,
       "isVisible": true,
       "label": "จัดการค่าใช้จ่าย",
