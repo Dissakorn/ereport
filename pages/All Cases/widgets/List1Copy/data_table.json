@@ -533,7 +533,7 @@
   "labelTextSize": "0.875rem",
   "leftColumn": 1,
   "onPageChange": "",
-  "onRowSelected": "{{showModal(UpdateModal.name).then(() => {\n  R_CASES_REF.run();\n  prelim_budget.run();\n  inves_budget.run();\n});}}",
+  "onRowSelected": "{{showModal(UpdateModal.name).then(() => {\n  R_CASES_REF.run();\n  prelim_budget.run();\n  inves_budget.run();\n  log_inv_inv.run();\n  log_inv_sta.run();\n  log_pre_inv.run();\n  log_pre_sta.run();\n  log_all.run();\n});}}",
   "onSearchTextChanged": "",
   "onSort": "",
   "parentColumnSpace": 16.3125,
