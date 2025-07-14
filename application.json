@@ -61,6 +61,10 @@
     {
       "id": "ChangePasswordPage",
       "isDefault": false
+    },
+    {
+      "id": "Public.case",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

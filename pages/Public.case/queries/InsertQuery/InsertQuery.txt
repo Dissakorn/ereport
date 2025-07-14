@@ -1,0 +1,26 @@
+INSERT INTO public."case" (
+	"case_number",
+	"lead_time",
+	"lead_date",
+	"case_type",
+	"reference",
+	"combined_date",
+	"case_number_date",
+	"pacc_tracking_number",
+	"num_book",
+	"num_book_date",
+	"inv_num_book"
+)
+VALUES (
+	'{{insert_form.formData.case_number}}',
+	'{{insert_form.formData.lead_time}}',
+	'{{insert_form.formData.lead_date}}',
+	'{{insert_form.formData.case_type}}',
+	'{{insert_form.formData.reference}}',
+	'{{insert_form.formData.combined_date}}',
+	'{{insert_form.formData.case_number_date}}',
+	'{{insert_form.formData.pacc_tracking_number}}',
+	'{{insert_form.formData.num_book}}',
+	'{{insert_form.formData.num_book_date}}',
+	'{{insert_form.formData.inv_num_book}}'
+);

@@ -1,0 +1,3 @@
+SELECT case_id, case_number FROM public."case"
+WHERE "case_number" ilike '%{{data_table.searchText || ""}}%'
+ORDER BY "{{data_table.sortOrder.column || 'case_id'}}" {{data_table.sortOrder.order || 'ASC'}};

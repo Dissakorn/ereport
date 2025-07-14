@@ -189,6 +189,51 @@
       "version": 1,
       "widgetId": "0geqpkcore",
       "widgetName": "Canvas7"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 860,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "j2bx1at99y",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 770,
+      "minWidth": 450,
+      "mobileBottomRow": 771,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 990.625,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "pegvstlfow",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 990.625,
+      "tabId": "tab15de19jxk3",
+      "tabName": "ลบคดี",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "nf67zolzl1",
+      "widgetName": "Canvas8"
     }
   ],
   "defaultTab": "การตั้งค่าขั้นพื้นฐาน",
@@ -207,6 +252,12 @@
     },
     {
       "key": "tabsObj.taby11unwqwv4.isVisible"
+    },
+    {
+      "key": "tabsObj.tab7u8jb2hm34.isVisible"
+    },
+    {
+      "key": "tabsObj.tab15de19jxk3.isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -216,6 +267,12 @@
     },
     {
       "key": "tabsObj.taby11unwqwv4.isVisible"
+    },
+    {
+      "key": "tabsObj.tab7u8jb2hm34.isVisible"
+    },
+    {
+      "key": "tabsObj.tab15de19jxk3.isVisible"
     }
   ],
   "dynamicTriggerPathList": [],
@@ -251,6 +308,13 @@
       "positioning": "vertical",
       "widgetId": "jcdt5cslwc"
     },
+    "tab15de19jxk3": {
+      "id": "tab15de19jxk3",
+      "index": 4,
+      "isVisible": "{{appsmith.store.user_type_id == 99}}",
+      "label": "ลบคดี",
+      "widgetId": "nf67zolzl1"
+    },
     "tab2": {
       "id": "tab2",
       "index": 1,
@@ -264,7 +328,7 @@
       "id": "tab7u8jb2hm34",
       "index": 3,
       "isDuplicateLabel": false,
-      "isVisible": true,
+      "isVisible": "{{appsmith.store.user_type_id == 99}}",
       "label": "สร้างผู้ใช้ใหม่",
       "widgetId": "w1u4mfotvq"
     },

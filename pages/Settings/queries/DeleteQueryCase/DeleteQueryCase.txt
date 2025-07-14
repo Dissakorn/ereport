@@ -1,0 +1,2 @@
+DELETE FROM public."case"
+  WHERE "case_id" = {{data_tableCopy.triggeredRow.case_id}};
