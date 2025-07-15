@@ -15,6 +15,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "isDisabled"
+    },
+    {
+      "key": "onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -31,7 +34,7 @@
   "isVisible": true,
   "key": "39z78os9vu",
   "leftColumn": 50,
-  "onClick": "{{I_Cases.run().then(() => {\n  showAlert('เพิ่มคดีสำเร็จ', 'success');\n});}}",
+  "onClick": "{{ \n  storeValue('isSubmitting', true);\n  I_Cases.run().then(() => {\n    showAlert('เพิ่มคดีสำเร็จ', 'success');\n    setTimeout(() => {\n      storeValue('isSubmitting', false);\n    }, 3000);\n  }).catch(() => {\n    showAlert('เกิดข้อผิดพลาดในการเพิ่มคดี', 'error');\n    storeValue('isSubmitting', false);\n  });\n}}\n",
   "parentId": "2w47hpxjfw",
   "placement": "CENTER",
   "recaptchaType": "V3",

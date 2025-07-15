@@ -1,1 +1,1 @@
-SELECT COUNT(*) FROM public."case" WHERE CAST(source AS INT) = 2;
+SELECT COUNT(*) FROM public."case" WHERE source = '2';

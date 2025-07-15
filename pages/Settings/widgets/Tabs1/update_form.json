@@ -1,9 +1,9 @@
 {
   "animateLoading": true,
-  "autoGenerateForm": true,
+  "autoGenerateForm": false,
   "backgroundColor": "#FFFFFF",
   "borderColor": "#fff",
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderRadius": "0.375rem",
   "borderWidth": "0",
   "bottomRow": 71,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
@@ -88,103 +88,31 @@
   "displayName": "JSON Form",
   "dynamicBindingPathList": [
     {
-      "key": "schema.__root_schema__.defaultValue"
-    },
-    {
       "key": "sourceData"
-    },
-    {
-      "key": "isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.cellBorderRadius"
-    },
-    {
-      "key": "title"
-    },
-    {
-      "key": "resetButtonStyles.buttonColor"
-    },
-    {
-      "key": "resetButtonStyles.borderRadius"
-    },
-    {
-      "key": "borderRadius"
-    },
-    {
-      "key": "boxShadow"
-    },
-    {
-      "key": "submitButtonStyles.buttonColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.name.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.name.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.email.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.email.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.division_id.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.division_id.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.division_id.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.user_type_id.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.user_type_id.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.password.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.password.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.password.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.username.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.username.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.password_hash.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.password_hash.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.password_hash.accentColor"
     },
     {
       "key": "schema.__root_schema__.children.salt.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.salt.borderRadius"
-    },
-    {
       "key": "schema.__root_schema__.children.salt.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.is_first_login.defaultValue"
+      "key": "schema.__root_schema__.children.salt.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.is_first_login.accentColor"
+      "key": "schema.__root_schema__.children.created_at.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.created_at.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.created_at.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.division_id.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.division_id.accentColor"
     },
     {
       "key": "schema.__root_schema__.children.is_temp_password.defaultValue"
@@ -196,31 +124,118 @@
       "key": "schema.__root_schema__.children.last_password_change.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.last_password_change.borderRadius"
-    },
-    {
       "key": "schema.__root_schema__.children.last_password_change.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.created_at.defaultValue"
+      "key": "schema.__root_schema__.children.last_password_change.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.created_at.borderRadius"
+      "key": "schema.__root_schema__.children.is_first_login.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.created_at.accentColor"
+      "key": "schema.__root_schema__.children.is_first_login.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.password.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.password.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.password.borderRadius"
     },
     {
       "key": "schema.__root_schema__.children.updated_at.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.updated_at.borderRadius"
-    },
-    {
       "key": "schema.__root_schema__.children.updated_at.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.user_type_id.borderRadius"
+      "key": "schema.__root_schema__.children.updated_at.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.password_hash.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.password_hash.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.password_hash.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.name.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.name.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.user_type_id.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.user_type_id.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.email.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.email.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.username.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.username.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.xn__b3czlfsr5g9cxc8a6dc.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.xn__b3czlfsr5g9cxc8a6dc.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.xn__b3czlfsr5g9cxc8a6dc.borderRadius"
+    },
+    {
+      "key": "title"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "schema.__root_schema__.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.cellBorderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.xn__12c1c7b3ai.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.xn__12c1c7b3ai.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.xn__12c1c7b3ai.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.user_id.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.user_id.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.user_id.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.user_type_id.options"
+    },
+    {
+      "key": "schema.__root_schema__.children.division_id.options"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -230,9 +245,6 @@
     },
     {
       "key": "isVisible"
-    },
-    {
-      "key": "borderRadius"
     },
     {
       "key": "onSubmit"
@@ -267,9 +279,9 @@
   "renderMode": "CANVAS",
   "resetButtonLabel": "Reset",
   "resetButtonStyles": {
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "borderRadius": "0.375rem",
     "boxShadow": "none",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "buttonColor": "#4b5c91",
     "buttonVariant": "SECONDARY"
   },
   "rightColumn": 64,
@@ -297,7 +309,7 @@
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Created At",
+          "label": "สร้างเมื่อ",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "created_at",
           "position": 11,
@@ -306,23 +318,24 @@
         "division_id": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "division_id",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "borderRadius": "0.375rem",
           "boxShadow": "none",
           "children": {},
           "dataType": "number",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.division_id))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Number Input",
-          "iconAlign": "left",
+          "fieldType": "Select",
           "identifier": "division_id",
           "isCustomField": false,
           "isDisabled": false,
+          "isFilterable": false,
           "isRequired": false,
-          "isSpellCheck": false,
           "isVisible": true,
-          "label": "Division Id",
+          "label": "สำนัก",
           "labelTextSize": "0.875rem",
+          "options": "{{ \nR_Divisions.data\n    .sort((a, b) => a.division_id - b.division_id)\n    .map((obj) => {\n        return {\n            label: obj.name,\n            value: obj.division_id\n        };\n    })\n}}\n",
           "originalIdentifier": "division_id",
           "position": 3,
+          "serverSideFiltering": false,
           "sourceData": 0
         },
         "email": {
@@ -341,7 +354,7 @@
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Email",
+          "label": "อีเมล",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "email",
           "position": 2
@@ -360,7 +373,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isVisible": true,
-          "label": "Is First Login",
+          "label": "ต้องเปลี่ยนรหัส",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "is_first_login",
           "position": 8,
@@ -380,7 +393,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isVisible": true,
-          "label": "Is Temp Password",
+          "label": "เป็นรหัสเริ่มต้น",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "is_temp_password",
           "position": 9,
@@ -423,7 +436,7 @@
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Name",
+          "label": "ชื่อจริง นามสกุล",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "name",
           "position": 0,
@@ -515,26 +528,49 @@
           "position": 12,
           "sourceData": "2025-07-03T01:58:16Z"
         },
-        "user_type_id": {
+        "user_id": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "user_type_id",
+          "accessor": "user_id",
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.user_type_id))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.user_id))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Number Input",
           "iconAlign": "left",
-          "identifier": "user_type_id",
+          "identifier": "user_id",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
-          "label": "User Type Id",
+          "isVisible": false,
+          "label": "User Id",
           "labelTextSize": "0.875rem",
+          "originalIdentifier": "user_id",
+          "position": 15,
+          "sourceData": 81
+        },
+        "user_type_id": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "user_type_id",
+          "borderRadius": "0.375rem",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.user_type_id))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Select",
+          "identifier": "user_type_id",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isFilterable": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "ประเภท",
+          "labelTextSize": "0.875rem",
+          "options": "{{ \nR_UserType.data\n    .sort((a, b) => a.user_type_id - b.user_type_id)\n    .map((obj) => {\n        return {\n            label: obj.name,\n            value: obj.user_type_id\n        };\n    })\n}}\n",
           "originalIdentifier": "user_type_id",
           "position": 4,
+          "serverSideFiltering": false,
           "sourceData": 0
         },
         "username": {
@@ -553,11 +589,55 @@
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Username",
+          "label": "ชื่อผู้ใช้",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "username",
           "position": 1,
           "sourceData": "Center"
+        },
+        "xn__12c1c7b3ai": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "สำนัก",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"สำนัก\"]))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "xn__12c1c7b3ai",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": false,
+          "label": "สำนัก",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "สำนัก",
+          "position": 14,
+          "sourceData": "กองบริหารคดี"
+        },
+        "xn__b3czlfsr5g9cxc8a6dc": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "ประเภทผู้ใช้",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"ประเภทผู้ใช้\"]))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "xn__b3czlfsr5g9cxc8a6dc",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": false,
+          "label": "ประเภทผู้ใช้",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "ประเภทผู้ใช้",
+          "position": 14,
+          "sourceData": ""
         }
       },
       "dataType": "object",
@@ -582,15 +662,15 @@
   },
   "scrollContents": true,
   "showReset": true,
-  "sourceData": "{{_.omit(data_table.selectedRow, \"customColumn1\", \"__originalIndex__\", \"user_id\")}}",
+  "sourceData": "{{data_table.selectedRow}}",
   "submitButtonLabel": "Update",
   "submitButtonStyles": {
     "borderRadius": "0.375rem",
     "boxShadow": "none",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "buttonColor": "#4b5c91",
     "buttonVariant": "PRIMARY"
   },
-  "title": "Update Row user_id: {{data_table.selectedRow.user_id}}",
+  "title": "แก้ไขผู้ใช้: {{data_table.selectedRow.username}}",
   "topRow": 0,
   "type": "JSON_FORM_WIDGET",
   "version": 1,

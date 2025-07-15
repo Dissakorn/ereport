@@ -5,11 +5,7 @@
   "bottomRow": 69,
   "boxShadow": "none",
   "defaultOptionValue": "1",
-  "dynamicBindingPathList": [
-    {
-      "key": "accentColor"
-    }
-  ],
+  "dynamicBindingPathList": [],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {

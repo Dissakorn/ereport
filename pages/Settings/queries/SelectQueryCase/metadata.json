@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT case_id, case_number FROM public.\"case\"\nWHERE \"case_number\" ilike '%{{data_table.searchText || \"\"}}%'\nORDER BY \"{{data_table.sortOrder.column || 'case_id'}}\" {{data_table.sortOrder.order || 'ASC'}};",
+      "body": "SELECT case_id, case_number,responsible_district FROM public.\"case\"\nWHERE \"case_number\" ilike '%{{data_table.searchText || \"\"}}%'\nORDER BY \"{{data_table.sortOrder.column || 'case_id'}}\" {{data_table.sortOrder.order || 'ASC'}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

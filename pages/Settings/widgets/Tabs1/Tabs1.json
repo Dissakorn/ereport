@@ -239,6 +239,18 @@
   "defaultTab": "การตั้งค่าขั้นพื้นฐาน",
   "dynamicBindingPathList": [
     {
+      "key": "tabsObj.tab7u8jb2hm34.isVisible"
+    },
+    {
+      "key": "tabsObj.tab15de19jxk3.isVisible"
+    },
+    {
+      "key": "tabsObj.taby11unwqwv4.isVisible"
+    },
+    {
+      "key": "tabsObj.tab2.isVisible"
+    },
+    {
       "key": "accentColor"
     },
     {
@@ -246,18 +258,6 @@
     },
     {
       "key": "boxShadow"
-    },
-    {
-      "key": "tabsObj.tab2.isVisible"
-    },
-    {
-      "key": "tabsObj.taby11unwqwv4.isVisible"
-    },
-    {
-      "key": "tabsObj.tab7u8jb2hm34.isVisible"
-    },
-    {
-      "key": "tabsObj.tab15de19jxk3.isVisible"
     }
   ],
   "dynamicHeight": "FIXED",

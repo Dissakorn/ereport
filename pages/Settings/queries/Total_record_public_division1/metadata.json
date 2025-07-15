@@ -29,7 +29,7 @@
     ],
     "name": "Total_record_public_division1",
     "pageId": "Settings",
-    "runBehaviour": "ON_PAGE_LOAD",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

@@ -1,0 +1,2 @@
+DELETE FROM public."investigator"
+  WHERE "investigator_id" = {{Tbl_Investigator.triggeredRow.investigator_id}};

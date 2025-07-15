@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "676e2c1104b16518b088fe23_2cc14b99-a3c2-4e36-be6e-7bd786abf88f",
-  "id": "Settings_Insert_public_investigator2",
+  "gitSyncId": "686e46c8f052af62894e37fb_f2a347a3-cc9b-45a4-9ed1-abbda35f01a0",
+  "id": "Settings_Query6",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO public.investigator (\"name\",\"division_id\",\"status\") VALUES ('{{(Tbl_Investigator.newRow || {}).name}}','{{(Tbl_Investigator.newRow || {}).division_id}}','{{(Tbl_Investigator.newRow || {}).status}}')",
+      "body": "SELECT setval(\n  'investigator_investigator_id_seq',\n  (SELECT MAX(investigator_id) FROM investigator),\n  true\n);\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ],
       "timeoutInMillisecond": 10000
@@ -22,12 +22,8 @@
       "name": "mainDB",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
-    "name": "Insert_public_investigator2",
+    "dynamicBindingPathList": [],
+    "name": "Query6",
     "pageId": "Settings",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

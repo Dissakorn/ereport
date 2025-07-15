@@ -1,0 +1,34 @@
+{
+  "borderRadius": "0px",
+  "bottomRow": 10,
+  "boxShadow": "none",
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "System Default",
+  "fontSize": "1rem",
+  "fontStyle": "",
+  "isLoading": false,
+  "isVisible": "true",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 2,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "overflow": "NONE",
+  "parentColumnSpace": 6.875,
+  "parentId": "6clgzmwejt",
+  "parentRowSpace": 10,
+  "rightColumn": 63,
+  "text": "ยืนยันที่จะลบนักสืบ  \"{{Tbl_Investigator.triggeredRow.name}}\" ใช่หรือไม่",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 6,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "4cm62e8o33",
+  "widgetName": "Text12Copy1"
+}

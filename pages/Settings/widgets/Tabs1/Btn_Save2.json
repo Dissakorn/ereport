@@ -13,7 +13,7 @@
     }
   ],
   "isDefaultClickDisabled": true,
-  "isDisabled": false,
+  "isDisabled": true,
   "isLoading": false,
   "isVisible": true,
   "key": "onmm2bvonb",
@@ -37,7 +37,7 @@
   "responsiveBehavior": "hug",
   "rightColumn": 32,
   "text": "บันทึก",
-  "topRow": 56,
+  "topRow": 55,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "jrvtwobyze",

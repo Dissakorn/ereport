@@ -1,14 +1,10 @@
 {
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderRadius": "0.375rem",
   "bottomRow": 21,
   "boxShadow": "none",
   "buttonColor": "#DD4B34",
   "buttonVariant": "PRIMARY",
-  "dynamicBindingPathList": [
-    {
-      "key": "borderRadius"
-    }
-  ],
+  "dynamicBindingPathList": [],
   "dynamicPropertyPathList": [
     {
       "key": "onClick"
@@ -25,11 +21,11 @@
   "isVisible": "true",
   "labelTextSize": "0.875rem",
   "leftColumn": 46,
-  "onClick": "{{DeleteQuery.run(() => SelectQuery.run(() => closeModal('Delete_Modal')), () => {})}}",
+  "onClick": "{{DeleteQueryUser.run(() => SelectQuery.run(() => closeModal('Delete_Modal')), () => {})}}",
   "parentId": "ncxdgt1qsc",
   "recaptchaType": "V3",
   "rightColumn": 64,
-  "text": "Confirm",
+  "text": "ยืนยัน",
   "topRow": 17,
   "type": "BUTTON_WIDGET",
   "version": 1,

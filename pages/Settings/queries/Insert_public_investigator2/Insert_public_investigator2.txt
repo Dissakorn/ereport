@@ -1,1 +1,0 @@
-INSERT INTO public.investigator ("name","division_id","status") VALUES ('{{(Tbl_Investigator.newRow || {}).name}}','{{(Tbl_Investigator.newRow || {}).division_id}}','{{(Tbl_Investigator.newRow || {}).status}}')

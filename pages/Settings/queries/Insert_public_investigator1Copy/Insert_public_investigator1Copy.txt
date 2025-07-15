@@ -1,3 +1,0 @@
-DELETE FROM public."investigator"
-  WHERE a = 0; -- Specify a valid condition here. Removing the condition may delete everything in the table!
-	cINSERT INTO public.investigator ("name","division_id") VALUES ('{{(Tbl_Investigator.newRow || {}).name}}','{{appsmith.store.division_id}}')

@@ -6,14 +6,23 @@
   "buttonColor": "#4b5c91",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
-  "dynamicBindingPathList": [],
+  "dynamicBindingPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
     }
   ],
   "isDefaultClickDisabled": true,
-  "isDisabled": false,
+  "isDisabled": "{{!Sel_Inv_Div.selectedOptionValue || Inp_Inv_Name.text.length === 0\n}}",
   "isLoading": false,
   "isVisible": true,
   "key": "onmm2bvonb",
@@ -24,7 +33,7 @@
   "mobileRightColumn": 17,
   "mobileTopRow": 41,
   "needsErrorInfo": false,
-  "onClick": "{{Insert_public_investigator1.run();\nJSObject4.Btn_Add_InvestigatoronClick();}}",
+  "onClick": "{{JSObject4.Btn_Add_InvestigatoronClick();}}",
   "originalBottomRow": 45,
   "originalTopRow": 41,
   "parentColumnSpace": 13.701171875,
@@ -37,7 +46,7 @@
   "responsiveBehavior": "hug",
   "rightColumn": 43,
   "text": "เพิ่มนักสืบในสำนัก",
-  "topRow": 36,
+  "topRow": 35,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "evjyzkvigz",

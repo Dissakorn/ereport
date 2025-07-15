@@ -8,13 +8,13 @@
   "defaultText": "{{R_Settings.data[0].prelim_deadline}}",
   "dynamicBindingPathList": [
     {
+      "key": "defaultText"
+    },
+    {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",

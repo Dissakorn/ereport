@@ -2,7 +2,11 @@
   "borderRadius": "0px",
   "bottomRow": 5,
   "boxShadow": "none",
-  "dynamicBindingPathList": [],
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    }
+  ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
@@ -16,13 +20,13 @@
   "isLoading": false,
   "isVisible": "true",
   "labelTextSize": "0.875rem",
-  "leftColumn": 1,
+  "leftColumn": 2,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "overflow": "NONE",
   "parentId": "ncxdgt1qsc",
-  "rightColumn": 41,
-  "text": "Delete Row",
+  "rightColumn": 58,
+  "text": " ลบผู้ใช้งาน \"{{data_table.triggeredRow.username}}\" ?",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 1,

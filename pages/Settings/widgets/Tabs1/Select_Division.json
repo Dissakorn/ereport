@@ -7,9 +7,6 @@
   "defaultOptionValue": "สำนัก",
   "dynamicBindingPathList": [
     {
-      "key": "accentColor"
-    },
-    {
       "key": "sourceData"
     }
   ],

@@ -8,10 +8,10 @@
   "defaultText": "{{R_Settings.data[0].prelim_warning}}",
   "dynamicBindingPathList": [
     {
-      "key": "accentColor"
+      "key": "defaultText"
     },
     {
-      "key": "defaultText"
+      "key": "accentColor"
     }
   ],
   "dynamicHeight": "FIXED",

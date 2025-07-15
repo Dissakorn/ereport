@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "676e2c1104b16518b088fe23_53f414c5-ec1d-4822-8a5c-4de25154ba72",
-  "id": "Settings_DeleteQuery",
+  "gitSyncId": "686e46c8f052af62894e37fb_b859d5a5-61eb-4ea3-8634-1d62fa16a652",
+  "id": "Settings_DeleteQueryInv",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM public.\"user\"\n  WHERE \"user_id\" = {{data_table.triggeredRow.user_id}};",
+      "body": "DELETE FROM public.\"investigator\"\n  WHERE \"investigator_id\" = {{Tbl_Investigator.triggeredRow.investigator_id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "name": "DeleteQuery",
+    "name": "DeleteQueryInv",
     "pageId": "Settings",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

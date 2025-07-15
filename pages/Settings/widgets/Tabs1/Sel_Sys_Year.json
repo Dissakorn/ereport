@@ -7,9 +7,6 @@
   "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( new Date().getFullYear()))(Sel_Sys_Year.options, Sel_Sys_Year.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
-      "key": "accentColor"
-    },
-    {
       "key": "defaultOptionValue"
     }
   ],

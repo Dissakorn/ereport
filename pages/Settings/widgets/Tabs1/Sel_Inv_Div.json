@@ -7,13 +7,10 @@
   "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.division_id))(Sel_Inv_Div.options, Sel_Inv_Div.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
-      "key": "accentColor"
+      "key": "sourceData"
     },
     {
       "key": "defaultOptionValue"
-    },
-    {
-      "key": "sourceData"
     },
     {
       "key": "isDisabled"

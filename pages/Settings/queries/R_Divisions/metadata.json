@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "676e2c1104b16518b088fe23_590ea99a-68f8-49a6-82cb-67a9c93eaa4c",
-  "id": "Settings_Select_public_investigator1",
+  "gitSyncId": "686e46c8f052af62894e37fb_cee55f14-305f-41a2-b79e-20e198100f59",
+  "id": "Settings_R_Divisions",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "\n",
+      "body": "SELECT * FROM public.\"division\";",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ],
       "timeoutInMillisecond": 10000
@@ -23,9 +23,9 @@
       "pluginId": "postgres-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "Select_public_investigator1",
+    "name": "R_Divisions",
     "pageId": "Settings",
-    "runBehaviour": "MANUAL",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
 }

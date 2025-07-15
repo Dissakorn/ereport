@@ -53,25 +53,13 @@
   "delimiter": ",",
   "dynamicBindingPathList": [
     {
-      "key": "accentColor"
-    },
-    {
-      "key": "borderRadius"
-    },
-    {
-      "key": "boxShadow"
-    },
-    {
       "key": "tableData"
     },
     {
-      "key": "totalRecordsCount"
+      "key": "primaryColumns.EditActions1.isSaveDisabled"
     },
     {
-      "key": "primaryColumns.division_id.computedValue"
-    },
-    {
-      "key": "primaryColumns.name.computedValue"
+      "key": "primaryColumns.EditActions1.isDiscardDisabled"
     },
     {
       "key": "primaryColumns.EditActions1.saveButtonColor"
@@ -83,16 +71,25 @@
       "key": "primaryColumns.EditActions1.discardBorderRadius"
     },
     {
-      "key": "primaryColumns.EditActions1.isSaveDisabled"
-    },
-    {
-      "key": "primaryColumns.EditActions1.isDiscardDisabled"
+      "key": "primaryColumns.investimewarning.computedValue"
     },
     {
       "key": "primaryColumns.leadtimewarning.computedValue"
     },
     {
-      "key": "primaryColumns.investimewarning.computedValue"
+      "key": "primaryColumns.name.computedValue"
+    },
+    {
+      "key": "primaryColumns.division_id.computedValue"
+    },
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
     }
   ],
   "dynamicPropertyPathList": [
