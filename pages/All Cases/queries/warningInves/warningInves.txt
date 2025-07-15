@@ -5,8 +5,8 @@ SELECT
   c.inves_status,
   c.inves_result,
   s.invest_warning,
-	c.responsible_district,
-	c.inves_investigator
+  c.responsible_district,
+  c.inves_investigator
 FROM public.case c
 JOIN public.settings s ON s.id = 1
 WHERE 
@@ -17,7 +17,7 @@ WHERE
   AND c.inves_deadline >= CURRENT_DATE
   AND (
     COALESCE({{ Slc_Division.selectedOptionValue }}, 0) = 0
-    OR CAST(c.responsible_district AS INTEGER) = {{ Slc_Division.selectedOptionValue }}
+    OR (c.responsible_district != '' AND CAST(c.responsible_district AS INTEGER) = {{ Slc_Division.selectedOptionValue }})
   )
 ORDER BY 
   c.year, c.case_number;

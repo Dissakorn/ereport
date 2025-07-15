@@ -5,8 +5,8 @@ SELECT
   c.prelim_status,
   c.prelim_result,
   s.prelim_warning,
-	c.responsible_district,
-	c.prelim_investigator
+  c.responsible_district,
+  c.prelim_investigator
 FROM public.case c
 JOIN public.settings s ON s.id = 1
 WHERE 
@@ -17,7 +17,7 @@ WHERE
   AND c.prelim_deadline >= CURRENT_DATE
   AND (
     COALESCE({{ Slc_Division.selectedOptionValue }}, 0) = 0
-    OR CAST(c.responsible_district AS INTEGER) = {{ Slc_Division.selectedOptionValue }}
+    OR (c.responsible_district != '' AND CAST(c.responsible_district AS INTEGER) = {{ Slc_Division.selectedOptionValue }})
   )
 ORDER BY 
   c.year, c.case_number;

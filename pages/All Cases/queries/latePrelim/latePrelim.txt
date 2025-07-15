@@ -14,7 +14,7 @@ WHERE
   AND c.prelim_deadline < CURRENT_DATE
   AND (
     COALESCE({{ Slc_Division.selectedOptionValue }}, 0) = 0
-    OR CAST(c.responsible_district AS INTEGER) = {{ Slc_Division.selectedOptionValue }}
+    OR (c.responsible_district != '' AND CAST(c.responsible_district AS INTEGER) = {{ Slc_Division.selectedOptionValue }})
   )
 ORDER BY 
   c.year, c.case_number;

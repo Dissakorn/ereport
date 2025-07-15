@@ -41,7 +41,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 61,
   "shouldTruncate": false,
-  "text": "ไซส์: {{\n  (() => {\n    const damage = Number(data_table.selectedRow.damage_value); // Convert the value to a number\n    \n    if (damage > 30000) {\n      return 'M'; // Return 'M' if damage is greater than 30,000\n    } else {\n      return 'S'; // Return 'S' if damage is 30,000 or less\n    }\n  })()\n}}      มูลค่าความเสียหาย {{Number(data_table.selectedRow.damage_value).toLocaleString()}} {{data_table.selectedRow.หน่วยเงิน}}\n",
+  "text": "ไซส์: {{\n  (() => {\n    const damage = Number(data_table.selectedRow.damage_value); // Convert the value to a number\n    \n    if (damage > 30000) {\n      return 'M'; // Return 'M' if damage is greater than 30,000\n    } else {\n      return 'S'; // Return 'S' if damage is 30,000 or less\n    }\n  })()\n}}      มูลค่าความเสียหาย {{Number(data_table.selectedRow.damage_value).toLocaleString()}}  บาท\n",
   "textAlign": "RIGHT",
   "textColor": "#231F20",
   "topRow": 0,

@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT \n  c.case_id,\n  c.case_number,\n  c.prelim_deadline,\n  c.prelim_status,\n  c.prelim_result,\n  s.prelim_warning,\n\tc.responsible_district,\n\tc.prelim_investigator\nFROM public.case c\nJOIN public.settings s ON s.id = 1\nWHERE \n  c.prelim_result != 2\n  AND c.prelim_status != 8\n  AND c.prelim_deadline IS NOT NULL\n  AND c.prelim_deadline <= CURRENT_DATE + s.prelim_warning * INTERVAL '1 day'\n  AND c.prelim_deadline >= CURRENT_DATE\n  AND (\n    COALESCE({{ Slc_Division.selectedOptionValue }}, 0) = 0\n    OR CAST(c.responsible_district AS INTEGER) = {{ Slc_Division.selectedOptionValue }}\n  )\nORDER BY \n  c.year, c.case_number;",
+      "body": "SELECT \n  c.case_id,\n  c.case_number,\n  c.prelim_deadline,\n  c.prelim_status,\n  c.prelim_result,\n  s.prelim_warning,\n  c.responsible_district,\n  c.prelim_investigator\nFROM public.case c\nJOIN public.settings s ON s.id = 1\nWHERE \n  c.prelim_result != 2\n  AND c.prelim_status != 8\n  AND c.prelim_deadline IS NOT NULL\n  AND c.prelim_deadline <= CURRENT_DATE + s.prelim_warning * INTERVAL '1 day'\n  AND c.prelim_deadline >= CURRENT_DATE\n  AND (\n    COALESCE({{ Slc_Division.selectedOptionValue }}, 0) = 0\n    OR (c.responsible_district != '' AND CAST(c.responsible_district AS INTEGER) = {{ Slc_Division.selectedOptionValue }})\n  )\nORDER BY \n  c.year, c.case_number;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
