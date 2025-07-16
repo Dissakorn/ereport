@@ -38,11 +38,13 @@
     "id",
     "case_id",
     "type_id",
-    "state"
+    "state",
+    "customColumn1"
   ],
-  "columnUpdatedAt": 1749197465817,
+  "columnUpdatedAt": 1752674104825,
   "columnWidthMap": {
-    "date": 135
+    "amount": 169,
+    "date": 111
   },
   "customIsLoading": false,
   "customIsLoadingValue": "",
@@ -92,7 +94,14 @@
       "key": "tableData"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "primaryColumns.customColumn1.menuItems.menuItemr1vl9rmiam.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
+    }
+  ],
   "enableClientSideSearch": true,
   "endOfData": false,
   "flexVerticalAlignment": "start",
@@ -180,6 +189,79 @@
       "originalId": "case_id",
       "sticky": "",
       "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn1": {
+      "alias": "ลบ",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "borderRadius": "0.375rem",
+      "buttonColor": "#ef4444",
+      "buttonLabel": "ลบ       ",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "buttonVariant": "PRIMARY",
+      "columnType": "iconButton",
+      "computedValue": "",
+      "configureMenuItems": {
+        "config": {
+          "id": "config",
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Menu Item"
+        },
+        "id": "config",
+        "label": "Configure menu items"
+      },
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "iconName": "trash",
+      "id": "customColumn1",
+      "index": 7,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isCompact": false,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "ลบ",
+      "labelColor": "#FFFFFF",
+      "menuButtonLabel": "ลบ              บ ",
+      "menuItems": {
+        "menuItemr1vl9rmiam": {
+          "id": "menuItemr1vl9rmiam",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "ลบ",
+          "onClick": "{{DeleteQueryBudget1.run().then(() => {\n  prelim_budget.run();\n});}}",
+          "widgetId": "7981rtb8mt"
+        },
+        "menuItemvwv2tfddxp": {
+          "id": "menuItemvwv2tfddxp",
+          "index": 1,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "ยกเลิก",
+          "widgetId": "i2pum08xpf"
+        }
+      },
+      "menuItemsSource": "STATIC",
+      "notation": "standard",
+      "onClick": "{{DeleteQueryBudget1.run().then(() => {\n  prelim_budget.run();\n});}}",
+      "originalId": "customColumn1",
+      "sourceData": [],
+      "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},

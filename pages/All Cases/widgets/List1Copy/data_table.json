@@ -109,6 +109,7 @@
   "columnWidthMap": {
     "book_date_644": 177,
     "case_number": 100,
+    "channel": 60,
     "customColumn2": 169,
     "customColumn4": 163,
     "inves_investigator": 210.486328125,
@@ -445,13 +446,13 @@
       "key": "primaryColumns.channel.menuColor"
     },
     {
+      "key": "primaryColumns.channel.isDisabled"
+    },
+    {
       "key": "primaryColumns.channel.cellBackground"
     },
     {
-      "key": "primaryColumns.channel.buttonColor"
-    },
-    {
-      "key": "primaryColumns.channel.isDisabled"
+      "key": "primaryColumns.book_date_644.textColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -528,13 +529,10 @@
       "key": "primaryColumns.customColumn8.textColor"
     },
     {
-      "key": "primaryColumns.channel.cellBackground"
-    },
-    {
-      "key": "primaryColumns.channel.buttonColor"
-    },
-    {
       "key": "primaryColumns.channel.isDisabled"
+    },
+    {
+      "key": "primaryColumns.channel.cellBackground"
     }
   ],
   "dynamicTriggerPathList": [
@@ -617,7 +615,7 @@
       "alias": "book_date_644",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (\n(() => {\n  const currentTime = new Date();\n  const settings = getSettings.data[0];\n  \n  if (currentRow.case_type == 2) {\n    return '#eeefef';\n  }\n  \n  if (currentRow.prelim_result !== 2) {\n    const prelimDeadline = new Date(currentRow.prelim_deadline);\n    const daysUntilPrelimDeadline = Math.ceil((prelimDeadline - currentTime) / (1000 * 60 * 60 * 24));\n    \n    if (currentRow.prelim_status == 8 || (currentRow.prelim_result !== 0 && currentRow.prelim_result !== 1)) {\n      return '#27ae60';\n    }\n    if (daysUntilPrelimDeadline <= settings.prelim_warning && daysUntilPrelimDeadline >= 0) {\n      return '#fff3cd';\n    }\n    if (daysUntilPrelimDeadline < 0) {\n      return '#d9534f';\n    }\n    return '#ffffff';\n  }\n  \n  const invesDeadline = new Date(currentRow.inves_deadline);\n  const daysUntilInvesDeadline = Math.ceil((invesDeadline - currentTime) / (1000 * 60 * 60 * 24));\n  \n  if (currentRow.inves_status == 7) {\n    return '#27ae60';\n  }\n  if (daysUntilInvesDeadline <= settings.inves_warning && daysUntilInvesDeadline >= 0) {\n    return '#fff3cd';\n  }\n  if (daysUntilInvesDeadline < 0) {\n    return '#d9534f';\n  }\n  return '#ffffff';\n})()\n)) : \n(() => {\n  const currentTime = new Date();\n  const settings = getSettings.data[0];\n  \n  if (currentRow.case_type == 2) {\n    return '#eeefef';\n  }\n  \n  if (currentRow.prelim_result !== 2) {\n    const prelimDeadline = new Date(currentRow.prelim_deadline);\n    const daysUntilPrelimDeadline = Math.ceil((prelimDeadline - currentTime) / (1000 * 60 * 60 * 24));\n    \n    if (currentRow.prelim_status == 8 || (currentRow.prelim_result !== 0 && currentRow.prelim_result !== 1)) {\n      return '#27ae60';\n    }\n    if (daysUntilPrelimDeadline <= settings.prelim_warning && daysUntilPrelimDeadline >= 0) {\n      return '#fff3cd';\n    }\n    if (daysUntilPrelimDeadline < 0) {\n      return '#d9534f';\n    }\n    return '#ffffff';\n  }\n  \n  const invesDeadline = new Date(currentRow.inves_deadline);\n  const daysUntilInvesDeadline = Math.ceil((invesDeadline - currentTime) / (1000 * 60 * 60 * 24));\n  \n  if (currentRow.inves_status == 7) {\n    return '#27ae60';\n  }\n  if (daysUntilInvesDeadline <= settings.inves_warning && daysUntilInvesDeadline >= 0) {\n    return '#fff3cd';\n  }\n  if (daysUntilInvesDeadline < 0) {\n    return '#d9534f';\n  }\n  return '#ffffff';\n})()\n })()}}",
+      "cellBackground": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( JSObject8.getBackgroundColor(currentRow) )) :  JSObject8.getBackgroundColor(currentRow)  })()}}",
       "columnType": "text",
       "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (\ncurrentRow[\"book_date_644\"]\n)) : \ncurrentRow[\"book_date_644\"]\n })()}}",
       "currencyCode": "USD",
@@ -640,7 +638,7 @@
       "notation": "standard",
       "originalId": "book_date_644",
       "sticky": "",
-      "textColor": "",
+      "textColor": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( JSObject8.getTextColor(JSObject8.getBackgroundColor(currentRow)) )) :  JSObject8.getTextColor(JSObject8.getBackgroundColor(currentRow))  })()}}",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -925,7 +923,7 @@
       "allowSameOptionsInNewRow": true,
       "borderRadius": "0.375rem",
       "boxShadow": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( JSObject8.getTextColor(JSObject8.getBackgroundColor(currentRow)) )) :  JSObject8.getTextColor(JSObject8.getBackgroundColor(currentRow))  })()}}",
+      "buttonColor": "#18181b",
       "cellBackground": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( JSObject8.getBackgroundColor(currentRow) )) :  JSObject8.getBackgroundColor(currentRow)  })()}}",
       "columnType": "iconButton",
       "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"channel\"])) : channel })()}}",
@@ -2810,7 +2808,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"prelim_status\"])) :  currentRow[\"prelim_status\"] })()}}",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( \ncurrentRow[\"prelim_status\"]\n)) :  \ncurrentRow[\"prelim_status\"]\n })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
