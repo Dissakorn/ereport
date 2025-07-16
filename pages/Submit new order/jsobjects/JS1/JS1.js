@@ -4,7 +4,7 @@ export default {
 	myFun1 () {
 		// Setting all input fields to empty string
 		Inp_Case_Num.setValue('');
-		Inp_Num_Date.setValue(''); // If formatted date is handled automatically, otherwise, use formattedDate = ''
+		Inp_Receive_Date.setValue(''); // If formatted date is handled automatically, otherwise, use formattedDate = ''
 		Inp_Nacc_Num.setValue('');
 		Inp_Book_Num.setValue('');
 		Inp_Book_Date.setValue(''); // If formatted date is handled automatically, otherwise, use formattedDate = ''

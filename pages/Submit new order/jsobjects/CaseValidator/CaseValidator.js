@@ -74,7 +74,7 @@ export default {
         }
         
         // Check number date
-        if (!Inp_Num_Date.selectedDate) {
+        if (!Inp_Receive_Date.selectedDate) {
             showAlert('กรุณาเลือกวันที่ออกหมายเลขคดี', 'error');
             return false;
         }

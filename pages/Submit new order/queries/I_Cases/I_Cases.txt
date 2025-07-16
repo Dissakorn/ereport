@@ -45,18 +45,18 @@ VALUES (
 	{{Inp_Case_Year.text}},
 	
 	-- Lead Date
-	{{ Inp_Case_Num_Date.selectedDate 
-	? `'${moment(Inp_Case_Num_Date.selectedDate).format("YYYY-MM-DD")}'` 
+	{{ Inp_Lead_Date.selectedDate 
+	? `'${moment(Inp_Lead_Date.selectedDate).format("YYYY-MM-DD")}'` 
 	: null }},
-
+	
 	-- Case Number Date
-	{{ Inp_Num_Date.selectedDate 
-	? `'${moment(Inp_Num_Date.selectedDate).format("YYYY-MM-DD")}'` 
+	{{ Inp_Receive_Date.selectedDate 
+	? `'${moment(Inp_Receive_Date.selectedDate).format("YYYY-MM-DD")}'` 
 	: null }},
 
 	-- Case Number Date Show
-	{{ Inp_Num_Date.selectedDate 
-	? `'${moment(Inp_Num_Date.selectedDate).format("YYYY-MM-DD")}'` 
+	{{ Inp_Receive_Date.selectedDate 
+	? `'${moment(Inp_Receive_Date.selectedDate).format("YYYY-MM-DD")}'` 
 	: null }},
 	
 	-- Offense Base
@@ -74,8 +74,8 @@ VALUES (
 	'{{ Inp_Receive_Num.text }}',
 
 	-- Received Date
-	{{ Inp_Lead_Date.selectedDate 
-	? `'${moment(Inp_Lead_Date.selectedDate).format("YYYY-MM-DD")}'` 
+	{{ Inp_Receive_Date.selectedDate 
+	? `'${moment(Inp_Receive_Date.selectedDate).format("YYYY-MM-DD")}'` 
 	: null }},
 
 	-- Source
@@ -106,8 +106,8 @@ VALUES (
 	0,
 
 	-- Prelim Deadline: Case Number Date + appsmith.store.prelim_deadline days
-	{{ Inp_Num_Date.selectedDate && appsmith.store.prelim_deadline 
-	? `'${moment(Inp_Num_Date.selectedDate).add(appsmith.store.prelim_deadline, 'days').format("YYYY-MM-DD")}'`
+	{{ Inp_Receive_Date.selectedDate && appsmith.store.prelim_deadline 
+	? `'${moment(Inp_Receive_Date.selectedDate).add(appsmith.store.prelim_deadline, 'days').format("YYYY-MM-DD")}'`
 	: null }},
 
 	-- Prelim Round
@@ -117,8 +117,8 @@ VALUES (
 	'1',
 
 	-- Inves Deadline: Case Number Date + appsmith.store.invest_deadline days
-	{{ Inp_Num_Date.selectedDate && appsmith.store.invest_deadline 
-	? `'${moment(Inp_Num_Date.selectedDate).add(appsmith.store.invest_deadline, 'days').format("YYYY-MM-DD")}'`
+	{{ Inp_Receive_Date.selectedDate && appsmith.store.invest_deadline 
+	? `'${moment(Inp_Receive_Date.selectedDate).add(appsmith.store.invest_deadline, 'days').format("YYYY-MM-DD")}'`
 	: null }},
 
 	-- Inves Round
