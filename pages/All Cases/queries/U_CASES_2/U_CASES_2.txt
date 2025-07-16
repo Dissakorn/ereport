@@ -1,8 +1,8 @@
 UPDATE "case"
 SET
 	case_number = {{ Inp_Case_NumCopyCopy.text }},
-	case_number_date = {{ Inp_Num_Date.selectedDate 
-		? `'${moment(Inp_Num_Date.selectedDate).format("YYYY-MM-DD")}'` 
+	case_number_date = {{ Inp_Case_Num_DateCopyCopy.selectedDate 
+		? `'${moment(Inp_Case_Num_DateCopyCopy.selectedDate).format("YYYY-MM-DD")}'` 
 		: null }},
 	received_number = '{{ Inp_Receive_NumCopyCopy.text }}',
 	received_date = {{ Inp_Receive_DateCopyCopy.selectedDate 
@@ -12,8 +12,8 @@ SET
 	num_book_date = {{ Inp_Book_DateCopyCopy.selectedDate 
 		? `'${moment(Inp_Book_DateCopyCopy.selectedDate).format("YYYY-MM-DD")}'` 
 		: null }},
-	source = '{{ Sel_Case_Origin.selectedOptionValue }}',
-	pacc_tracking_number = '{{ Inp_Nacc_Num.text }}',
+	source = '{{ Sel_Case_OriginCopyCopy.selectedOptionValue }}',
+	pacc_tracking_number = '{{ Inp_Nacc_NumCopyCopy.text }}',
 	channel = '{{ Sel_Case_ChannelCopyCopy.selectedOptionValue }}',
 	responsible_district = '{{ Sel_DistrictCopyCopy.selectedOptionValue }}',
 	offense_base = '{{ Sel_Corr_CategoryCopyCopy.selectedOptionValue }}',
