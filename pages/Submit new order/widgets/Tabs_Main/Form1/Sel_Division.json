@@ -4,7 +4,7 @@
   "borderRadius": "0.375rem",
   "bottomRow": 42,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.division_id))(Sel_District.options, Sel_District.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.division_id))(Sel_Division.options, Sel_Division.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -64,5 +64,5 @@
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "7801gxqroa",
-  "widgetName": "Sel_District"
+  "widgetName": "Sel_Division"
 }

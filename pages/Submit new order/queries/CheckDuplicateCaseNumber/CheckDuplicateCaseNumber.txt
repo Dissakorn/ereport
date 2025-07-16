@@ -1,0 +1,10 @@
+SELECT 
+    case_id,
+    case_number
+FROM "case" 
+WHERE case_number = {{
+  (Inp_Case_Num.text && Inp_Case_Year.text) 
+  ? String(Inp_Case_Num.text) + '/' + String(Inp_Case_Year.text)
+  : String(Inp_Case_Num.text) + '/' + String(moment().year() + 543)
+}}
+LIMIT 1;

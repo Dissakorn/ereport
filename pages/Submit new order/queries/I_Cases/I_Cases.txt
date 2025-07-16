@@ -85,7 +85,7 @@ VALUES (
 	'{{ Inp_Nacc_Num.text }}',
 
 	-- Responsible District
-	'{{ Sel_District.selectedOptionValue }}',
+	'{{ Sel_Division.selectedOptionValue }}',
 
 	-- Prelim Extension
 	FALSE,

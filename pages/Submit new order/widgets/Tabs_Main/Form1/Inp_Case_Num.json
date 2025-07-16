@@ -13,7 +13,12 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
   "hideCard": false,
   "iconAlign": "left",
   "iconSVG": "/static/media/icon.9f505595.svg",
@@ -29,6 +34,7 @@
   "leftColumn": 13,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
+  "onTextChanged": "",
   "parentColumnSpace": 12.01953125,
   "parentId": "2w47hpxjfw",
   "parentRowSpace": 10,

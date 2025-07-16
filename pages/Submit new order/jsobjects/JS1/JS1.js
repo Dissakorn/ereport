@@ -11,7 +11,7 @@ export default {
 		Inp_Receive_Num.setValue('');
 		Inp_Lead_Date.setValue(''); // If formatted date is handled automatically, otherwise, use formattedDate = ''
 	Sel_Case_Origin.setSelectedOption('');
-		Sel_District.setSelectedOption(''); // Reset the dropdown to default or empty value
+		Sel_Division.setSelectedOption(''); // Reset the dropdown to default or empty value
 	},
 	async myFun2 () {
 		// use async-await or promises if needed
