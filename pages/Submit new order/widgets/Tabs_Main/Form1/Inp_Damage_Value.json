@@ -5,7 +5,7 @@
   "borderRadius": "0.375rem",
   "bottomRow": 60,
   "boxShadow": "none",
-  "defaultText": "1",
+  "defaultText": "",
   "displayName": "Input",
   "dynamicBindingPathList": [
     {
@@ -32,7 +32,7 @@
   "parentColumnSpace": 12.01953125,
   "parentId": "2w47hpxjfw",
   "parentRowSpace": 10,
-  "placeholderText": "เลขที่รับ",
+  "placeholderText": "มูลค่าความเสียหาย",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "rightColumn": 30,

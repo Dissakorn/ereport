@@ -10,13 +10,13 @@
       "key": "accentColor"
     },
     {
-      "key": "defaultOptionValue"
-    },
-    {
       "key": "isDisabled"
     },
     {
       "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",

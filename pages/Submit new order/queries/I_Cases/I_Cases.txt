@@ -50,13 +50,13 @@ VALUES (
 	: null }},
 	
 	-- Case Number Date
-	{{ Inp_Receive_Date.selectedDate 
-	? `'${moment(Inp_Receive_Date.selectedDate).format("YYYY-MM-DD")}'` 
+	{{ Inp_Case_Num_Date.selectedDate 
+	? `'${moment(Inp_Case_Num_Date.selectedDate).format("YYYY-MM-DD")}'` 
 	: null }},
 
 	-- Case Number Date Show
-	{{ Inp_Receive_Date.selectedDate 
-	? `'${moment(Inp_Receive_Date.selectedDate).format("YYYY-MM-DD")}'` 
+	{{ Inp_Case_Num_Date.selectedDate 
+	? `'${moment(Inp_Case_Num_Date.selectedDate).format("YYYY-MM-DD")}'` 
 	: null }},
 	
 	-- Offense Base

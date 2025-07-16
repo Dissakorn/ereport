@@ -25,17 +25,19 @@
     "case_number",
     "case_id",
     "customColumn1",
-    "responsible_district"
+    "responsible_district",
+    "customColumn2"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1752644036550,
+  "columnUpdatedAt": 1752650832156,
   "columnWidthMap": {
     "case_id": 354,
-    "case_number": 574
+    "case_number": 574,
+    "customColumn1": 171
   },
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
@@ -87,6 +89,12 @@
     },
     {
       "key": "primaryColumns.customColumn1.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn2.boxShadow"
+    },
+    {
+      "key": "primaryColumns.customColumn2.menuColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -103,6 +111,9 @@
     },
     {
       "key": "onSort"
+    },
+    {
+      "key": "primaryColumns.customColumn2.onClick"
     }
   ],
   "enableClientSideSearch": true,
@@ -230,13 +241,53 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "customColumn2": {
+      "alias": "ลบคดี",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "borderRadius": "0.375rem",
+      "boxShadow": "{{data_tableCopy.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "#DD4B34",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "iconButton",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "iconName": "trash",
+      "id": "customColumn2",
+      "index": 7,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "ลบคดี",
+      "labelColor": "#FFFFFF",
+      "menuColor": "{{data_tableCopy.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "notation": "standard",
+      "onClick": "{{showModal(Delete_Modal_Case.name);}}",
+      "originalId": "customColumn2",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "responsible_district": {
       "alias": "responsible_district",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = data_tableCopy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"responsible_district\"])) : responsible_district })()}}",
+      "computedValue": "{{(() => { const tableData = data_tableCopy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"responsible_district\"])) : currentRow[\"responsible_district\"] })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,

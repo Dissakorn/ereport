@@ -1,0 +1,64 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 109,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{\n  \"tips\": [\n    \"Pass data to this widget in the default model field\",\n    \"Access data in the javascript file using the appsmith.model variable\",\n    \"Create events in the widget and trigger them in the javascript file using appsmith.triggerEvent('eventName')\",\n    \"Access data in CSS as var(--appsmith-model-{property-name})\"\n  ]\n}",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    }
+  ],
+  "events": [
+    "onResetClick"
+  ],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "we08pubcyk",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 123,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 23,
+  "mobileTopRow": 93,
+  "needsErrorInfo": false,
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "parentColumnSpace": 17.9375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 23,
+  "srcDoc": {
+    "css": ".clock-container {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  height: 100%;\n  font-family: system-ui, sans-serif;\n  border-radius: var(--appsmith-theme-borderRadius);\n  background: #fff;\n  box-shadow: var(--appsmith-theme-boxShadow);\n  padding: 32px 16px;\n}\n\n.clock-time {\n  font-size: 3em;\n  font-weight: 700;\n  letter-spacing: 0.02em;\n  color: var(--appsmith-theme-primaryColor, #1e90ff);\n  margin-bottom: 8px;\n  transition: color 0.3s;\n}\n\n.clock-date {\n  font-size: 1.3em;\n  color: #6e6e6e;\n  letter-spacing: 0.01em;\n}",
+    "html": "<div id=\"root\"></div>",
+    "js": "import React from \"https://esm.sh/react@18.2.0\";\nimport ReactDOM from \"https://esm.sh/react-dom@18.2.0\";\nfunction formatTime(date) {\n  return date.toLocaleTimeString(\"th-TH\", {\n    hour: '2-digit',\n    minute: '2-digit',\n    second: '2-digit',\n    hour12: false\n  });\n}\nfunction formatBE(date) {\n  // Clone the date to avoid mutating it\n  const beDate = new Date(date.getTime());\n  beDate.setFullYear(date.getFullYear() + 543);\n  // Use Intl.DateTimeFormat for Thai with Buddhist calendar\n  return beDate.toLocaleDateString(\"th-TH-u-ca-buddhist\", {\n    weekday: 'long',\n    year: 'numeric',\n    month: 'long',\n    day: 'numeric'\n  });\n}\nfunction Clock() {\n  // Start from model.time if present, otherwise from Date.now()\n  const [now, setNow] = React.useState(appsmith.model?.time ? new Date(appsmith.model.time) : new Date());\n  React.useEffect(() => {\n    const interval = setInterval(() => {\n      setNow(new Date());\n    }, 1000);\n    return () => clearInterval(interval);\n  }, []);\n  React.useEffect(() => {\n    appsmith.onModelChange((model, prevModel) => {\n      if (model.time && model.time !== prevModel?.time) {\n        setNow(new Date(model.time));\n      }\n    });\n  }, []);\n  return /*#__PURE__*/React.createElement(\"div\", {\n    className: \"clock-container\"\n  }, /*#__PURE__*/React.createElement(\"div\", {\n    className: \"clock-time\"\n  }, formatTime(now)), /*#__PURE__*/React.createElement(\"div\", {\n    className: \"clock-date\"\n  }, formatBE(now)));\n}\nappsmith.onReady(() => {\n  ReactDOM.render(/*#__PURE__*/React.createElement(Clock, null), document.getElementById(\"root\"));\n});"
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 93,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": ".clock-container {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  height: 100%;\n  font-family: system-ui, sans-serif;\n  border-radius: var(--appsmith-theme-borderRadius);\n  background: #fff;\n  box-shadow: var(--appsmith-theme-boxShadow);\n  padding: 32px 16px;\n}\n\n.clock-time {\n  font-size: 3em;\n  font-weight: 700;\n  letter-spacing: 0.02em;\n  color: var(--appsmith-theme-primaryColor, #1e90ff);\n  margin-bottom: 8px;\n  transition: color 0.3s;\n}\n\n.clock-date {\n  font-size: 1.3em;\n  color: #6e6e6e;\n  letter-spacing: 0.01em;\n}\n",
+    "html": "<div id=\"root\"></div>",
+    "js": "import React from \"https://esm.sh/react@18.2.0\";\nimport ReactDOM from \"https://esm.sh/react-dom@18.2.0\";\n\nfunction formatTime(date) {\n  return date.toLocaleTimeString(\"th-TH\", {\n    hour: '2-digit',\n    minute: '2-digit',\n    second: '2-digit',\n    hour12: false\n  });\n}\n\nfunction formatBE(date) {\n  // Clone the date to avoid mutating it\n  const beDate = new Date(date.getTime());\n  beDate.setFullYear(date.getFullYear() + 543);\n  // Use Intl.DateTimeFormat for Thai with Buddhist calendar\n  return beDate.toLocaleDateString(\"th-TH-u-ca-buddhist\", {\n    weekday: 'long',\n    year: 'numeric',\n    month: 'long',\n    day: 'numeric'\n  });\n}\n\nfunction Clock() {\n  // Start from model.time if present, otherwise from Date.now()\n  const [now, setNow] = React.useState(appsmith.model?.time ? new Date(appsmith.model.time) : new Date());\n\n  React.useEffect(() => {\n    const interval = setInterval(() => {\n      setNow(new Date());\n    }, 1000);\n    return () => clearInterval(interval);\n  }, []);\n\n  React.useEffect(() => {\n    appsmith.onModelChange((model, prevModel) => {\n      if (model.time && model.time !== prevModel?.time) {\n        setNow(new Date(model.time));\n      }\n    });\n  }, []);\n\n  return (\n    <div className=\"clock-container\">\n      <div className=\"clock-time\">{formatTime(now)}</div>\n      <div className=\"clock-date\">{formatBE(now)}</div>\n    </div>\n  );\n}\n\nappsmith.onReady(() => {\n  ReactDOM.render(<Clock />, document.getElementById(\"root\"));\n});\n"
+  },
+  "version": 1,
+  "widgetId": "oxiqzh384v",
+  "widgetName": "Custom1"
+}
