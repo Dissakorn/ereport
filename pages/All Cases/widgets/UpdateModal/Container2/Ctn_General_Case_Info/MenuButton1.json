@@ -8,12 +8,12 @@
       "key": "label"
     },
     {
-      "key": "menuItems.menuItem1.isDisabled"
+      "key": "isDisabled"
     }
   ],
   "dynamicPropertyPathList": [
     {
-      "key": "menuItems.menuItem1.isDisabled"
+      "key": "isDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -22,7 +22,7 @@
     }
   ],
   "isCompact": false,
-  "isDisabled": false,
+  "isDisabled": "{{ data_table.selectedRow.prelim_extension_count >= 2 }}",
   "isLoading": false,
   "isVisible": true,
   "key": "3smxbeqcx5",
@@ -33,7 +33,7 @@
     "menuItem1": {
       "id": "menuItem1",
       "index": 0,
-      "isDisabled": "{{ data_table.selectedRow.prelim_extension_count >= 2 }}",
+      "isDisabled": false,
       "isVisible": true,
       "label": "ยืนยันการขยาย",
       "onClick": "{{Extension.exten_prelim();\ncloseModal(UpdateModal.name).then(() => {\n  R_CASES.run();\n});}}",

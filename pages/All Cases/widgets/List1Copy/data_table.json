@@ -543,6 +543,9 @@
     },
     {
       "key": "onRowSelected"
+    },
+    {
+      "key": "primaryColumns.channel.onClick"
     }
   ],
   "enableClientSideSearch": false,
@@ -941,6 +944,7 @@
       "label": "ลบคดี",
       "menuColor": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "notation": "standard",
+      "onClick": "{{showModal(Delete_Modal_Case.name);}}",
       "originalId": "channel",
       "sticky": "",
       "textColor": "",
