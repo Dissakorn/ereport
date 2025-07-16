@@ -449,6 +449,9 @@
     },
     {
       "key": "primaryColumns.channel.buttonColor"
+    },
+    {
+      "key": "primaryColumns.channel.isDisabled"
     }
   ],
   "dynamicPropertyPathList": [
@@ -529,6 +532,9 @@
     },
     {
       "key": "primaryColumns.channel.buttonColor"
+    },
+    {
+      "key": "primaryColumns.channel.isDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -936,7 +942,7 @@
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
-      "isDisabled": false,
+      "isDisabled": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (appsmith.store.user_type_id != 99 && appsmith.store.user_type_id != 1)) : appsmith.store.user_type_id != 99 && appsmith.store.user_type_id != 1 })()}}",
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
