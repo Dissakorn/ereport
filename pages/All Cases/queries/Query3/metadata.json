@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "676e2c1104b16518b088fe23_4984b5d4-fc70-42d5-9360-e6843eafa864",
-  "id": "All Cases_R_CASES_REF",
+  "gitSyncId": "686e46c8f052af62894e37fb_1724d9d3-abc9-4a48-a3d3-a7d30d5e87e5",
+  "id": "All Cases_Query3",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT case_number\nFROM public.\"case\" \nWHERE reference = CAST({{data_table.selectedRow.case_id}} AS TEXT);",
+      "body": "UPDATE public.\"case\"\nSET file_2 = {{Inp_Prelim_Letter_File.files[0].data}}\nWHERE case_id = {{data_table.selectedRow.case_id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "name": "R_CASES_REF",
+    "name": "Query3",
     "pageId": "All Cases",
     "runBehaviour": "MANUAL",
-    "userSetOnLoad": true
+    "userSetOnLoad": false
   }
 }

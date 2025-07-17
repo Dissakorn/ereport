@@ -41,7 +41,7 @@
   "placeholderText": "เลขสำนวนคดี",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
-  "rightColumn": 20,
+  "rightColumn": 21,
   "shouldAllowAutofill": false,
   "topRow": 14,
   "type": "INPUT_WIDGET_V2",

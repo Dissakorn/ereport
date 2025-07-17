@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "676e2c1104b16518b088fe23_4984b5d4-fc70-42d5-9360-e6843eafa864",
-  "id": "All Cases_R_CASES_REF",
+  "gitSyncId": "686e46c8f052af62894e37fb_93507d5d-0a35-4bfd-b3f3-19ab76e83ce5",
+  "id": "All Cases_upload2",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT case_number\nFROM public.\"case\" \nWHERE reference = CAST({{data_table.selectedRow.case_id}} AS TEXT);",
+      "body": "UPDATE public.\"case\"\nSET file_2 = {{Inp_Prelim_Letter_File2.files[0].data}}\nWHERE case_id = {{data_table.selectedRow.case_id}};\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "name": "R_CASES_REF",
+    "name": "upload2",
     "pageId": "All Cases",
     "runBehaviour": "MANUAL",
-    "userSetOnLoad": true
+    "userSetOnLoad": false
   }
 }

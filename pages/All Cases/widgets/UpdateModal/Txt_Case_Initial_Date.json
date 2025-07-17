@@ -42,7 +42,7 @@
   "rightColumn": 39,
   "shouldScrollContents": true,
   "shouldTruncate": false,
-  "text": "{{\n(() => {\n  // Retrieve the case number date from the selected row\n  const caseNumberDate = new Date(data_table.selectedRow.case_number_date);\n\n  // Check if the date is valid\n  if (isNaN(caseNumberDate.getTime())) {\n    return 'วันที่รับคดีไม่ถูกต้อง'; // Return an error message if the date is invalid\n  }\n\n  // Define options for formatting the date\n  const options = {\n    day: '2-digit',\n    month: 'short',\n    year: '2-digit'\n  };\n\n  // Format the date to Thai locale with short month names\n  const formattedDate = new Intl.DateTimeFormat('th-TH', options).format(caseNumberDate);\n\n  // Construct the final string\n  const result = `รับสำนวนคดี ${formattedDate}`;\n\n  // Return the result for display in the text widget\n  return result;\n})()\n}}\n",
+  "text": "{{\n(() => {\n  // Retrieve the case number date from the selected row\n  const caseNumberDate = new Date(data_table.selectedRow.received_date);\n\n  // Check if the date is valid\n  if (isNaN(caseNumberDate.getTime())) {\n    return 'วันที่รับคดีไม่ถูกต้อง'; // Return an error message if the date is invalid\n  }\n\n  // Define options for formatting the date\n  const options = {\n    day: '2-digit',\n    month: 'short',\n    year: '2-digit'\n  };\n\n  // Format the date to Thai locale with short month names\n  const formattedDate = new Intl.DateTimeFormat('th-TH', options).format(caseNumberDate);\n\n  // Construct the final string\n  const result = `รับสำนวนคดี ${formattedDate}`;\n\n  // Return the result for display in the text widget\n  return result;\n})()\n}}\n",
   "textAlign": "CENTER",
   "textColor": "#231f20",
   "topRow": 0,

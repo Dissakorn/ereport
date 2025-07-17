@@ -41,7 +41,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 11,
   "shouldTruncate": false,
-  "text": "{{data_table.selectedRow.ประเภทของคดี}}",
+  "text": "{{data_table.selectedRow.case_type}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 80,

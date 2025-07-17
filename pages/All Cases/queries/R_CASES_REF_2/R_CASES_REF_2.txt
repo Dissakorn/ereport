@@ -1,0 +1,5 @@
+SELECT case_number
+FROM public."case" 
+WHERE case_id = CAST('{{data_table.selectedRow.reference}}' AS INTEGER)
+AND '{{data_table.selectedRow.reference}}' IS NOT NULL
+AND '{{data_table.selectedRow.reference}}' != '';
