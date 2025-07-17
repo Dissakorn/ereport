@@ -1,6 +1,6 @@
 {
   "animateLoading": true,
-  "autoGenerateForm": true,
+  "autoGenerateForm": false,
   "backgroundColor": "#FFFFFF",
   "borderColor": "#fff",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",

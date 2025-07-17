@@ -51,7 +51,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 51,
   "shouldTruncate": false,
-  "text": "{{ \n  (() => {\n    const thaiMonths = {\n      'Jan': 'ม.ค.',\n      'Feb': 'ก.พ.',\n      'Mar': 'มี.ค.',\n      'Apr': 'เม.ย.',\n      'May': 'พ.ค.',\n      'Jun': 'มิ.ย.',\n      'Jul': 'ก.ค.',\n      'Aug': 'ส.ค.',\n      'Sep': 'ก.ย.',\n      'Oct': 'ต.ค.',\n      'Nov': 'พ.ย.',\n      'Dec': 'ธ.ค.'\n    };\n\n    const date = new Date(data_table.selectedRow.inves_deadline);\n    const day = date.getDate().toString().padStart(2, '0');\n    const monthShort = date.toLocaleDateString('en-UK', { month: 'short' });\n    const monthThai = thaiMonths[monthShort] || monthShort;\n    const yearBE2Digit = (date.getFullYear() + 543).toString().slice(-2);\n\n    return `${day} ${monthThai} ${yearBE2Digit}`;\n  })()\n}}\n",
+  "text": "{{ \n  (() => {\n    const thaiMonths = [\n      'ม.ค.',   // January (0)\n      'ก.พ.',   // February (1)\n      'มี.ค.',  // March (2)\n      'เม.ย.',  // April (3)\n      'พ.ค.',   // May (4)\n      'มิ.ย.',  // June (5)\n      'ก.ค.',   // July (6)\n      'ส.ค.',   // August (7)\n      'ก.ย.',   // September (8)\n      'ต.ค.',   // October (9)\n      'พ.ย.',   // November (10)\n      'ธ.ค.'    // December (11)\n    ];\n    \n    const date = new Date(data_table.selectedRow.inves_deadline);\n    const day = date.getDate().toString().padStart(2, '0');\n    const monthThai = thaiMonths[date.getMonth()]; // getMonth() returns 0-11\n    const yearBE2Digit = (date.getFullYear() + 543).toString().slice(-2);\n    \n    return `${day} ${monthThai} ${yearBE2Digit}`;\n  })()\n}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 0,
