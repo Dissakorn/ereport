@@ -91,48 +91,31 @@ export default {
         return true;
     },
     
-    // Validate dates logic
+    // Validate dates logic - CONSTRAINTS REMOVED
     validateDates() {
         console.log('Validating date logic...');
         
         const leadDate = Inp_Lead_Date.selectedDate;
-        const numDate = Inp_Receive_Date.selectedDate;
-        const caseNumDate = Inp_Case_Num_Date.selectedDate;
+        const receiveDate = Inp_Receive_Date.selectedDate;
         
-        // Check if case number date is before lead date
-        if (caseNumDate && leadDate) {
-            if (moment(caseNumDate).isBefore(moment(leadDate))) {
-                showAlert('วันที่เกิดเหตุไม่สามารถเป็นวันก่อนวันที่ได้รับเรื่องได้', 'error');
+        // Only validate that receive date is not before lead date
+        if (receiveDate && leadDate) {
+            if (moment(receiveDate).isBefore(moment(leadDate))) {
+                showAlert('วันที่ ปปท.รับเรื่องไม่สามารถเป็นวันก่อนวันที่เกิดเหตุได้', 'error');
                 return false;
             }
         }
         
-        // Check if number date is reasonable
-        if (numDate && leadDate) {
-            if (moment(numDate).isBefore(moment(leadDate))) {
-                showAlert('วันที่ออกหมายเลขไม่สามารถเป็นวันก่อนวันที่ได้รับเรื่องได้', 'error');
-                return false;
-            }
-        }
+        // Removed constraints for Inp_Case_Num_Date and Inp_Book_Date
+        // These fields can now be any date without validation
         
         console.log('Date validation passed');
         return true;
     },
     
-    // Validate damage value
+    // Validate damage value - REMOVED
     validateDamageValue() {
-        console.log('Validating damage value...');
-        
-        const damageValue = this.safeString(Inp_Damage_Value.text);
-        
-        if (damageValue && damageValue.trim() !== '') {
-            if (isNaN(damageValue) || parseFloat(damageValue) < 0) {
-                showAlert('มูลค่าความเสียหายต้องเป็นตัวเลขที่มากกว่าหรือเท่ากับ 0', 'error');
-                return false;
-            }
-        }
-        
-        console.log('Damage value validation passed');
+        console.log('Damage value validation skipped');
         return true;
     },
     
@@ -268,7 +251,7 @@ export default {
             resetWidget('Inp_Book_Num');
             resetWidget('Inp_Book_Date');
             resetWidget('Inp_Receive_Num');
-					  resetWidget('Inp_Receive_Date');
+            resetWidget('Inp_Receive_Date');
             resetWidget('Inp_Nacc_Num');
             resetWidget('Inp_Damage_Value');
             resetWidget('Boolean_Spinoff');
