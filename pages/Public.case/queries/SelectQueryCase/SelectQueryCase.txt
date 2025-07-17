@@ -8,18 +8,12 @@ SELECT
     combined_date,
     case_number_date,
     pacc_tracking_number,
-    num_book,
     num_book_date,
-    inv_num_book,
     inv_num_book_date,
-    received_number,
     received_date,
     prelim_status,
     prelim_result,
     prelim_round,
-    prelim_session,
-    prelim_letter,
-    prelim_evidence,
     prelim_extension,
     prelim_investigator,
     command_number,
@@ -34,11 +28,6 @@ SELECT
     judgment,
     inves_investigator,
     responsible_district,
-    offense_base,
-    statute_limit,
-    statute_due_date,
-    damage_value,
-    currency_id,
     prelim_deadline,
     prelim_done,
     inves_deadline,
@@ -52,7 +41,11 @@ SELECT
     inves_result_date,
     case_num_date_show
 FROM public."case"
-WHERE case_number ILIKE '%{{data_table.searchText || ""}}%'
-ORDER BY {{data_table.sortOrder.column || 'case_id'}} {{data_table.sortOrder.order || 'ASC'}}
+WHERE (
+    "case_number" ILIKE '%{{data_table.searchText || ""}}%'
+    OR "pacc_tracking_number" ILIKE '%{{data_table.searchText || ""}}%'
+    OR "command_number" ILIKE '%{{data_table.searchText || ""}}%'
+)
+ORDER BY "{{data_table.sortOrder.column || 'case_id'}}" {{data_table.sortOrder.order || 'ASC'}}
 LIMIT {{data_table.pageSize}}
 OFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};
