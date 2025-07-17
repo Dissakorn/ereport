@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT case_number\nFROM public.\"case\" \nWHERE case_id = CAST('{{data_table.selectedRow.reference}}' AS INTEGER)\nAND '{{data_table.selectedRow.reference}}' IS NOT NULL\nAND '{{data_table.selectedRow.reference}}' != '';",
+      "body": "SELECT case_number\nFROM public.\"case\" \nWHERE case_id = {{data_table.selectedRow.reference}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
