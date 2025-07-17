@@ -41,7 +41,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 11,
   "shouldTruncate": false,
-  "text": "{{data_table.selectedRow.case_type}}",
+  "text": "{{\n  {\n    1: \"เป็นคดีหลัก\",\n    2: \"เป็นคดีที่ถูกรวมแล้ว\", \n    3: \"เป็นคดีที่แยกออกมา\"\n  }[data_table.selectedRow.case_type] || \"ไม่ระบุประเภท\"\n}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 80,

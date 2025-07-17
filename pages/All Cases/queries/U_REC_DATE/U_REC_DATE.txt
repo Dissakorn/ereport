@@ -1,0 +1,17 @@
+SELECT set_config('app.current_user', '{{appsmith.store.name}}', true);
+UPDATE public."case" 
+SET
+  "received_date" = {{ Inp_Receive_DateCopyCopy.selectedDate 
+    ? "'" + moment(Inp_Receive_DateCopyCopy.selectedDate).format("YYYY-MM-DD") + "'" 
+    : null }},
+    
+  "prelim_deadline" = {{ Inp_Receive_DateCopyCopy.selectedDate 
+    ? "'" + moment(Inp_Receive_DateCopyCopy.selectedDate).add((appsmith.store.prelim_deadline || 90), 'days').format("YYYY-MM-DD") + "'" 
+    : null }},
+    
+  "inves_deadline" = {{ Inp_Receive_DateCopyCopy.selectedDate 
+    ? "'" + moment(Inp_Receive_DateCopyCopy.selectedDate).add((appsmith.store.invest_deadline || 365), 'days').format("YYYY-MM-DD") + "'" 
+    : null }}
+    
+WHERE 
+  case_id = {{ data_table.selectedRow.case_id || 0 }};

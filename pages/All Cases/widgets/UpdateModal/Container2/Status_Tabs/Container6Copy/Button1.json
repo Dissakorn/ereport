@@ -7,7 +7,11 @@
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
@@ -20,6 +24,7 @@
   "mobileRightColumn": 26,
   "mobileTopRow": 50,
   "needsErrorInfo": false,
+  "onClick": "{{U_REC_DATE.run().then(() => {\n  closeModal(UpdateModal.name);\n  R_CASES.run();\n});}}",
   "parentColumnSpace": 15.82763671875,
   "parentId": "aropldrf8b",
   "parentRowSpace": 10,
@@ -30,6 +35,7 @@
   "responsiveBehavior": "hug",
   "rightColumn": 63,
   "text": "กดเพื่ออัพเดทวันที่รับเรื่อง",
+  "tooltip": "ปุ่มนี้จะแก้ไขเฉพาะวันที่รับเรื่อง ข้อมูลอื่นๆจะไม่ถูกบันทึกไปด้วย ฉะนั้นต้องอัพเดทแยกกันนะครับ",
   "topRow": 9,
   "type": "BUTTON_WIDGET",
   "version": 1,
