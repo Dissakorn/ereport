@@ -583,7 +583,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "case_id",
           "position": 0,
-          "sourceData": 4
+          "sourceData": 980
         },
         "case_num_date_show": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -604,8 +604,7 @@
           "label": "Case Num Date Show",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "case_num_date_show",
-          "position": 40,
-          "sourceData": null
+          "position": 40
         },
         "case_number": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -697,8 +696,7 @@
           "label": "Combined Date",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "combined_date",
-          "position": 6,
-          "sourceData": null
+          "position": 6
         },
         "command_number": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -741,8 +739,7 @@
           "label": "Command Type",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "command_type",
-          "position": 38,
-          "sourceData": null
+          "position": 38
         },
         "command_year": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -763,8 +760,7 @@
           "label": "Command Year",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "command_year",
-          "position": 36,
-          "sourceData": null
+          "position": 36
         },
         "commmand_number_date": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -785,8 +781,7 @@
           "label": "Commmand Number Date",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "commmand_number_date",
-          "position": 33,
-          "sourceData": null
+          "position": 33
         },
         "inv_num_book_date": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -807,8 +802,7 @@
           "label": "Inv Num Book Date",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "inv_num_book_date",
-          "position": 10,
-          "sourceData": null
+          "position": 10
         },
         "inves_deadline": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -856,8 +850,7 @@
           "label": "Inves Done",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "inves_done",
-          "position": 32,
-          "sourceData": null
+          "position": 32
         },
         "inves_evidence": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -878,8 +871,7 @@
           "label": "Inves Evidence",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "inves_evidence",
-          "position": 25,
-          "sourceData": null
+          "position": 25
         },
         "inves_extension": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -942,8 +934,7 @@
           "label": "Inves Letter",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "inves_letter",
-          "position": 22,
-          "sourceData": null
+          "position": 22
         },
         "inves_prosecutor_letter": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -964,8 +955,7 @@
           "label": "Inves Prosecutor Letter",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "inves_prosecutor_letter",
-          "position": 24,
-          "sourceData": null
+          "position": 24
         },
         "inves_result": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1008,8 +998,7 @@
           "label": "Inves Result Date",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "inves_result_date",
-          "position": 39,
-          "sourceData": null
+          "position": 39
         },
         "inves_round": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1030,8 +1019,7 @@
           "label": "Inves Round",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "inves_round",
-          "position": 20,
-          "sourceData": null
+          "position": 20
         },
         "inves_session": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1096,8 +1084,7 @@
           "label": "Judgment",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "judgment",
-          "position": 26,
-          "sourceData": null
+          "position": 26
         },
         "lead_date": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1145,8 +1132,7 @@
           "label": "Lead Time",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "lead_time",
-          "position": 2,
-          "sourceData": null
+          "position": 2
         },
         "num_book_date": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1243,8 +1229,7 @@
           "label": "Prelim Done",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "prelim_done",
-          "position": 30,
-          "sourceData": null
+          "position": 30
         },
         "prelim_extension": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1351,8 +1336,7 @@
           "label": "Prelim Result Date",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "prelim_result_date",
-          "position": 37,
-          "sourceData": null
+          "position": 37
         },
         "prelim_round": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1373,8 +1357,7 @@
           "label": "Prelim Round",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "prelim_round",
-          "position": 14,
-          "sourceData": null
+          "position": 14
         },
         "prelim_status": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1396,7 +1379,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "prelim_status",
           "position": 12,
-          "sourceData": 3
+          "sourceData": 2
         },
         "received_date": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",

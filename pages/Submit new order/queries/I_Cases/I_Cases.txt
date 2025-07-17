@@ -34,7 +34,7 @@ VALUES (
 	{{ Boolean_Spinoff.isChecked ? 3 : 1 }},
 
 	-- Reference
-	{{ Boolean_Spinoff.isChecked ? `'${Sel_Spinoff.selectedOptionValue}'` : null }},
+	{{ Boolean_Spinoff.isChecked ? `${Sel_Spinoff.selectedOptionValue}` : null }},
 
 	-- Case Number
 	{{ (Inp_Case_Num.text && Inp_Case_Year.text) 
