@@ -29,7 +29,7 @@
     ],
     "name": "log_inv_sta",
     "pageId": "All Cases",
-    "runBehaviour": "AUTOMATIC",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
 }

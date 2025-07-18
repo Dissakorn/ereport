@@ -61,9 +61,6 @@
       "key": "boxShadow"
     },
     {
-      "key": "tableData"
-    },
-    {
       "key": "primaryColumns.updated_at.computedValue"
     },
     {
@@ -77,6 +74,9 @@
     },
     {
       "key": "primaryColumns.new_value.computedValue"
+    },
+    {
+      "key": "tableData"
     }
   ],
   "dynamicPropertyPathList": [
