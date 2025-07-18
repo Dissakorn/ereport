@@ -41,6 +41,7 @@
   "labelAlignment": "left",
   "labelPosition": "Auto",
   "labelStyle": "",
+  "labelTextColor": "#231f20",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 0,

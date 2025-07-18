@@ -26,6 +26,7 @@
   "key": "8u07ib144u",
   "label": "เป็นคดีที่แยกมา",
   "labelPosition": "Left",
+  "labelTextColor": "#231f20",
   "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,

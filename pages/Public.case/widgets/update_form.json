@@ -109,16 +109,10 @@
       "key": "resetButtonStyles.buttonColor"
     },
     {
-      "key": "resetButtonStyles.borderRadius"
-    },
-    {
       "key": "borderRadius"
     },
     {
       "key": "boxShadow"
-    },
-    {
-      "key": "submitButtonStyles.borderRadius"
     },
     {
       "key": "submitButtonStyles.buttonColor"
@@ -549,7 +543,7 @@
   "renderMode": "CANVAS",
   "resetButtonLabel": "Reset",
   "resetButtonStyles": {
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "borderRadius": "0.375rem",
     "boxShadow": "none",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "SECONDARY"
@@ -583,7 +577,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "case_id",
           "position": 0,
-          "sourceData": 980
+          "sourceData": 899
         },
         "case_num_date_show": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1379,7 +1373,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "prelim_status",
           "position": 12,
-          "sourceData": 2
+          "sourceData": 3
         },
         "received_date": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1500,7 +1494,7 @@
   "sourceData": "{{data_table.selectedRow}}",
   "submitButtonLabel": "Update",
   "submitButtonStyles": {
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "borderRadius": "0.375rem",
     "boxShadow": "none",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "PRIMARY"

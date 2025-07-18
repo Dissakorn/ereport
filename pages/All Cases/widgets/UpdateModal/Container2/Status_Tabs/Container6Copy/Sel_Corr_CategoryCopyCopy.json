@@ -48,7 +48,7 @@
   "placeholderText": "เลือกอายุความ",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 60,
+  "rightColumn": 63,
   "serverSideFiltering": false,
   "sourceData": "[\n  {\n    \"name\": \"10\",\n    \"code\": \"10\"\n  },\n\t{\n    \"name\": \"15\",\n    \"code\": \"15\"\n  },\n\t{\n    \"name\": \"20\",\n    \"code\": \"20\"\n  }\n]\n",
   "topRow": 39,
