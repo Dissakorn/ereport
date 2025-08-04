@@ -98,6 +98,7 @@
     "note_inves",
     "customColumn2",
     "customColumn3",
+    "customColumn9",
     "channel"
   ],
   "columnSizeMap": {
@@ -105,7 +106,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1752572273282,
+  "columnUpdatedAt": 1754285224969,
   "columnWidthMap": {
     "book_date_644": 177,
     "case_number": 100,
@@ -454,6 +455,15 @@
     },
     {
       "key": "primaryColumns.book_date_644.textColor"
+    },
+    {
+      "key": "primaryColumns.customColumn9.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn9.textColor"
+    },
+    {
+      "key": "primaryColumns.customColumn9.cellBackground"
     }
   ],
   "dynamicPropertyPathList": [
@@ -534,6 +544,12 @@
     },
     {
       "key": "primaryColumns.channel.cellBackground"
+    },
+    {
+      "key": "primaryColumns.customColumn9.textColor"
+    },
+    {
+      "key": "primaryColumns.customColumn9.cellBackground"
     }
   ],
   "dynamicTriggerPathList": [
@@ -1435,6 +1451,41 @@
       "labelColor": "#FFFFFF",
       "notation": "standard",
       "originalId": "customColumn8",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( JSObject8.getTextColor(JSObject8.getBackgroundColor(currentRow)) )) :  JSObject8.getTextColor(JSObject8.getBackgroundColor(currentRow))  })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn9": {
+      "alias": "ที่มาของคดี",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "buttonStyle": "rgb(3, 179, 101)",
+      "cellBackground": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( JSObject8.getBackgroundColor(currentRow) )) :  JSObject8.getBackgroundColor(currentRow)  })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( \n  [\n    { name: \"ม.62\", code: \"1\" },\n    { name: \"ม.18/4(2)\", code: \"2\" },\n    { name: \"พ.ร.บ. มาตรการ\", code: \"3\" },\n    { name: \"อื่นๆ\", code: \"4\" }\n  ].find(item => item.code === currentRow[\"source\"])?.name || \"ไม่พบข้อมูล\"\n)) :  \n  [\n    { name: \"ม.62\", code: \"1\" },\n    { name: \"ม.18/4(2)\", code: \"2\" },\n    { name: \"พ.ร.บ. มาตรการ\", code: \"3\" },\n    { name: \"อื่นๆ\", code: \"4\" }\n  ].find(item => item.code === currentRow[\"source\"])?.name || \"ไม่พบข้อมูล\"\n })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "CENTER",
+      "id": "customColumn9",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "ที่มาของคดี",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "originalId": "customColumn9",
       "sticky": "",
       "textColor": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( JSObject8.getTextColor(JSObject8.getBackgroundColor(currentRow)) )) :  JSObject8.getTextColor(JSObject8.getBackgroundColor(currentRow))  })()}}",
       "textSize": "0.875rem",
@@ -2979,7 +3030,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"source\"])) :  currentRow[\"source\"] })()}}",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"source\"])) : currentRow[\"source\"] })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,

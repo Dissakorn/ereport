@@ -577,7 +577,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "case_id",
           "position": 0,
-          "sourceData": 899
+          "sourceData": 103
         },
         "case_num_date_show": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1373,7 +1373,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "prelim_status",
           "position": 12,
-          "sourceData": 3
+          "sourceData": 4
         },
         "received_date": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",

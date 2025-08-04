@@ -65,7 +65,7 @@
   "placeholderText": "โปรดเลือก",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 32,
+  "rightColumn": 31,
   "serverSideFiltering": false,
   "sourceData": "{{R_INVES_RESULT.data.map( (obj) =>{ return  {'label': obj.name, 'value': obj.result_type_id } })}}",
   "topRow": 36,

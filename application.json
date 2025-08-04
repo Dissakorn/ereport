@@ -65,6 +65,14 @@
     {
       "id": "Public.case",
       "isDefault": false
+    },
+    {
+      "id": "Public.status_inves",
+      "isDefault": false
+    },
+    {
+      "id": "Public.status_prelim",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
