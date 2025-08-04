@@ -1,0 +1,9 @@
+SELECT 
+    COUNT(*) as total_rows,
+    COUNT(CASE WHEN prelim_deadline = '2025-04-20' THEN 1 END) as prelim_april_20,
+    COUNT(CASE WHEN prelim_deadline = '2025-06-19' THEN 1 END) as prelim_june_19,
+    COUNT(CASE WHEN prelim_deadline = '2025-08-18' THEN 1 END) as prelim_august_18,
+    COUNT(CASE WHEN inves_deadline = '2027-02-19' THEN 1 END) as inves_2027,
+    COUNT(CASE WHEN inves_deadline = '2028-02-19' THEN 1 END) as inves_2028
+FROM public."case"
+WHERE received_date < DATE '2025-02-19';

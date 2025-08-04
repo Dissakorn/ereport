@@ -24,6 +24,10 @@
   "columnOrder": [
     "case_id",
     "case_number",
+    "received_date",
+    "prelim_deadline",
+    "inves_deadline",
+    "customColumn1",
     "lead_time",
     "lead_date",
     "case_type",
@@ -33,7 +37,6 @@
     "pacc_tracking_number",
     "num_book_date",
     "inv_num_book_date",
-    "received_date",
     "prelim_status",
     "prelim_result",
     "prelim_round",
@@ -48,12 +51,10 @@
     "inves_extension",
     "inves_prosecutor_letter",
     "inves_evidence",
+    "responsible_district",
     "judgment",
     "inves_investigator",
-    "responsible_district",
-    "prelim_deadline",
     "prelim_done",
-    "inves_deadline",
     "inves_done",
     "commmand_number_date",
     "year",
@@ -62,15 +63,21 @@
     "prelim_result_date",
     "command_type",
     "inves_result_date",
-    "case_num_date_show",
-    "customColumn1"
+    "case_num_date_show"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1752738995613,
+  "columnUpdatedAt": 1754291482491,
+  "columnWidthMap": {
+    "case_id": 93,
+    "case_number": 132,
+    "inves_deadline": 137,
+    "prelim_deadline": 151,
+    "received_date": 137
+  },
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
@@ -108,9 +115,6 @@
       "key": "derivedColumns.customColumn1.buttonLabel"
     },
     {
-      "key": "primaryColumns.customColumn1.buttonLabel"
-    },
-    {
       "key": "accentColor"
     },
     {
@@ -118,9 +122,6 @@
     },
     {
       "key": "boxShadow"
-    },
-    {
-      "key": "primaryColumns.customColumn1.borderRadius"
     },
     {
       "key": "primaryColumns.case_id.computedValue"
@@ -244,20 +245,17 @@
     },
     {
       "key": "primaryColumns.case_num_date_show.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn1.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
-    {
-      "key": "primaryColumns.customColumn1.borderRadius"
-    },
     {
       "key": "tableData"
     }
   ],
   "dynamicTriggerPathList": [
-    {
-      "key": "primaryColumns.customColumn1.onClick"
-    },
     {
       "key": "onPageChange"
     },
@@ -314,7 +312,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "case_id",
       "notation": "standard",
       "originalId": "case_id",
@@ -633,27 +631,36 @@
       "width": 150
     },
     "customColumn1": {
-      "borderRadius": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-      "boxShadow": "none",
-      "buttonColor": "#DD4B34",
-      "buttonLabel": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( 'Delete'))}}",
-      "buttonLabelColor": "#FFFFFF",
+      "alias": "สำนัก",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
       "buttonStyle": "rgb(3, 179, 101)",
-      "columnType": "button",
-      "computedValue": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( \n  R_DIVISION.data.find(division => division.division_id == currentRow[\"responsible_district\"])?.name || \"-\" \n)) :  \n  R_DIVISION.data.find(division => division.division_id == currentRow[\"responsible_district\"])?.name || \"-\" \n })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "horizontalAlignment": "LEFT",
       "id": "customColumn1",
-      "index": 5,
+      "index": 9,
+      "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": true,
       "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
       "isVisible": true,
-      "label": "Delete",
+      "label": "สำนัก",
       "labelColor": "#FFFFFF",
-      "menuColor": "#03B365",
-      "onClick": "{{showModal('Delete_Modal')}}",
-      "sticky": "right",
+      "notation": "standard",
+      "originalId": "customColumn1",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
       "width": 150
     },
     "inv_num_book_date": {
@@ -696,7 +703,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "date",
-      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"inves_deadline\"])) : inves_deadline })()}}",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"inves_deadline\"])) : inves_deadline_check })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -716,6 +723,7 @@
       "label": "inves_deadline",
       "notation": "standard",
       "originalId": "inves_deadline",
+      "outputFormat": "DD/MM/YYYY",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
@@ -1294,6 +1302,7 @@
       "label": "prelim_deadline",
       "notation": "standard",
       "originalId": "prelim_deadline",
+      "outputFormat": "DD/MM/YYYY",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
@@ -1600,6 +1609,7 @@
       "label": "received_date",
       "notation": "standard",
       "originalId": "received_date",
+      "outputFormat": "DD/MM/YYYY",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

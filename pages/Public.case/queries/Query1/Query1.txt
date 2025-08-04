@@ -1,0 +1,3 @@
+UPDATE public."case"
+SET inves_deadline = DATE '2027-02-19'
+WHERE inves_deadline < DATE '2027-02-19';

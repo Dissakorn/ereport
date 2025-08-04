@@ -1,0 +1,9 @@
+SELECT 
+    COUNT(*) as total_null_inves_deadline,
+    COUNT(CASE WHEN inves_extension = false THEN 1 END) as false_extension,
+    COUNT(CASE WHEN inves_extension = true THEN 1 END) as true_extension,
+    COUNT(CASE WHEN inves_extension IS NULL THEN 1 END) as null_extension,
+    MIN(received_date) as earliest_received,
+    MAX(received_date) as latest_received
+FROM public."case"
+WHERE inves_deadline IS NULL;

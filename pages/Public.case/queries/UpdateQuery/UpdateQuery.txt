@@ -7,7 +7,5 @@ UPDATE public."case" SET
 		"combined_date" = '{{update_form.fieldState.combined_date.isVisible ? update_form.formData.combined_date : update_form.sourceData.combined_date}}',
 		"case_number_date" = '{{update_form.fieldState.case_number_date.isVisible ? update_form.formData.case_number_date : update_form.sourceData.case_number_date}}',
 		"pacc_tracking_number" = '{{update_form.fieldState.pacc_tracking_number.isVisible ? update_form.formData.pacc_tracking_number : update_form.sourceData.pacc_tracking_number}}',
-		"num_book" = '{{update_form.fieldState.num_book.isVisible ? update_form.formData.num_book : update_form.sourceData.num_book}}',
-		"num_book_date" = '{{update_form.fieldState.num_book_date.isVisible ? update_form.formData.num_book_date : update_form.sourceData.num_book_date}}',
-		"inv_num_book" = '{{update_form.fieldState.inv_num_book.isVisible ? update_form.formData.inv_num_book : update_form.sourceData.inv_num_book}}'
+		"num_book_date" = '{{update_form.fieldState.num_book_date.isVisible ? update_form.formData.num_book_date : update_form.sourceData.num_book_date}}'
 	WHERE "case_id" = {{data_table.selectedRow.case_id}};

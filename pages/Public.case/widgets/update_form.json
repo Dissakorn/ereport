@@ -145,9 +145,6 @@
       "key": "schema.__root_schema__.children.lead_time.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.lead_date.defaultValue"
-    },
-    {
       "key": "schema.__root_schema__.children.lead_date.borderRadius"
     },
     {
@@ -179,9 +176,6 @@
     },
     {
       "key": "schema.__root_schema__.children.combined_date.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.case_number_date.defaultValue"
     },
     {
       "key": "schema.__root_schema__.children.case_number_date.borderRadius"
@@ -479,6 +473,21 @@
     },
     {
       "key": "schema.__root_schema__.children.case_num_date_show.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.xn__12c1c7b3ai.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.xn__12c1c7b3ai.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.xn__12c1c7b3ai.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.case_number_date.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.lead_date.defaultValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -499,9 +508,6 @@
       "key": "schema.__root_schema__.children.lead_date.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.case_number_date.defaultValue"
-    },
-    {
       "key": "schema.__root_schema__.children.num_book_date.defaultValue"
     },
     {
@@ -518,6 +524,9 @@
     },
     {
       "key": "schema.__root_schema__.children.inves_deadline.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.case_number_date.defaultValue"
     }
   ],
   "dynamicTriggerPathList": [
@@ -577,7 +586,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "case_id",
           "position": 0,
-          "sourceData": 103
+          "sourceData": 722
         },
         "case_num_date_show": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -632,7 +641,7 @@
           "convertToISO": false,
           "dataType": "string",
           "dateFormat": "YYYY-MM-DD",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (moment(sourceData.case_number_date, \"YYYY-MM-DD\").format(\"YYYY-MM-DDTHH:mm:ss.sssZ\")))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.case_number_date))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Datepicker",
           "identifier": "case_number_date",
           "isCustomField": false,
@@ -1057,7 +1066,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "inves_status",
           "position": 18,
-          "sourceData": 0
+          "sourceData": 3
         },
         "judgment": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1090,7 +1099,7 @@
           "convertToISO": false,
           "dataType": "string",
           "dateFormat": "YYYY-MM-DD",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (moment(sourceData.lead_date, \"YYYY-MM-DD\").format(\"YYYY-MM-DDTHH:mm:ss.sssZ\")))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.lead_date))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Datepicker",
           "identifier": "lead_date",
           "isCustomField": false,
@@ -1138,7 +1147,7 @@
           "convertToISO": false,
           "dataType": "string",
           "dateFormat": "YYYY-MM-DD",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (moment(sourceData.num_book_date, \"YYYY-MM-DD\").format(\"YYYY-MM-DDTHH:mm:ss.sssZ\")))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.num_book_date))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Datepicker",
           "identifier": "num_book_date",
           "isCustomField": false,
@@ -1309,7 +1318,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "prelim_result",
           "position": 13,
-          "sourceData": 0
+          "sourceData": 2
         },
         "prelim_result_date": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1373,7 +1382,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "prelim_status",
           "position": 12,
-          "sourceData": 4
+          "sourceData": 9
         },
         "received_date": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -1385,7 +1394,7 @@
           "convertToISO": false,
           "dataType": "string",
           "dateFormat": "YYYY-MM-DD",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (moment(sourceData.received_date, \"YYYY-MM-DD\").format(\"YYYY-MM-DDTHH:mm:ss.sssZ\")))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.received_date))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "fieldType": "Datepicker",
           "identifier": "received_date",
           "isCustomField": false,
@@ -1446,6 +1455,28 @@
           "position": 28,
           "sourceData": "10"
         },
+        "xn__12c1c7b3ai": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "สำนัก",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"สำนัก\"]))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "xn__12c1c7b3ai",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "สำนัก",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "สำนัก",
+          "position": 41,
+          "sourceData": ""
+        },
         "year": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "year",
@@ -1466,7 +1497,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "year",
           "position": 34,
-          "sourceData": 2568
+          "sourceData": 2561
         }
       },
       "dataType": "object",

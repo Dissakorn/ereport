@@ -1,0 +1,21 @@
+SELECT 
+    case_id,
+    received_date,
+    prelim_extension_count,
+    inves_extension,
+    prelim_deadline as current_prelim,
+    inves_deadline as current_inves,
+    -- Preview what the new values would be:
+    CASE 
+        WHEN prelim_extension_count = 0 THEN DATE '2025-04-20'
+        WHEN prelim_extension_count = 1 THEN DATE '2025-06-19'
+        WHEN prelim_extension_count = 2 THEN DATE '2025-08-18'
+        ELSE prelim_deadline
+    END as new_prelim,
+    CASE 
+        WHEN inves_extension = false THEN DATE '2027-02-19'
+        WHEN inves_extension = true THEN DATE '2028-02-19'
+        ELSE inves_deadline
+    END as new_inves
+FROM public."case"
+WHERE received_date < DATE '2025-02-19';

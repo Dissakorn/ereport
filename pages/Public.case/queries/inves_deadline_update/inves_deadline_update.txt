@@ -1,0 +1,8 @@
+UPDATE public."case"
+SET inves_deadline = CASE 
+    WHEN inves_extension = false THEN received_date + INTERVAL '730 days'
+    WHEN inves_extension = true THEN received_date + INTERVAL '1095 days'
+    ELSE inves_deadline  -- Keep NULL if inves_extension is also NULL
+END
+WHERE received_date >= DATE '2025-02-19' 
+  AND inves_deadline IS NULL;
