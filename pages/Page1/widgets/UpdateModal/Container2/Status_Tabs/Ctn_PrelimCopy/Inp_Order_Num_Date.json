@@ -7,16 +7,16 @@
   "closeOnSelection": true,
   "dateFormat": "DD/MM/YYYY",
   "datePickerType": "DATE_PICKER",
-  "defaultDate": "{{data_table.selectedRow.commmand_number_date}}",
+  "defaultDate": "{{R_CASE.data[0].commmand_number_date}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
-      "key": "defaultDate"
+      "key": "isDisabled"
     },
     {
-      "key": "isDisabled"
+      "key": "defaultDate"
     }
   ],
   "dynamicHeight": "FIXED",

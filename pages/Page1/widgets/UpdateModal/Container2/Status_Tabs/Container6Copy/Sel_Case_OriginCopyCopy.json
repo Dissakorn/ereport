@@ -4,7 +4,7 @@
   "borderRadius": "0.375rem",
   "bottomRow": 25,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( data_table.selectedRow.source))(Sel_Case_OriginCopyCopy.options, Sel_Case_OriginCopyCopy.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( R_CASE.data[0].source))(Sel_Case_OriginCopyCopy.options, Sel_Case_OriginCopyCopy.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

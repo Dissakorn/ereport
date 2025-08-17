@@ -42,7 +42,7 @@
       "isDisabled": false,
       "isVisible": true,
       "label": "ยืนยันการขยาย",
-      "onClick": "{{Extension.exten_inves();\ncloseModal(UpdateModal.name).then(() => {\n  R_CASES.run();\n});}}",
+      "onClick": "{{U_DEADLINE_INVES.run()\ncloseModal(UpdateModal.name).then(() => {\n  R_CASES.run();\n});}}",
       "widgetId": ""
     },
     "menuItem2": {

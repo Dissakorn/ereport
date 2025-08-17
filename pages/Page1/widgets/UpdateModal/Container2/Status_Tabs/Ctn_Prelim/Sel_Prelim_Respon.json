@@ -67,7 +67,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "serverSideFiltering": false,
-  "sourceData": "{{R_Investigator.data.map( (obj) =>{ return  {'label': obj.name, 'value': obj.investigator_id } })}}",
+  "sourceData": "{{R_INVESTIGATOR.data.map( (obj) =>{ return  {'label': obj.name, 'value': obj.investigator_id } })}}",
   "topRow": 15,
   "type": "SELECT_WIDGET",
   "version": 1,

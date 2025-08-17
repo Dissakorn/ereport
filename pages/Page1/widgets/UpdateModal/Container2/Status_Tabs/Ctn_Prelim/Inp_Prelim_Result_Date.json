@@ -7,7 +7,7 @@
   "closeOnSelection": true,
   "dateFormat": "DD/MM/YYYY",
   "datePickerType": "DATE_PICKER",
-  "defaultDate": "{{data_table.selectedRow.prelim_result_date}}",
+  "defaultDate": "{{R_CASE.data[0].prelim_result_date}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

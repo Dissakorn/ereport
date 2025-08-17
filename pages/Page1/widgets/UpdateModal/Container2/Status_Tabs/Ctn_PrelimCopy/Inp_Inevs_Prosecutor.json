@@ -5,7 +5,7 @@
   "borderRadius": "0.375rem",
   "bottomRow": 64,
   "boxShadow": "none",
-  "defaultText": "{{data_table.selectedRow.inves_prosecutor_letter}}",
+  "defaultText": "{{R_CASE.data[0].inves_prosecutor_letter}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

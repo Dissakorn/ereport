@@ -41,7 +41,7 @@
   "rightColumn": 30,
   "topRow": 45,
   "type": "INPUT_WIDGET_V2",
-  "validation": "{{data_table.selectedRow.damage_value}}",
+  "validation": "{{R_CASE.data[0].damage_value}}",
   "version": 2,
   "widgetId": "0y7ipddx1k",
   "widgetName": "Inp_Damage_ValueCopyCopy"

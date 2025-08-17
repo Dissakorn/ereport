@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT \n    case_id, case_number, case_type, received_date, prelim_status, prelim_result, \n    prelim_extension, inves_status, inves_result, inves_extension, responsible_district, \n    offense_base, prelim_deadline, inves_deadline, year, book_date_213, \n    book_sign_date_213, book_date_644, source , prelim_investigator\nFROM \n    public.\"case\" c\nWHERE\n    CASE \n        WHEN {{ String(Slc_Division.selectedOptionValue) }} = '0' THEN TRUE\n        ELSE c.responsible_district = {{ String(Slc_Division.selectedOptionValue) }}\n    END\nORDER BY \n    c.received_date DESC NULLS LAST;",
+      "body": "SELECT \n    case_id, case_number, case_type, received_date, prelim_status, prelim_result, \n    prelim_extension, inves_status, inves_result, inves_extension, responsible_district, \n    offense_base, prelim_deadline, inves_deadline, year, book_date_213, \n    book_sign_date_213, book_date_644, source , prelim_investigator, damage_value, inves_investigator\nFROM \n    public.\"case\" c\nWHERE\n    CASE \n        WHEN {{ String(Slc_Division.selectedOptionValue) }} = '0' THEN TRUE\n        ELSE c.responsible_district = {{ String(Slc_Division.selectedOptionValue) }}\n    END\nORDER BY \n    c.received_date DESC NULLS LAST;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

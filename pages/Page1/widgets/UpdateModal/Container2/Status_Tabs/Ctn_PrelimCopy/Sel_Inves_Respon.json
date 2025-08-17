@@ -4,7 +4,7 @@
   "borderRadius": "0.375rem",
   "bottomRow": 29,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( parseInt(data_table.selectedRow.inves_inv)))(Sel_Inves_Respon.options, Sel_Inves_Respon.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  parseInt(data_table.selectedRow.inves_investigator, 10) ))(Sel_Inves_Respon.options, Sel_Inves_Respon.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -67,7 +67,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "serverSideFiltering": false,
-  "sourceData": "{{R_Investigator.data.map( (obj) =>{ return  {'label': obj.name, 'value': obj.investigator_id } })}}",
+  "sourceData": "{{R_INVESTIGATOR.data.map( (obj) =>{ return  {'label': obj.name, 'value': obj.investigator_id } })}}",
   "topRow": 22,
   "type": "SELECT_WIDGET",
   "version": 1,

@@ -30,6 +30,6 @@
     "name": "R_CASE",
     "pageId": "Page1",
     "runBehaviour": "MANUAL",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

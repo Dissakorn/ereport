@@ -5,7 +5,7 @@
   "borderRadius": "0.375rem",
   "bottomRow": 50,
   "boxShadow": "none",
-  "defaultText": "{{data_table.selectedRow.inves_letter}}",
+  "defaultText": "{{R_CASE.data[0].inves_letter}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

@@ -2,7 +2,7 @@ SELECT
     case_id, case_number, case_type, received_date, prelim_status, prelim_result, 
     prelim_extension, inves_status, inves_result, inves_extension, responsible_district, 
     offense_base, prelim_deadline, inves_deadline, year, book_date_213, 
-    book_sign_date_213, book_date_644, source , prelim_investigator
+    book_sign_date_213, book_date_644, source , prelim_investigator, damage_value, inves_investigator
 FROM 
     public."case" c
 WHERE

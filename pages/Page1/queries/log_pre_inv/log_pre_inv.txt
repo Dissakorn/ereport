@@ -1,0 +1,13 @@
+SELECT 
+    ur.updated_at,
+    ur.user_id,
+    ur.updated_field,
+    ur.old_value,
+    ur.new_value
+FROM 
+    updating_record ur
+WHERE 
+    ur.case_id = {{data_table.selectedRow.case_id}}
+    AND ur.updated_field = 'prelim_investigator'
+ORDER BY 
+    ur.updated_at DESC;

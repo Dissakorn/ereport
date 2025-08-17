@@ -23,7 +23,7 @@
     }
   ],
   "dynamicTriggerPathList": [],
-  "isDisabled": "{{data_table.selectedRow.channel}}",
+  "isDisabled": "{{R_CASE.data[0].channel}}",
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,

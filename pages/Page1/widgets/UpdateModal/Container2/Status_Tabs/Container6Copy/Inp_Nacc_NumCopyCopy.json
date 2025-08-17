@@ -5,7 +5,7 @@
   "borderRadius": "0.375rem",
   "bottomRow": 25,
   "boxShadow": "none",
-  "defaultText": "{{data_table.selectedRow.pacc_tracking_number}}",
+  "defaultText": "{{R_CASE.data[0].pacc_tracking_number}}",
   "displayName": "Input",
   "dynamicBindingPathList": [
     {

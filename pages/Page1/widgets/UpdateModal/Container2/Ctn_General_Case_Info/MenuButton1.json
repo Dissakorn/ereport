@@ -36,7 +36,7 @@
       "isDisabled": false,
       "isVisible": true,
       "label": "ยืนยันการขยาย",
-      "onClick": "{{Extension.exten_prelim();\ncloseModal(UpdateModal.name).then(() => {\n  R_CASES.run();\n});}}",
+      "onClick": "{{U_DEADLINE_PRELIM.run()\ncloseModal(UpdateModal.name).then(() => {\n  R_CASES.run();\n});}}",
       "widgetId": ""
     },
     "menuItem2": {

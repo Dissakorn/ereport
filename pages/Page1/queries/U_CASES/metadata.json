@@ -1,6 +1,6 @@
 {
   "gitSyncId": "676e2c1104b16518b088fe23_b1286f68-5bbc-43e8-97ad-960319d6953b",
-  "id": "All Cases_U_CASES",
+  "id": "Page1_U_CASES",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -28,7 +28,7 @@
       }
     ],
     "name": "U_CASES",
-    "pageId": "All Cases",
+    "pageId": "Page1",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }

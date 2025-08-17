@@ -5,7 +5,7 @@
   "borderRadius": "0.375rem",
   "bottomRow": 57,
   "boxShadow": "none",
-  "defaultText": "{{data_table.selectedRow.prelim_evidence}}",
+  "defaultText": "{{R_CASE.data[0].prelim_evidence}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
