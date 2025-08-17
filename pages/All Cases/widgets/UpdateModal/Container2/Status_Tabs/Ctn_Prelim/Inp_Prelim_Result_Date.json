@@ -7,7 +7,7 @@
   "closeOnSelection": true,
   "dateFormat": "DD/MM/YYYY",
   "datePickerType": "DATE_PICKER",
-  "defaultDate": "{{data_table.selectedRow.prelim_result_date}}",
+  "defaultDate": "{{R_CASE.data[0].prelim_result_date}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -64,7 +64,7 @@
   "originalBottomRow": 43,
   "originalTopRow": 36,
   "parentColumnSpace": 7.757568359375,
-  "parentId": "4vo25a0ywq",
+  "parentId": "5sfotkxlpm",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -74,6 +74,6 @@
   "topRow": 36,
   "type": "DATE_PICKER_WIDGET2",
   "version": 2,
-  "widgetId": "89pq2khtvp",
+  "widgetId": "xois9i74uy",
   "widgetName": "Inp_Prelim_Result_Date"
 }

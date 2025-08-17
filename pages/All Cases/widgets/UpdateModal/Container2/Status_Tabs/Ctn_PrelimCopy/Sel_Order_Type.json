@@ -4,7 +4,7 @@
   "borderRadius": "0.375rem",
   "bottomRow": 22,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( data_table.selectedRow.command_type))(Sel_Order_Type.options, Sel_Order_Type.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( R_CASE.data[0].command_type))(Sel_Order_Type.options, Sel_Order_Type.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -54,7 +54,7 @@
   "originalBottomRow": 23,
   "originalTopRow": 16,
   "parentColumnSpace": 7.757568359375,
-  "parentId": "y0hpm9kgti",
+  "parentId": "visubu5h1r",
   "parentRowSpace": 10,
   "placeholderText": "เลือกคำสั่ง",
   "renderMode": "CANVAS",
@@ -65,6 +65,6 @@
   "topRow": 15,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "gzgdds5of9",
+  "widgetId": "hd7o1zgwg9",
   "widgetName": "Sel_Order_Type"
 }

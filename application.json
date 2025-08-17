@@ -51,7 +51,7 @@
       "isDefault": true
     },
     {
-      "id": "All Cases",
+      "id": "All Cases 1",
       "isDefault": false
     },
     {
@@ -75,7 +75,11 @@
       "isDefault": false
     },
     {
-      "id": "Page1",
+      "id": "All Cases",
+      "isDefault": false
+    },
+    {
+      "id": "Page2",
       "isDefault": false
     }
   ],

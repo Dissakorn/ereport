@@ -32,13 +32,13 @@
   "mobileTopRow": 0,
   "needsErrorInfo": false,
   "onClick": "{{closeModal(UpdateModal.name);}}",
-  "parentId": "tfv6j9z1gu",
+  "parentId": "9oell1w7mo",
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
   "rightColumn": 64,
   "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "pi0prytua2",
+  "widgetId": "iqbfdzi7p1",
   "widgetName": "Closebutton"
 }

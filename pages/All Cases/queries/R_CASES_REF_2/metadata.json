@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "686e46c8f052af62894e37fb_12f379f8-a6eb-48f3-8164-74f95c92bbbc",
+  "gitSyncId": "686e46c8f052af62894e37fb_e97e88f6-025d-4afd-ab22-470f5ef13560",
   "id": "All Cases_R_CASES_REF_2",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
@@ -29,7 +29,7 @@
     ],
     "name": "R_CASES_REF_2",
     "pageId": "All Cases",
-    "runBehaviour": "ON_PAGE_LOAD",
-    "userSetOnLoad": false
+    "runBehaviour": "MANUAL",
+    "userSetOnLoad": true
   }
 }

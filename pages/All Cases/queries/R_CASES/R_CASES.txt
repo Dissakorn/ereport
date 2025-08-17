@@ -1,13 +1,14 @@
 SELECT 
-    c.*
+    case_id, case_number, case_type, received_date, prelim_status, prelim_result, 
+    prelim_extension, inves_status, inves_result, inves_extension, responsible_district, 
+    offense_base, prelim_deadline, inves_deadline, year, book_date_213, 
+    book_sign_date_213, book_date_644, source , prelim_investigator, damage_value, inves_investigator
 FROM 
     public."case" c
 WHERE
--- Scenario 1: Show all cases when division is 0 or not selected
-        '{{ Slc_Division.selectedOptionValue }}' = '' 
-        OR '{{ Slc_Division.selectedOptionValue }}' IS NULL
-        OR '{{ Slc_Division.selectedOptionValue }}' = '0'
-        -- Scenario 2: Show cases where responsible_district matches selected division
-        OR c.responsible_district = '{{ Slc_Division.selectedOptionValue }}'
+    CASE 
+        WHEN {{ String(Slc_Division.selectedOptionValue) }} = '0' THEN TRUE
+        ELSE c.responsible_district = {{ String(Slc_Division.selectedOptionValue) }}
+    END
 ORDER BY 
     c.received_date DESC NULLS LAST;

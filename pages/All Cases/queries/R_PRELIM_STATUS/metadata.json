@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "676e2c1104b16518b088fe23_9aedf3bf-dcec-4170-a51f-e98fe7a3ecea",
+  "gitSyncId": "686e46c8f052af62894e37fb_9139f41e-d229-426b-890b-fa33829fee02",
   "id": "All Cases_R_PRELIM_STATUS",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
@@ -26,6 +26,6 @@
     "name": "R_PRELIM_STATUS",
     "pageId": "All Cases",
     "runBehaviour": "ON_PAGE_LOAD",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

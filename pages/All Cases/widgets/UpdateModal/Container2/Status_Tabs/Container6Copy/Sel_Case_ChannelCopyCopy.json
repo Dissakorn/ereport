@@ -23,7 +23,7 @@
     }
   ],
   "dynamicTriggerPathList": [],
-  "isDisabled": "{{data_table.selectedRow.channel}}",
+  "isDisabled": "{{R_CASE.data[0].channel}}",
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
@@ -46,7 +46,7 @@
   "optionLabel": "name",
   "optionValue": "code",
   "parentColumnSpace": 13.6689453125,
-  "parentId": "aropldrf8b",
+  "parentId": "n4ka7s0sc4",
   "parentRowSpace": 10,
   "placeholderText": "เลือกช่องทางการรับเรื่อง",
   "renderMode": "CANVAS",
@@ -57,6 +57,6 @@
   "topRow": 27,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "rrrfdhsndi",
+  "widgetId": "phrp6r9aab",
   "widgetName": "Sel_Case_ChannelCopyCopy"
 }

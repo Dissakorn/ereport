@@ -5,7 +5,7 @@
   "borderRadius": "0.375rem",
   "bottomRow": 68,
   "boxShadow": "none",
-  "defaultText": "{{data_table.selectedRow.note_prelim}}",
+  "defaultText": "{{R_CASE.data[0].note_prelim}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -41,7 +41,7 @@
   "originalBottomRow": 68,
   "originalTopRow": 57,
   "parentColumnSpace": 17.03125,
-  "parentId": "4vo25a0ywq",
+  "parentId": "5sfotkxlpm",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
@@ -52,6 +52,6 @@
   "topRow": 57,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "xwo73la35l",
+  "widgetId": "fjku3hsny7",
   "widgetName": "Inp_Note1"
 }

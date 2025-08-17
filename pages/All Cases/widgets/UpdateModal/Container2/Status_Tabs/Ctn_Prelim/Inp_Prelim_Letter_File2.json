@@ -10,17 +10,11 @@
   "dynamicBindingPathList": [
     {
       "key": "isVisible"
-    },
-    {
-      "key": "isDisabled"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "isVisible"
-    },
-    {
-      "key": "isDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -32,7 +26,7 @@
   "fileDataType": "Base64",
   "files": [],
   "isDefaultClickDisabled": true,
-  "isDisabled": "{{Inp_Prelim_Letter_File.files}}",
+  "isDisabled": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": "{{\n  (() => {\n    // Define the valid options\n    const validOptions = [\"ส่ง ป.ป.ช.\", \"ส่งพนักงานสอบสวน\", \"ส่งต้นสังกัด\",\"คำสั่งไต่สวน\"];\n    \n    // Check if the selected option is in the valid options\n    return validOptions.includes(Sel_Prelim_Result.selectedOptionLabel);\n  })()\n}}",
@@ -51,7 +45,7 @@
   "originalBottomRow": 57,
   "originalTopRow": 53,
   "parentColumnSpace": 8.59375,
-  "parentId": "4vo25a0ywq",
+  "parentId": "5sfotkxlpm",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
@@ -60,6 +54,6 @@
   "topRow": 53,
   "type": "FILE_PICKER_WIDGET_V2",
   "version": 1,
-  "widgetId": "ilu2as2hgo",
+  "widgetId": "wbu8wkjkcc",
   "widgetName": "Inp_Prelim_Letter_File2"
 }

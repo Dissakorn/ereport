@@ -40,7 +40,7 @@
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "mpt82dmevw",
+      "parentId": "5g4gifcqa5",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -51,7 +51,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "e9ji2vx6yx",
+      "widgetId": "esypihxtfc",
       "widgetName": "Canvas9"
     },
     {
@@ -86,7 +86,7 @@
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "mpt82dmevw",
+      "parentId": "5g4gifcqa5",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -97,7 +97,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "27m4z34f64",
+      "widgetId": "y1h4614imr",
       "widgetName": "Canvas10"
     },
     {
@@ -132,7 +132,7 @@
       "mobileTopRow": 1,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "mpt82dmevw",
+      "parentId": "5g4gifcqa5",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -142,7 +142,7 @@
       "topRow": 1,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "c3fyhxwm8h",
+      "widgetId": "kvdlyu1rsr",
       "widgetName": "Canvas11"
     },
     {
@@ -177,7 +177,7 @@
       "mobileTopRow": 1,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "mpt82dmevw",
+      "parentId": "5g4gifcqa5",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -187,7 +187,7 @@
       "topRow": 1,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "qf7xxjrzvo",
+      "widgetId": "9hjnxywcan",
       "widgetName": "Canvas19"
     },
     {
@@ -222,7 +222,7 @@
       "mobileTopRow": 1,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "mpt82dmevw",
+      "parentId": "5g4gifcqa5",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -232,7 +232,7 @@
       "topRow": 1,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "drzqnlk793",
+      "widgetId": "o0yqrawxkr",
       "widgetName": "Canvas23"
     },
     {
@@ -267,7 +267,7 @@
       "mobileTopRow": 1,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "mpt82dmevw",
+      "parentId": "5g4gifcqa5",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -277,7 +277,7 @@
       "topRow": 1,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "s9096wot8x",
+      "widgetId": "kgic3s77gd",
       "widgetName": "Canvas24"
     },
     {
@@ -312,7 +312,7 @@
       "mobileTopRow": 1,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "mpt82dmevw",
+      "parentId": "5g4gifcqa5",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -322,7 +322,7 @@
       "topRow": 1,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "h1rsyp0t8c",
+      "widgetId": "mznyvwzw9k",
       "widgetName": "Canvas27"
     }
   ],
@@ -374,7 +374,7 @@
   "originalBottomRow": 66,
   "originalTopRow": 11,
   "parentColumnSpace": 15.9375,
-  "parentId": "eg5wn6s6vm",
+  "parentId": "5lq694mer9",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -389,7 +389,7 @@
       "isVisible": "{{ data_table.selectedRow.case_type != 2}}",
       "label": "จัดการสถานะ",
       "positioning": "vertical",
-      "widgetId": "e9ji2vx6yx"
+      "widgetId": "esypihxtfc"
     },
     "tab2": {
       "id": "tab2",
@@ -398,7 +398,7 @@
       "isVisible": "{{ data_table.selectedRow.case_type == 2}}",
       "label": "รวมเรื่อง",
       "positioning": "vertical",
-      "widgetId": "27m4z34f64"
+      "widgetId": "y1h4614imr"
     },
     "taba6bfbf7ep4": {
       "id": "taba6bfbf7ep4",
@@ -406,7 +406,7 @@
       "isDuplicateLabel": false,
       "isVisible": true,
       "label": "ข้อมูลทั่วไป",
-      "widgetId": "h1rsyp0t8c"
+      "widgetId": "mznyvwzw9k"
     },
     "tabesv3fvpzim": {
       "id": "tabesv3fvpzim",
@@ -414,7 +414,7 @@
       "isDuplicateLabel": false,
       "isVisible": true,
       "label": "ประวัติการแก้ไขทั้งหมด",
-      "widgetId": "drzqnlk793"
+      "widgetId": "o0yqrawxkr"
     },
     "tablts0ze31sq": {
       "id": "tablts0ze31sq",
@@ -422,7 +422,7 @@
       "isDuplicateLabel": false,
       "isVisible": true,
       "label": "ประวัติการแก้ไข",
-      "widgetId": "s9096wot8x"
+      "widgetId": "kgic3s77gd"
     },
     "tabmi9zbynf2m": {
       "id": "tabmi9zbynf2m",
@@ -430,7 +430,7 @@
       "isDuplicateLabel": false,
       "isVisible": "{{ data_table.selectedRow.case_type != 2 }}",
       "label": "เรื่องที่ถูกรวม",
-      "widgetId": "c3fyhxwm8h"
+      "widgetId": "kvdlyu1rsr"
     },
     "tabyp8wkmf1ro": {
       "id": "tabyp8wkmf1ro",
@@ -438,12 +438,12 @@
       "isDuplicateLabel": false,
       "isVisible": true,
       "label": "จัดการค่าใช้จ่าย",
-      "widgetId": "qf7xxjrzvo"
+      "widgetId": "9hjnxywcan"
     }
   },
   "topRow": 6,
   "type": "TABS_WIDGET",
   "version": 3,
-  "widgetId": "mpt82dmevw",
+  "widgetId": "5g4gifcqa5",
   "widgetName": "Status_Tabs"
 }

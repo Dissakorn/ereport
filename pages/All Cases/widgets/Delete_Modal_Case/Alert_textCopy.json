@@ -24,7 +24,7 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "overflow": "NONE",
-  "parentId": "95qvc3y3iu",
+  "parentId": "nnvqiw5m00",
   "rightColumn": 61,
   "text": "ลบคดีเลขที่ \"{{data_table.triggeredRow.case_number}}\" ?",
   "textAlign": "LEFT",
@@ -32,6 +32,6 @@
   "topRow": 1,
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "jxjvex1vdx",
+  "widgetId": "0gu0qdm153",
   "widgetName": "Alert_textCopy"
 }

@@ -42,11 +42,11 @@
   "mobileRightColumn": 57,
   "mobileTopRow": 38,
   "needsErrorInfo": false,
-  "onClick": "{{upload1.run().then(() => {\n  showAlert('อัพโหลดไฟล์สำเร็จ', 'success');\n  getfile1.run();\n});}}",
+  "onClick": "{{upload1.run().then(() => {\n  showAlert('อัพโหลดไฟล์สำเร็จ', 'success');\n  R_FILE_1.run();\n});}}",
   "originalBottomRow": 50,
   "originalTopRow": 46,
   "parentColumnSpace": 7.890625,
-  "parentId": "4vo25a0ywq",
+  "parentId": "5sfotkxlpm",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
@@ -59,6 +59,6 @@
   "topRow": 46,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "nezk5laxnq",
+  "widgetId": "3pla1xowhc",
   "widgetName": "Btn_Prelim_Letter_FileCopy"
 }

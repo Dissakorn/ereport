@@ -1,0 +1,17 @@
+
+INSERT INTO "budget" (
+	case_id,
+	type_id,
+	date,
+	amount,
+	state
+)
+VALUES (
+	{{ data_table.selectedRow.case_id || 0 }},
+	{{ Inp_inves_budget_type.selectedOptionValue || 0 }},
+	{{ Inp_inves_budget_date.selectedDate 
+		? `'${moment(Inp_inves_budget_date.selectedDate).format("YYYY-MM-DD")}'` 
+		: null }},
+	{{Inp_inves_budget_amount.text}},
+	{{ 2 }}
+);

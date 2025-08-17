@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "676e2c1104b16518b088fe23_2b7f1e52-8a9c-4fd9-9084-f2135bc7de41",
+  "gitSyncId": "686e46c8f052af62894e37fb_493fea55-3a30-473b-872d-ebb9fe9e303f",
   "id": "All Cases_R_USER_DIVISION",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
@@ -29,7 +29,7 @@
     ],
     "name": "R_USER_DIVISION",
     "pageId": "All Cases",
-    "runBehaviour": "ON_PAGE_LOAD",
-    "userSetOnLoad": true
+    "runBehaviour": "AUTOMATIC",
+    "userSetOnLoad": false
   }
 }

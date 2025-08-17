@@ -48,7 +48,7 @@
   "originalBottomRow": 16,
   "originalTopRow": 9,
   "parentColumnSpace": 1.640625,
-  "parentId": "y0hpm9kgti",
+  "parentId": "visubu5h1r",
   "parentRowSpace": 10,
   "placeholderText": "โปรดเลือก",
   "renderMode": "CANVAS",
@@ -59,6 +59,6 @@
   "topRow": 8,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "58k4zmv5ms",
+  "widgetId": "nogddold9t",
   "widgetName": "Sel_Inves_Status"
 }

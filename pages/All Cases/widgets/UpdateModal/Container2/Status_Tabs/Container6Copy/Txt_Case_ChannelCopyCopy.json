@@ -55,7 +55,7 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "overflow": "NONE",
-  "parentId": "aropldrf8b",
+  "parentId": "n4ka7s0sc4",
   "renderMode": "CANVAS",
   "rightColumn": 12,
   "text": "ช่องทางการรับเรื่อง",
@@ -66,6 +66,6 @@
   "truncateButtonColor": "#FFC13D",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "z7x1pjzrbo",
+  "widgetId": "tdrgd2z2lg",
   "widgetName": "Txt_Case_ChannelCopyCopy"
 }

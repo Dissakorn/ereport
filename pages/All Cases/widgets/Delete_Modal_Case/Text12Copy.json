@@ -16,7 +16,7 @@
   "minDynamicHeight": 4,
   "overflow": "NONE",
   "parentColumnSpace": 6.875,
-  "parentId": "95qvc3y3iu",
+  "parentId": "nnvqiw5m00",
   "parentRowSpace": 10,
   "rightColumn": 63,
   "text": "คุณยืนยันที่จะลบคดีนี้ใช่ไหม",
@@ -25,6 +25,6 @@
   "topRow": 6,
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "kzeg7kv80b",
+  "widgetId": "gmfw2x4meb",
   "widgetName": "Text12Copy"
 }

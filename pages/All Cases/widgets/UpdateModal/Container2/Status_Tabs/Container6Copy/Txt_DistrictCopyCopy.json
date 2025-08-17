@@ -55,7 +55,7 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "overflow": "NONE",
-  "parentId": "aropldrf8b",
+  "parentId": "n4ka7s0sc4",
   "renderMode": "CANVAS",
   "rightColumn": 42,
   "text": "เขตที่รับผิดชอบ",
@@ -66,6 +66,6 @@
   "truncateButtonColor": "#FFC13D",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "hgvfik1cb6",
+  "widgetId": "2ekkuj9sb7",
   "widgetName": "Txt_DistrictCopyCopy"
 }

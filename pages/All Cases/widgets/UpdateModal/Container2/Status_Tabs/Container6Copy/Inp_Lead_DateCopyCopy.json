@@ -7,7 +7,7 @@
   "closeOnSelection": true,
   "dateFormat": "DD/MM/YY",
   "datePickerType": "DATE_PICKER",
-  "defaultDate": "{{data_table.selectedRow.lead_date}}",
+  "defaultDate": "{{R_CASE.data[0].lead_date}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -47,7 +47,7 @@
   "mobileTopRow": 7,
   "needsErrorInfo": false,
   "parentColumnSpace": 13.701171875,
-  "parentId": "aropldrf8b",
+  "parentId": "n4ka7s0sc4",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -57,6 +57,6 @@
   "topRow": 39,
   "type": "DATE_PICKER_WIDGET2",
   "version": 2,
-  "widgetId": "a0yaqcgvtc",
+  "widgetId": "szzlpvuaza",
   "widgetName": "Inp_Lead_DateCopyCopy"
 }

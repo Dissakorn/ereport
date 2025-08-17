@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "676e2c1104b16518b088fe23_3e08ebed-f59c-40e2-8ecb-f806bf7a7acc",
+  "gitSyncId": "686e46c8f052af62894e37fb_6b978f41-319b-4d8d-be3d-a21ce5d8e24b",
   "id": "All Cases_upload1",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE public.\"case\"\nSET file_1 = {{Inp_Prelim_Letter_File.files[0].data}}\nWHERE case_id = {{data_table.selectedRow.case_id}};\n",
+      "body": "UPDATE public.\"case\"\nSET \n    file_1 = {{ Inp_Prelim_Letter_File.selectedFiles.length > 0 ? \"'\" + Inp_Prelim_Letter_File.selectedFiles[0].data + \"'\" : \"NULL\" }},\n    file_1_name = {{ Inp_Prelim_Letter_File.selectedFiles.length > 0 ? \"'\" + Inp_Prelim_Letter_File.selectedFiles[0].name + \"'\" : \"NULL\" }},\n    file_1_type = {{ Inp_Prelim_Letter_File.selectedFiles.length > 0 ? \"'\" + Inp_Prelim_Letter_File.selectedFiles[0].type + \"'\" : \"NULL\" }},\n    file_1_size = {{ Inp_Prelim_Letter_File.selectedFiles.length > 0 ? Inp_Prelim_Letter_File.selectedFiles[0].size : \"NULL\" }}\nWHERE case_id = {{ data_table.selectedRow.case_id }};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

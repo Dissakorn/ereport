@@ -12,7 +12,7 @@ export default {
 
 	getBackgroundColor: (row) => {
 		const currentTime = new Date();
-		const settings = getSettings.data[0];
+		const settings = R_SETTING.data[0];
 		
 		// Special Case: Case type is 2
 		if (row.case_type == 2) {

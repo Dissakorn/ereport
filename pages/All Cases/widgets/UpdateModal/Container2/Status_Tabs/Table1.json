@@ -85,7 +85,7 @@
   "mobileTopRow": 3,
   "needsErrorInfo": false,
   "parentColumnSpace": 15.625,
-  "parentId": "c3fyhxwm8h",
+  "parentId": "kvdlyu1rsr",
   "parentRowSpace": 10,
   "primaryColumns": {
     "case_number": {
@@ -134,6 +134,6 @@
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",
-  "widgetId": "zzk89xqkl3",
+  "widgetId": "hrvezb4apv",
   "widgetName": "Table1"
 }

@@ -22,13 +22,13 @@
   "labelTextSize": "0.875rem",
   "leftColumn": 33,
   "onClick": "{{closeModal('Delete_Modal')}}",
-  "parentId": "95qvc3y3iu",
+  "parentId": "nnvqiw5m00",
   "recaptchaType": "V3",
   "rightColumn": 45,
   "text": "ยกเลิก",
   "topRow": 11,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "ty8f6equz6",
+  "widgetId": "gyhkmy7gn4",
   "widgetName": "Button1Copy1"
 }

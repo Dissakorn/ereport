@@ -1,6 +1,6 @@
 {
   "borderRadius": "0.375rem",
-  "bottomRow": 107,
+  "bottomRow": 118,
   "boxShadow": "none",
   "canEscapeKeyClose": true,
   "canOutsideClickClose": true,
@@ -20,14 +20,14 @@
       "leftColumn": 0,
       "minHeight": 176,
       "parentColumnSpace": 1,
-      "parentId": "608w17h326",
+      "parentId": "thetpp0a71",
       "parentRowSpace": 1,
       "rightColumn": 453.1875,
       "shouldScrollContents": false,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "95qvc3y3iu",
+      "widgetId": "nnvqiw5m00",
       "widgetName": "Canvas3Copy1"
     }
   ],
@@ -46,10 +46,10 @@
   "parentRowSpace": 10,
   "rightColumn": 45,
   "shouldScrollContents": false,
-  "topRow": 83,
+  "topRow": 94,
   "type": "MODAL_WIDGET",
   "version": 2,
-  "widgetId": "608w17h326",
+  "widgetId": "thetpp0a71",
   "widgetName": "Delete_Modal_Case",
   "width": 456
 }

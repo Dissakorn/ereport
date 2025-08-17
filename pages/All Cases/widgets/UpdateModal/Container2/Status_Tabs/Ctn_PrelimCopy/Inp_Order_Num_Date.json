@@ -7,16 +7,16 @@
   "closeOnSelection": true,
   "dateFormat": "DD/MM/YYYY",
   "datePickerType": "DATE_PICKER",
-  "defaultDate": "{{data_table.selectedRow.commmand_number_date}}",
+  "defaultDate": "{{R_CASE.data[0].commmand_number_date}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
-      "key": "defaultDate"
+      "key": "isDisabled"
     },
     {
-      "key": "isDisabled"
+      "key": "defaultDate"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -63,7 +63,7 @@
   "originalBottomRow": 23,
   "originalTopRow": 16,
   "parentColumnSpace": 7.890625,
-  "parentId": "y0hpm9kgti",
+  "parentId": "visubu5h1r",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -73,6 +73,6 @@
   "topRow": 15,
   "type": "DATE_PICKER_WIDGET2",
   "version": 2,
-  "widgetId": "dj7wfyyd7i",
+  "widgetId": "g83fwvzpj6",
   "widgetName": "Inp_Order_Num_Date"
 }

@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "676e2c1104b16518b088fe23_a5a13152-577a-4c83-b01a-535d043518ef",
+  "gitSyncId": "686e46c8f052af62894e37fb_8c3fe2c6-50be-4ee4-bc7e-f1a5c17ce8a9",
   "id": "All Cases_inves_budget",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
@@ -29,7 +29,7 @@
     ],
     "name": "inves_budget",
     "pageId": "All Cases",
-    "runBehaviour": "ON_PAGE_LOAD",
-    "userSetOnLoad": false
+    "runBehaviour": "MANUAL",
+    "userSetOnLoad": true
   }
 }

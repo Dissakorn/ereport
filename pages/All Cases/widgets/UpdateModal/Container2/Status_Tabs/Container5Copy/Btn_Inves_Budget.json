@@ -28,7 +28,7 @@
   "onClick": "{{I_inves_Budget.run().then(() => {\n  inves_budget.run();\n});}}",
   "originalBottomRow": 54,
   "originalTopRow": 50,
-  "parentId": "03vovabpli",
+  "parentId": "gkujlae93o",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
@@ -39,6 +39,6 @@
   "topRow": 7,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "ihcss02uyb",
+  "widgetId": "wm3m8yns36",
   "widgetName": "Btn_Inves_Budget"
 }

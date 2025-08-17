@@ -39,7 +39,7 @@
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "whsgqad5s4",
+      "parentId": "fd973y04hl",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -50,7 +50,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "97a5pznvby",
+      "widgetId": "bt0rx1z65w",
       "widgetName": "Canvas16"
     },
     {
@@ -85,7 +85,7 @@
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "whsgqad5s4",
+      "parentId": "fd973y04hl",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -96,7 +96,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "f697agfoh1",
+      "widgetId": "ambvvyyxk9",
       "widgetName": "Canvas17"
     },
     {
@@ -131,7 +131,7 @@
       "mobileTopRow": 1,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "whsgqad5s4",
+      "parentId": "fd973y04hl",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -141,7 +141,7 @@
       "topRow": 1,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "77n0f3rtxl",
+      "widgetId": "r6hsknr4lh",
       "widgetName": "Canvas22"
     },
     {
@@ -176,7 +176,7 @@
       "mobileTopRow": 1,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "whsgqad5s4",
+      "parentId": "fd973y04hl",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -186,7 +186,7 @@
       "topRow": 1,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "qg6dege30j",
+      "widgetId": "h8t9fl0huv",
       "widgetName": "Canvas25"
     }
   ],
@@ -230,7 +230,7 @@
   "mobileTopRow": 5,
   "needsErrorInfo": false,
   "parentColumnSpace": 6.9375,
-  "parentId": "jlr4w9uhh0",
+  "parentId": "4b86p1m2rj",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -241,10 +241,10 @@
     "tab1": {
       "id": "tab1",
       "index": 0,
-      "isVisible": "{{ !appsmith.store.risk }}",
+      "isVisible": "{{ R_WARNING.data.length == 0}} ",
       "label": "Tab 1",
       "positioning": "vertical",
-      "widgetId": "97a5pznvby"
+      "widgetId": "bt0rx1z65w"
     },
     "tab2": {
       "id": "tab2",
@@ -252,26 +252,26 @@
       "isVisible": "{{ appsmith.store.risk }}",
       "label": "ระยะเวลาดำเนินการ",
       "positioning": "vertical",
-      "widgetId": "f697agfoh1"
+      "widgetId": "ambvvyyxk9"
     },
     "tab2loohquus4": {
       "id": "tab2loohquus4",
       "index": 2,
       "isVisible": true,
       "label": "อายุความ",
-      "widgetId": "77n0f3rtxl"
+      "widgetId": "r6hsknr4lh"
     },
     "tabb89laxbe0w": {
       "id": "tabb89laxbe0w",
       "index": 3,
       "isVisible": true,
       "label": "หมดอายุความ",
-      "widgetId": "qg6dege30j"
+      "widgetId": "h8t9fl0huv"
     }
   },
   "topRow": 0,
   "type": "TABS_WIDGET",
   "version": 3,
-  "widgetId": "whsgqad5s4",
+  "widgetId": "fd973y04hl",
   "widgetName": "Tabs1"
 }

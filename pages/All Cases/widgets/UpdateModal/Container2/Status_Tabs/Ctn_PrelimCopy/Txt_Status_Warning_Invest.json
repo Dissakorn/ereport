@@ -56,7 +56,7 @@
   "needsErrorInfo": false,
   "overflow": "NONE",
   "parentColumnSpace": 5.921875,
-  "parentId": "y0hpm9kgti",
+  "parentId": "visubu5h1r",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -69,6 +69,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "wt5t1es8u2",
+  "widgetId": "zom8hslxpx",
   "widgetName": "Txt_Status_Warning_Invest"
 }

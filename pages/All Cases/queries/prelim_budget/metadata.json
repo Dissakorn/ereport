@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "676e2c1104b16518b088fe23_c2a78fb4-da13-456c-8061-dae0d5877094",
+  "gitSyncId": "686e46c8f052af62894e37fb_9ff3e3ac-aa31-407d-9b6d-eb27403a24db",
   "id": "All Cases_prelim_budget",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
@@ -29,7 +29,7 @@
     ],
     "name": "prelim_budget",
     "pageId": "All Cases",
-    "runBehaviour": "ON_PAGE_LOAD",
-    "userSetOnLoad": false
+    "runBehaviour": "MANUAL",
+    "userSetOnLoad": true
   }
 }

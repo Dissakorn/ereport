@@ -1,0 +1,8 @@
+SELECT 
+    case_id,
+    file_1,
+    file_1_name,
+    file_1_type,
+    file_1_size
+FROM public."case" 
+WHERE case_id = {{ data_table.selectedRow.case_id }};

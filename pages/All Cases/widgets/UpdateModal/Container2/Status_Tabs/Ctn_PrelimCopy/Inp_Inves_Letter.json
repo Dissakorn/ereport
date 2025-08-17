@@ -5,7 +5,7 @@
   "borderRadius": "0.375rem",
   "bottomRow": 50,
   "boxShadow": "none",
-  "defaultText": "{{data_table.selectedRow.inves_letter}}",
+  "defaultText": "{{R_CASE.data[0].inves_letter}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -52,7 +52,7 @@
   "originalBottomRow": 50,
   "originalTopRow": 43,
   "parentColumnSpace": 11.57177734375,
-  "parentId": "y0hpm9kgti",
+  "parentId": "visubu5h1r",
   "parentRowSpace": 10,
   "placeholderText": "",
   "renderMode": "CANVAS",
@@ -64,6 +64,6 @@
   "topRow": 43,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "63okoyj2nu",
+  "widgetId": "6nw4a9oguh",
   "widgetName": "Inp_Inves_Letter"
 }

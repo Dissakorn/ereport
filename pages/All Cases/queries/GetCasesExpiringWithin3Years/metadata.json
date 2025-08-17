@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "6872108d46877c6bf2e3ad57_a211a48d-0563-4bca-b202-47c89a46ac49",
+  "gitSyncId": "686e46c8f052af62894e37fb_2e29009c-05b3-4641-b12d-e77cfb24dbeb",
   "id": "All Cases_GetCasesExpiringWithin3Years",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
@@ -29,7 +29,7 @@
     ],
     "name": "GetCasesExpiringWithin3Years",
     "pageId": "All Cases",
-    "runBehaviour": "AUTOMATIC",
-    "userSetOnLoad": false
+    "runBehaviour": "MANUAL",
+    "userSetOnLoad": true
   }
 }

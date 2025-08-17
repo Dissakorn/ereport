@@ -7,7 +7,7 @@
   "closeOnSelection": true,
   "dateFormat": "DD/MM/YYYY",
   "datePickerType": "DATE_PICKER",
-  "defaultDate": "{{data_table.selectedRow.book_date_644}}",
+  "defaultDate": "{{R_CASE.data[0].book_date_644}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -66,7 +66,7 @@
   "originalBottomRow": 37,
   "originalTopRow": 30,
   "parentColumnSpace": 7.890625,
-  "parentId": "y0hpm9kgti",
+  "parentId": "visubu5h1r",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -76,6 +76,6 @@
   "topRow": 29,
   "type": "DATE_PICKER_WIDGET2",
   "version": 2,
-  "widgetId": "bwzu2z2nuc",
+  "widgetId": "6k5xwiznq4",
   "widgetName": "Inp_644_Book_Date"
 }

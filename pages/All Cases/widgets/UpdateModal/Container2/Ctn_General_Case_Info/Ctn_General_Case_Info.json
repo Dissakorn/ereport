@@ -38,7 +38,7 @@
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "ohu0phstw1",
+      "parentId": "7sepr5rsa5",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -46,7 +46,7 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "v6wo1t54gq",
+      "widgetId": "c0ztdyao6f",
       "widgetName": "Canvas7"
     }
   ],
@@ -73,7 +73,7 @@
   "mobileTopRow": 1,
   "needsErrorInfo": false,
   "parentColumnSpace": 4.306640625,
-  "parentId": "eg5wn6s6vm",
+  "parentId": "5lq694mer9",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -82,6 +82,6 @@
   "topRow": 0,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "ohu0phstw1",
+  "widgetId": "7sepr5rsa5",
   "widgetName": "Ctn_General_Case_Info"
 }

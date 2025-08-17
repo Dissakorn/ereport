@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "676e2c1104b16518b088fe23_b9856081-a7ff-4c56-b288-90a3df8a977b",
+  "gitSyncId": "686e46c8f052af62894e37fb_6d79e7bf-012a-4e32-978e-ecd4c43795ee",
   "id": "All Cases_JSObject2.default_next_Prelim_Status_onClick",
   "pluginId": "js-plugin",
   "pluginType": "JS",
@@ -25,7 +25,7 @@
     "fullyQualifiedName": "JSObject2.default_next_Prelim_Status_onClick",
     "name": "default_next_Prelim_Status_onClick",
     "pageId": "All Cases",
-    "runBehaviour": "ON_PAGE_LOAD",
-    "userSetOnLoad": true
+    "runBehaviour": "MANUAL",
+    "userSetOnLoad": false
   }
 }

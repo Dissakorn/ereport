@@ -55,7 +55,7 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "overflow": "NONE",
-  "parentId": "aropldrf8b",
+  "parentId": "n4ka7s0sc4",
   "renderMode": "CANVAS",
   "rightColumn": 11,
   "text": "ที่มาของสำนวน",
@@ -66,6 +66,6 @@
   "truncateButtonColor": "#FFC13D",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "njzkaaf0uz",
+  "widgetId": "9tlgfgn5r2",
   "widgetName": "Txt_Case_OriginCopyCopy"
 }

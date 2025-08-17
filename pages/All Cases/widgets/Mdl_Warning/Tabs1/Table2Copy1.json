@@ -49,7 +49,7 @@
     "months_remaining",
     "inves_investigator"
   ],
-  "columnUpdatedAt": 1752482320299,
+  "columnUpdatedAt": 1755435166123,
   "columnWidthMap": {
     "case_number": 122,
     "customColumn1": 194.00000000000003,
@@ -155,7 +155,7 @@
   "mobileTopRow": 0,
   "needsErrorInfo": false,
   "parentColumnSpace": 15.625,
-  "parentId": "77n0f3rtxl",
+  "parentId": "r6hsknr4lh",
   "parentRowSpace": 10,
   "primaryColumns": {
     "case_id": {
@@ -233,7 +233,7 @@
       "buttonStyle": "rgb(3, 179, 101)",
       "cellBackground": "#fef9c3",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table2Copy1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( R_Investigator.data.find(investigator => investigator.investigator_id == currentRow[\"prelim_investigator\"])?.name || \"-\"\n)) :  R_Investigator.data.find(investigator => investigator.investigator_id == currentRow[\"prelim_investigator\"])?.name || \"-\"\n })()}}",
+      "computedValue": "{{(() => { const tableData = Table2Copy1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( R_INVESTIGATOR.data.find(investigator => investigator.investigator_id == currentRow[\"prelim_investigator\"])?.name || \"-\"\n)) :  R_INVESTIGATOR.data.find(investigator => investigator.investigator_id == currentRow[\"prelim_investigator\"])?.name || \"-\"\n })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -370,7 +370,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "#fef9c3",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table2Copy1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( R_Investigator.data.find(investigator => investigator.investigator_id == currentRow[\"inves_investigator\"])?.name || \"-\"\n)) :  R_Investigator.data.find(investigator => investigator.investigator_id == currentRow[\"inves_investigator\"])?.name || \"-\"\n })()}}",
+      "computedValue": "{{(() => { const tableData = Table2Copy1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( R_INVESTIGATOR.data.find(investigator => investigator.investigator_id == currentRow[\"inves_investigator\"])?.name || \"-\"\n)) :  R_INVESTIGATOR.data.find(investigator => investigator.investigator_id == currentRow[\"inves_investigator\"])?.name || \"-\"\n })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -681,6 +681,6 @@
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",
-  "widgetId": "0v0df83z95",
+  "widgetId": "5amwzua0sa",
   "widgetName": "Table2Copy1"
 }

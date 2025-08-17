@@ -22,11 +22,11 @@
     }
   ],
   "isCompact": false,
-  "isDisabled": "{{ data_table.selectedRow.prelim_extension_count >= 2 }}",
+  "isDisabled": "{{ R_CASE.data[0].prelim_extension_count >= 2 }}",
   "isLoading": false,
   "isVisible": true,
   "key": "3smxbeqcx5",
-  "label": "{{ \n data_table.selectedRow.prelim_extension_count >= 2 \n    ? \"ขยายครบ 2 ครั้งแล้ว\" \n    : data_table.selectedRow.prelim_extension_count === 1 \n      ? \"กดเพื่อขยายครั้งที่ 2\" \n      : \"ขยายระยะเวลาไต่สวนเบื้องต้น\" \n}}\n",
+  "label": "{{ \n R_CASE.data[0].prelim_extension_count >= 2 \n    ? \"ขยายครบ 2 ครั้งแล้ว\" \n    : R_CASE.data[0].prelim_extension_count === 1 \n      ? \"กดเพื่อขยายครั้งที่ 2\" \n      : \"ขยายระยะเวลาไต่สวนเบื้องต้น\" \n}}\n",
   "leftColumn": 18,
   "menuColor": "#4b5c91",
   "menuItems": {
@@ -36,7 +36,7 @@
       "isDisabled": false,
       "isVisible": true,
       "label": "ยืนยันการขยาย",
-      "onClick": "{{Extension.exten_prelim();\ncloseModal(UpdateModal.name).then(() => {\n  R_CASES.run();\n});}}",
+      "onClick": "{{U_DEADLINE_PRELIM.run()\ncloseModal(UpdateModal.name).then(() => {\n  R_CASES.run();\n});}}",
       "widgetId": ""
     },
     "menuItem2": {
@@ -57,7 +57,7 @@
   "mobileTopRow": 0,
   "needsErrorInfo": false,
   "parentColumnSpace": 7.757568359375,
-  "parentId": "v6wo1t54gq",
+  "parentId": "c0ztdyao6f",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "renderMode": "CANVAS",
@@ -65,6 +65,6 @@
   "topRow": 0,
   "type": "MENU_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "tx4itv69zd",
+  "widgetId": "9fd1vil731",
   "widgetName": "MenuButton1"
 }

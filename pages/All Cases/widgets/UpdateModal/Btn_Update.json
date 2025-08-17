@@ -25,10 +25,10 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{U_CASES.run().then(() => {\n  U_CASES_2.run();\n  U_CASES.run();\n  setInterval(() => {}, 1000, '');\n  R_CASES.run();\n  closeModal(UpdateModal.name);\n});}}",
+  "onClick": "{{U_CASES.run().then(() => {\n  U_CASES_2.run();\n  setInterval(() => {}, 1000, '');\n  R_CASES.run();\n  closeModal(UpdateModal.name);\n});}}",
   "originalBottomRow": 54,
   "originalTopRow": 50,
-  "parentId": "tfv6j9z1gu",
+  "parentId": "9oell1w7mo",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
@@ -39,6 +39,6 @@
   "topRow": 80,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "is2a42cbow",
+  "widgetId": "d5egx086xu",
   "widgetName": "Btn_Update"
 }

@@ -29,14 +29,14 @@
       "leftColumn": 0,
       "minHeight": 400,
       "parentColumnSpace": 1,
-      "parentId": "dv340z6omx",
+      "parentId": "6wgb1nw9xe",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "rightColumn": 475.5,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "thzj9zrbid",
+      "widgetId": "m9fbxruvqs",
       "widgetName": "Canvas12"
     }
   ],
@@ -68,6 +68,6 @@
   "topRow": 0,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "dv340z6omx",
+  "widgetId": "6wgb1nw9xe",
   "widgetName": "Menu"
 }

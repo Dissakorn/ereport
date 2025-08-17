@@ -24,14 +24,14 @@
       "leftColumn": 0,
       "minHeight": 870,
       "parentColumnSpace": 1,
-      "parentId": "lnw09dmob4",
+      "parentId": "6rmeri6yai",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "rightColumn": 433.5,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "78ck8p7x5q",
+      "widgetId": "1y64jj9psi",
       "widgetName": "Canvas2CopyCopyCopy1"
     }
   ],
@@ -66,6 +66,6 @@
   "topRow": 0,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "lnw09dmob4",
+  "widgetId": "6rmeri6yai",
   "widgetName": "List1Copy"
 }

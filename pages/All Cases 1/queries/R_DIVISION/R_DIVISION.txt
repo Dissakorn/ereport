@@ -1,0 +1,1 @@
+SELECT * FROM public."division" where division_id>=0 and division_id<20;

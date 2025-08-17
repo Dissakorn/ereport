@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "6872108d46877c6bf2e3ad57_71b98a31-1d84-4c58-92e0-1ec3ed756fa8",
+  "gitSyncId": "686e46c8f052af62894e37fb_bf071e8e-d265-4d7a-b2fc-7c1013a07d21",
   "id": "All Cases_log_all",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
@@ -29,7 +29,7 @@
     ],
     "name": "log_all",
     "pageId": "All Cases",
-    "runBehaviour": "AUTOMATIC",
-    "userSetOnLoad": false
+    "runBehaviour": "MANUAL",
+    "userSetOnLoad": true
   }
 }

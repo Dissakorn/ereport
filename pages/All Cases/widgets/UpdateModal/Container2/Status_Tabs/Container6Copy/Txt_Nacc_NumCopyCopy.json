@@ -55,7 +55,7 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "overflow": "NONE",
-  "parentId": "aropldrf8b",
+  "parentId": "n4ka7s0sc4",
   "renderMode": "CANVAS",
   "rightColumn": 43,
   "text": "เลขติดตาม ป.ป.ช. (เลข ต.)",
@@ -66,6 +66,6 @@
   "truncateButtonColor": "#FFC13D",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "q0dctdg2li",
+  "widgetId": "xf151ebo44",
   "widgetName": "Txt_Nacc_NumCopyCopy"
 }

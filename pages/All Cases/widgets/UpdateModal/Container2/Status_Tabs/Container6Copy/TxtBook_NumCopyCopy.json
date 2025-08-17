@@ -55,7 +55,7 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "overflow": "NONE",
-  "parentId": "aropldrf8b",
+  "parentId": "n4ka7s0sc4",
   "renderMode": "CANVAS",
   "rightColumn": 11,
   "text": "เลขหนังสือ ป.ป.ช./หนังสือร้องเรียน",
@@ -66,6 +66,6 @@
   "truncateButtonColor": "#FFC13D",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "epiyh56jz2",
+  "widgetId": "c8ia01zjeu",
   "widgetName": "TxtBook_NumCopyCopy"
 }

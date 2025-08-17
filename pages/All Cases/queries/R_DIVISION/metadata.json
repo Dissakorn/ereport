@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "676e2c1104b16518b088fe23_896361c5-6a4c-4fc1-aef7-242e49e86ae6",
+  "gitSyncId": "686e46c8f052af62894e37fb_3551b441-e2a7-4c0d-b736-52adc29d4af9",
   "id": "All Cases_R_DIVISION",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM public.\"division\" where division_id>=0 and division_id<20;",
+      "body": "SELECT * FROM public.\"division\";",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

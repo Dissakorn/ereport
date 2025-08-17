@@ -67,7 +67,7 @@
   "needsErrorInfo": false,
   "onDateSelected": "{{U_INVES_DEADLINE.run()}}",
   "parentColumnSpace": 7.890625,
-  "parentId": "4vo25a0ywq",
+  "parentId": "5sfotkxlpm",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -77,6 +77,6 @@
   "topRow": 22,
   "type": "DATE_PICKER_WIDGET2",
   "version": 2,
-  "widgetId": "zcrbsyfcip",
+  "widgetId": "u5tbl8kbf2",
   "widgetName": "Inp_213_Book_Date"
 }

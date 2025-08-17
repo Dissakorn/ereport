@@ -52,7 +52,7 @@
   "optionLabel": "label",
   "optionValue": "value",
   "parentColumnSpace": 12.7001953125,
-  "parentId": "aropldrf8b",
+  "parentId": "n4ka7s0sc4",
   "parentRowSpace": 10,
   "placeholderText": "เลือกเขตที่รับผิดชอบ",
   "renderMode": "CANVAS",
@@ -63,6 +63,6 @@
   "topRow": 27,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "pdg1y8jn9d",
+  "widgetId": "0ag5g0gkdd",
   "widgetName": "Sel_DistrictCopyCopy"
 }

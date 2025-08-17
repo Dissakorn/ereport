@@ -35,7 +35,7 @@
   "needsErrorInfo": false,
   "overflow": "NONE",
   "parentColumnSpace": 10.716850280761719,
-  "parentId": "tfv6j9z1gu",
+  "parentId": "9oell1w7mo",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -48,6 +48,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "asxq3p1ej2",
+  "widgetId": "0orcfw2493",
   "widgetName": "Txt_Case_Initial_Date1"
 }

@@ -12,9 +12,6 @@
     },
     {
       "key": "isVisible"
-    },
-    {
-      "key": "isDisabled"
     }
   ],
   "dynamicPropertyPathList": [
@@ -31,7 +28,7 @@
     }
   ],
   "isDefaultClickDisabled": true,
-  "isDisabled": "{{getfile1.data[0].file_1.length==0}}",
+  "isDisabled": "",
   "isLoading": false,
   "isVisible": "{{\n  (() => {\n    // Define the valid options\n    const validOptions = [\"ส่ง ป.ป.ช.\", \"ส่งพนักงานสอบสวน\", \"ส่งต้นสังกัด\",\"คำสั่งไต่สวน\"];\n    \n    // Check if the selected option is in the valid options\n    return validOptions.includes(Sel_Prelim_Result.selectedOptionLabel);\n  })()\n}}",
   "key": "f4gvjj3t2g",
@@ -42,11 +39,11 @@
   "mobileRightColumn": 57,
   "mobileTopRow": 38,
   "needsErrorInfo": false,
-  "onClick": "{{JSObject9.downloadFile();}}",
+  "onClick": "{{R_FILE_1.run().then(() => {\n  JSObject10.viewFileInNewPage();\n  navigateTo('Page2', {}, 'NEW_WINDOW');\n});}}",
   "originalBottomRow": 50,
   "originalTopRow": 46,
   "parentColumnSpace": 7.890625,
-  "parentId": "4vo25a0ywq",
+  "parentId": "5sfotkxlpm",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
@@ -58,6 +55,6 @@
   "topRow": 46,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "9civfsdm4z",
+  "widgetId": "zfspxiz35l",
   "widgetName": "Btn_Prelim_Letter_File"
 }

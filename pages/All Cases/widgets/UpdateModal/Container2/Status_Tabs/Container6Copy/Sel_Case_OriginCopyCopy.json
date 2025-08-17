@@ -4,7 +4,7 @@
   "borderRadius": "0.375rem",
   "bottomRow": 25,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( data_table.selectedRow.source))(Sel_Case_OriginCopyCopy.options, Sel_Case_OriginCopyCopy.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( R_CASE.data[0].source))(Sel_Case_OriginCopyCopy.options, Sel_Case_OriginCopyCopy.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -43,7 +43,7 @@
   "optionLabel": "name",
   "optionValue": "code",
   "parentColumnSpace": 13.6689453125,
-  "parentId": "aropldrf8b",
+  "parentId": "n4ka7s0sc4",
   "parentRowSpace": 10,
   "placeholderText": "ที่มาของสำนวน",
   "renderMode": "CANVAS",
@@ -54,6 +54,6 @@
   "topRow": 21,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "afhlownd5o",
+  "widgetId": "9vffbetz4f",
   "widgetName": "Sel_Case_OriginCopyCopy"
 }

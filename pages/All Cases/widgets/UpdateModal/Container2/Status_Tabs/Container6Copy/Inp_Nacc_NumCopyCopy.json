@@ -5,7 +5,7 @@
   "borderRadius": "0.375rem",
   "bottomRow": 25,
   "boxShadow": "none",
-  "defaultText": "{{data_table.selectedRow.pacc_tracking_number}}",
+  "defaultText": "{{R_CASE.data[0].pacc_tracking_number}}",
   "displayName": "Input",
   "dynamicBindingPathList": [
     {
@@ -41,7 +41,7 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "parentColumnSpace": 12.01953125,
-  "parentId": "aropldrf8b",
+  "parentId": "n4ka7s0sc4",
   "parentRowSpace": 10,
   "placeholderText": "หากเป็น ม 62 ต้องกรอกเลข ต",
   "renderMode": "CANVAS",
@@ -51,6 +51,6 @@
   "type": "INPUT_WIDGET_V2",
   "validation": "",
   "version": 2,
-  "widgetId": "tr2oby1hg6",
+  "widgetId": "y7bq0axqwg",
   "widgetName": "Inp_Nacc_NumCopyCopy"
 }

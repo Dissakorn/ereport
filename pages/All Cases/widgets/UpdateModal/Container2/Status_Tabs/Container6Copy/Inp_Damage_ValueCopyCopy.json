@@ -33,7 +33,7 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "parentColumnSpace": 12.01953125,
-  "parentId": "aropldrf8b",
+  "parentId": "n4ka7s0sc4",
   "parentRowSpace": 10,
   "placeholderText": "เลขที่รับ",
   "renderMode": "CANVAS",
@@ -41,8 +41,8 @@
   "rightColumn": 30,
   "topRow": 45,
   "type": "INPUT_WIDGET_V2",
-  "validation": "{{data_table.selectedRow.damage_value}}",
+  "validation": "{{R_CASE.data[0].damage_value}}",
   "version": 2,
-  "widgetId": "4hm63vjqkb",
+  "widgetId": "0y7ipddx1k",
   "widgetName": "Inp_Damage_ValueCopyCopy"
 }

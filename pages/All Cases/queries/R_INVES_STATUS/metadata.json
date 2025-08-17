@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "676e2c1104b16518b088fe23_736f8c10-ddbb-48d2-95ab-97d7075ca768",
+  "gitSyncId": "686e46c8f052af62894e37fb_2b3a2e28-a0fd-4eb9-94d0-09175b1782d5",
   "id": "All Cases_R_INVES_STATUS",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
@@ -26,6 +26,6 @@
     "name": "R_INVES_STATUS",
     "pageId": "All Cases",
     "runBehaviour": "ON_PAGE_LOAD",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

@@ -1,0 +1,13 @@
+SELECT 
+    c.*
+FROM 
+    public."case" c
+WHERE
+-- Scenario 1: Show all cases when division is 0 or not selected
+        '{{ Slc_Division.selectedOptionValue }}' = '' 
+        OR '{{ Slc_Division.selectedOptionValue }}' IS NULL
+        OR '{{ Slc_Division.selectedOptionValue }}' = '0'
+        -- Scenario 2: Show cases where responsible_district matches selected division
+        OR c.responsible_district = '{{ Slc_Division.selectedOptionValue }}'
+ORDER BY 
+    c.received_date DESC NULLS LAST;

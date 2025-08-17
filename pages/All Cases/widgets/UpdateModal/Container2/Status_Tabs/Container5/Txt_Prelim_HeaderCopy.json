@@ -32,7 +32,7 @@
   "needsErrorInfo": false,
   "overflow": "NONE",
   "parentColumnSpace": 2.3203125,
-  "parentId": "ltiz4g1c26",
+  "parentId": "qni8poulv0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -46,6 +46,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "4ljwdr2c04",
+  "widgetId": "ulxajzceqa",
   "widgetName": "Txt_Prelim_HeaderCopy"
 }

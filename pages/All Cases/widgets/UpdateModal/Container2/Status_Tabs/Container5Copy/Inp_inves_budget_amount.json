@@ -36,7 +36,7 @@
   "mobileTopRow": 47,
   "needsErrorInfo": false,
   "parentColumnSpace": 16.40625,
-  "parentId": "03vovabpli",
+  "parentId": "gkujlae93o",
   "parentRowSpace": 10,
   "placeholderText": "0.00",
   "renderMode": "CANVAS",
@@ -47,6 +47,6 @@
   "topRow": 4,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "tfw66zupoz",
+  "widgetId": "4snj7dgwju",
   "widgetName": "Inp_inves_budget_amount"
 }

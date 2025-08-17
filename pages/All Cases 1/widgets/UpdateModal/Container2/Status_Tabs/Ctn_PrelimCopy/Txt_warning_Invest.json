@@ -1,0 +1,70 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 8,
+  "disableLink": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "textColor"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "fontSize"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "0.6rem",
+  "fontStyle": "",
+  "isLoading": false,
+  "isVisible": "{{Inp_Order_Num_Date.selectedDate.length>0}}",
+  "key": "ecope157sn",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 21,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 10,
+  "mobileTopRow": 17,
+  "needsErrorInfo": false,
+  "originalBottomRow": 9,
+  "originalTopRow": 5,
+  "overflow": "NONE",
+  "parentColumnSpace": 2.3203125,
+  "parentId": "y0hpm9kgti",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 27,
+  "shouldTruncate": false,
+  "text": "{{(() => {\n  // Retrieve the investigation status from the selected row or the selected option\n  const invesStatus = data_table.selectedRow.inves_status || Sel_Inves_Status.selectedOptionValue;\n\n// If completed, show the completion date\nif (Sel_Inves_Result.selectedOptionValue != 0) {\n  const completionDate = Inp_Inves_Result_Date.selectedDate\n    ? new Date(Inp_Inves_Result_Date.selectedDate)\n    : new Date(); // fallback to today's date\n\n  const formattedDate = completionDate.toLocaleDateString('th-TH', {\n    year: 'numeric',\n    month: 'long',\n    day: 'numeric',\n  });\n\n  return `เสร็จสิ้นเมื่อวันที่ ${formattedDate}`;\n}\n  // Parse the investigation deadline date from the selected row\n  const invesDeadline = new Date(data_table.selectedRow.inves_deadline);\n  const currentDate = new Date();\n\n  // Calculate the time difference between the current date and the investigation deadline\n  const timeDifference = invesDeadline.getTime() - currentDate.getTime();\n  const daysDifference = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));\n\n  // Format the investigation deadline date\n  const formattedInvesDeadline = invesDeadline.toLocaleDateString('th-TH', {\n    year: 'numeric',\n    month: 'long',\n    day: 'numeric',\n  });\n\n  // Determine if the case is overdue or has time remaining\n  if (daysDifference < 0) {\n    // Calculate the number of days overdue\n    const daysOverdue = Math.abs(daysDifference);\n    return `เลยกำหนดมาแล้ว ${daysOverdue} วัน \n(ครบกำหนดวันที่ ${formattedInvesDeadline})`;\n  } else {\n    return `เหลือเวลาอีก ${daysDifference} วัน \n(ครบกำหนดวันที่ ${formattedInvesDeadline})`;\n  }\n})();\n}}",
+  "textAlign": "LEFT",
+  "textColor": "{{appsmith.theme.colors.primaryColor}}",
+  "topRow": 4,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "dzfpt12byl",
+  "widgetName": "Txt_warning_Invest"
+}

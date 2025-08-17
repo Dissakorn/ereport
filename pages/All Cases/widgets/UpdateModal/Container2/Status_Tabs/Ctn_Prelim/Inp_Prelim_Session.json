@@ -5,7 +5,7 @@
   "borderRadius": "0.375rem",
   "bottomRow": 43,
   "boxShadow": "none",
-  "defaultText": "{{data_table.selectedRow.prelim_session}}",
+  "defaultText": "{{R_CASE.data[0].prelim_session}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -55,7 +55,7 @@
   "originalBottomRow": 43,
   "originalTopRow": 36,
   "parentColumnSpace": 7.5,
-  "parentId": "4vo25a0ywq",
+  "parentId": "5sfotkxlpm",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
@@ -65,6 +65,6 @@
   "topRow": 36,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "ah5tydbs2n",
+  "widgetId": "p1tcihogfk",
   "widgetName": "Inp_Prelim_Session"
 }

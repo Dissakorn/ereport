@@ -40,7 +40,7 @@
   "optionLabel": "name",
   "optionValue": "code",
   "parentColumnSpace": 16.40625,
-  "parentId": "03vovabpli",
+  "parentId": "gkujlae93o",
   "parentRowSpace": 10,
   "placeholderText": "เลือกประเภท",
   "renderMode": "CANVAS",
@@ -51,6 +51,6 @@
   "topRow": 4,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "stw1y0goyx",
+  "widgetId": "i8q8oj2v9u",
   "widgetName": "Inp_inves_budget_type"
 }
