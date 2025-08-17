@@ -24,7 +24,7 @@
   "mobileRightColumn": 41,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onClick": "{{R_WARNING.run().then(() => {\n  showModal(Mdl_Warning.name);\n});}}",
+  "onClick": "{{R_WARNING.run().then(() => {\n  GetCasesExpiringWithin3Years.run();\n  showModal(Mdl_Warning.name);\n});}}",
   "parentColumnSpace": 13.9814453125,
   "parentId": "1y64jj9psi",
   "parentRowSpace": 10,

@@ -241,7 +241,7 @@
     "tab1": {
       "id": "tab1",
       "index": 0,
-      "isVisible": "{{ !appsmith.store.risk }}",
+      "isVisible": "{{ R_WARNING.data.length == 0}} ",
       "label": "Tab 1",
       "positioning": "vertical",
       "widgetId": "bt0rx1z65w"

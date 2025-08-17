@@ -52,14 +52,15 @@
     "customColumn2",
     "customColumn3",
     "customColumn9",
-    "source"
+    "source",
+    "prelim_investigator"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1755435166114,
+  "columnUpdatedAt": 1755436820154,
   "columnWidthMap": {
     "book_date_644": 177,
     "case_number": 100,
@@ -255,6 +256,9 @@
     },
     {
       "key": "primaryColumns.source.computedValue"
+    },
+    {
+      "key": "primaryColumns.prelim_investigator.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -578,7 +582,7 @@
       "buttonStyle": "rgb(3, 179, 101)",
       "cellBackground": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( JSObject8.getBackgroundColor(currentRow) )) :  JSObject8.getBackgroundColor(currentRow)  })()}}",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( R_Investigator.data.find(investigator => investigator.investigator_id == currentRow[\"prelim_investigator\"])?.name || \"-\"\n)) :  R_Investigator.data.find(investigator => investigator.investigator_id == currentRow[\"prelim_investigator\"])?.name || \"-\"\n })()}}",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( R_INVESTIGATOR.data.find(investigator => investigator.investigator_id == currentRow[\"prelim_investigator\"])?.name || \"-\"\n)) :  R_INVESTIGATOR.data.find(investigator => investigator.investigator_id == currentRow[\"prelim_investigator\"])?.name || \"-\"\n })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -1117,6 +1121,40 @@
       "label": "prelim_extension",
       "notation": "standard",
       "originalId": "prelim_extension",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "prelim_investigator": {
+      "alias": "prelim_investigator",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"prelim_investigator\"])) : prelim_investigator })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "prelim_investigator",
+      "index": 19,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "prelim_investigator",
+      "notation": "standard",
+      "originalId": "prelim_investigator",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

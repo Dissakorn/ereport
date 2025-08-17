@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "686e46c8f052af62894e37fb_f0080ddd-0625-478c-9e04-3deae3bf8a5b",
-  "id": "Page1_R_INVESTIGATOR",
+  "gitSyncId": "686e46c8f052af62894e37fb_15c39b3f-7a36-46f0-bb19-7ca59d7d9dfd",
+  "id": "Page1_R_CASE",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT investigator_id, name FROM public.\"investigator\";",
+      "body": "SELECT * FROM public.\"case\" WHERE case_id = {{data_table.selectedRow.case_id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,10 +22,14 @@
       "name": "mainDB",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [],
-    "name": "R_INVESTIGATOR",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "name": "R_CASE",
     "pageId": "Page1",
-    "runBehaviour": "ON_PAGE_LOAD",
-    "userSetOnLoad": true
+    "runBehaviour": "MANUAL",
+    "userSetOnLoad": false
   }
 }

@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "686e46c8f052af62894e37fb_f0080ddd-0625-478c-9e04-3deae3bf8a5b",
-  "id": "Page1_R_INVESTIGATOR",
+  "gitSyncId": "686e46c8f052af62894e37fb_9139f41e-d229-426b-890b-fa33829fee02",
+  "id": "Page1_R_PRELIM_STATUS",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT investigator_id, name FROM public.\"investigator\";",
+      "body": "SELECT * FROM public.status_prelim ORDER BY status_id ASC;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -23,7 +23,7 @@
       "pluginId": "postgres-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "R_INVESTIGATOR",
+    "name": "R_PRELIM_STATUS",
     "pageId": "Page1",
     "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": true
