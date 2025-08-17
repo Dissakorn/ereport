@@ -25,7 +25,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{U_CASES.run().then(() => {\n  I_Prelim_Budget.run();\n  prelim_budget.run();\n});}}",
+  "onClick": "{{I_Prelim_Budget.run().then(() => {\n  prelim_budget.run();\n});}}",
   "originalBottomRow": 54,
   "originalTopRow": 50,
   "parentId": "qni8poulv0",
