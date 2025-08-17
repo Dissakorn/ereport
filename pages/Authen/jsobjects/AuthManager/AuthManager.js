@@ -133,7 +133,7 @@ export default {
                 navigateTo("ChangePasswordPage");
             } else {
                 showAlert(`\n\nการลงชื่อเข้าใช้สำเร็จ ยินดีต้อนรับ\n\n`, "success");
-                // navigateTo("Home Page"); // Changed to match your navigation
+                navigateTo("Home Page"); // Changed to match your navigation
             }
 
         } catch (error) {
