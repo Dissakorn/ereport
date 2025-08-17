@@ -1,0 +1,70 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "0.375rem",
+  "bottomRow": 43,
+  "boxShadow": "none",
+  "defaultText": "{{data_table.selectedRow.inves_session}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "defaultText"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "TEXT",
+  "isDisabled": "{{\n  (() => {\n    return Inp_Prelim_Letter.text.len>0 ? true : false;\n  })()\n}}",
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "{{\n  (() => {\n    return (Sel_Inves_Status.selectedOptionLabel === 'มีมติแล้ว') ? true : false;\n  })()\n}}\n",
+  "key": "6pwtqwlmzg",
+  "label": "วาระ",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 56,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 23,
+  "mobileLeftColumn": 32,
+  "mobileRightColumn": 52,
+  "mobileTopRow": 16,
+  "needsErrorInfo": false,
+  "originalBottomRow": 44,
+  "originalTopRow": 37,
+  "parentColumnSpace": 7.5,
+  "parentId": "visubu5h1r",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "showStepArrows": false,
+  "topRow": 36,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "r7db62x08u",
+  "widgetName": "Inp_Inves_Session"
+}

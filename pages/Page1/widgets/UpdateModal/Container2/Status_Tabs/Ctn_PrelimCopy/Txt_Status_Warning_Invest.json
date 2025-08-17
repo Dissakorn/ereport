@@ -1,0 +1,74 @@
+{
+  "animateLoading": true,
+  "backgroundColor": "{{\n(() => {\n  // Retrieve the selected date from the Inp_Order_Num_Date widget\n  const selectedDate = new Date(data_table.selectedRow.inves_deadline);\n\n  // Validate the selected date\n  if (!selectedDate) {\n    return 'white'; // Default to white background if no date is selected\n  }\n\n  const invesDeadline = new Date(selectedDate);\n  const currentTime = new Date().getTime();\n\n  // Check if the date is valid\n  if (isNaN(invesDeadline.getTime())) {\n    return 'white'; // Default to white background if the date is invalid\n  }\n\n  // Check if the investigation status is 'มีมติแล้ว' (status code 7)\n  if (Sel_Inves_Result.selectedOptionValue != 0) {\n    return 'green'; // Green background for completed status\n  }\n\n  // Determine if the current date is past the investigation deadline\n  if (currentTime > invesDeadline.getTime()) {\n    return 'red'; // Red background for overdue\n  } else {\n    return 'white'; // White background for ongoing\n  }\n})()\n}}\n",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 8,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    },
+    {
+      "key": "textColor"
+    },
+    {
+      "key": "backgroundColor"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "textColor"
+    },
+    {
+      "key": "backgroundColor"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": "{{\n  (() => {\n    return data_table.selectedRow.inves_deadline ? true : false;\n  })()\n}}",
+  "key": "ecope157sn",
+  "leftColumn": 27,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 49,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 4,
+  "needsErrorInfo": false,
+  "overflow": "NONE",
+  "parentColumnSpace": 5.921875,
+  "parentId": "visubu5h1r",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "shouldTruncate": false,
+  "text": "{{\n(() => {\n  // Retrieve the investigation status from the selected row or the selected option\n  const invesStatus = data_table.selectedRow.inves_status || Sel_Inves_Status.selectedOptionValue;\n\n  // Check if the investigation is completed\n  if (Sel_Inves_Result.selectedOptionValue != 0) {\n    return 'เสร็จสิ้นกระบวนการไต่สวนชี้มูล';\n  }\n\n  // Parse the investigation deadline date from the selected row\n  const invesDeadline = new Date(data_table.selectedRow.inves_deadline);\n  const currentDate = new Date();\n\n  // Calculate the time difference between the current date and the investigation deadline\n  const timeDifference = invesDeadline.getTime() - currentDate.getTime();\n  const daysDifference = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));\n\n  // Determine if the case is overdue or has time remaining\n  if (daysDifference < 0) {\n    const daysOverdue = Math.abs(daysDifference);\n    return `เลยกำหนดมาแล้ว ${daysOverdue} วัน`;\n  } else {\n    return 'ปกติ';\n  }\n})()\n}}\n",
+  "textAlign": "CENTER",
+  "textColor": "{{\n(() => {\n  // Retrieve the selected date from the Inp_Order_Num_Date widget\n  const selectedDate = new Date(data_table.selectedRow.inves_deadline);\n\n  // Validate the selected date\n  if (!selectedDate) {\n    return 'black'; // Default to black text if no date is selected\n  }\n\n  const invesDeadline = new Date(selectedDate);\n  const currentTime = new Date().getTime();\n\n  // Check if the date is valid\n  if (isNaN(invesDeadline.getTime())) {\n    return 'black'; // Default to black text if the date is invalid\n  }\n\n  // Check if the investigation status is 'มีมติแล้ว' (status code 7)\n  if (Sel_Inves_Result.selectedOptionValue != 0) {\n    return 'white'; // White text for completed status\n  }\n\n  // Determine if the current date is past the investigation deadline\n  if (currentTime > invesDeadline.getTime()) {\n    return 'white'; // White text for overdue\n  } else {\n    return 'black'; // Black text for ongoing\n  }\n})()\n}}\n",
+  "topRow": 4,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "zom8hslxpx",
+  "widgetName": "Txt_Status_Warning_Invest"
+}
