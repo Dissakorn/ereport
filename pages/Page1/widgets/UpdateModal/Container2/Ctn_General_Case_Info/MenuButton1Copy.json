@@ -32,7 +32,7 @@
   "isLoading": false,
   "isVisible": "{{\n  (() => {\n    return (Sel_Prelim_Result.selectedOptionValue == 2) ? true : false;\n  })()\n}}",
   "key": "3smxbeqcx5",
-  "label": "{{ data_table.selectedRow.inves_extension === true \n        ? \"ขยายแล้ว\" \n        : \"ขยายระยะเวลาไต่สวนชี้มูล\" \n}}\n",
+  "label": "{{ R_CASE.data[0].inves_extension === true \n        ? \"ขยายแล้ว\" \n        : \"ขยายระยะเวลาไต่สวนชี้มูล\" \n}}\n",
   "leftColumn": 51,
   "menuColor": "#4b5c91",
   "menuItems": {

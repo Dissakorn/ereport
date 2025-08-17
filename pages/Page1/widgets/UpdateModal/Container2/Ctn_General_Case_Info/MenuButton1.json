@@ -22,11 +22,11 @@
     }
   ],
   "isCompact": false,
-  "isDisabled": "{{ data_table.selectedRow.prelim_extension_count >= 2 }}",
+  "isDisabled": "{{ R_CASE.data[0].prelim_extension_count >= 2 }}",
   "isLoading": false,
   "isVisible": true,
   "key": "3smxbeqcx5",
-  "label": "{{ \n data_table.selectedRow.prelim_extension_count >= 2 \n    ? \"ขยายครบ 2 ครั้งแล้ว\" \n    : data_table.selectedRow.prelim_extension_count === 1 \n      ? \"กดเพื่อขยายครั้งที่ 2\" \n      : \"ขยายระยะเวลาไต่สวนเบื้องต้น\" \n}}\n",
+  "label": "{{ \n R_CASE.data[0].prelim_extension_count >= 2 \n    ? \"ขยายครบ 2 ครั้งแล้ว\" \n    : R_CASE.data[0].prelim_extension_count === 1 \n      ? \"กดเพื่อขยายครั้งที่ 2\" \n      : \"ขยายระยะเวลาไต่สวนเบื้องต้น\" \n}}\n",
   "leftColumn": 18,
   "menuColor": "#4b5c91",
   "menuItems": {
