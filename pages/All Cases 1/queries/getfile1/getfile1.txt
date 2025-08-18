@@ -1,1 +1,0 @@
-SELECT file_1 FROM public."case" WHERE case_id = {{data_table.selectedRow.case_id}};

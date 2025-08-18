@@ -1,5 +1,0 @@
-UPDATE public."status_inves" SET
-		"name" = '{{update_form.fieldState.name.isVisible ? update_form.formData.name : update_form.sourceData.name}}',
-		"type" = '{{update_form.fieldState.type.isVisible ? update_form.formData.type : update_form.sourceData.type}}',
-    "leadtime" = '{{update_form.fieldState.leadtime.isVisible ? update_form.formData.leadtime : update_form.sourceData.leadtime}}'
-WHERE "status_id" = {{data_table.selectedRow.status_id}};

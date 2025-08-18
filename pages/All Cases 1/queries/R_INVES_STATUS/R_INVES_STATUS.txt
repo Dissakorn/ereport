@@ -1,1 +1,0 @@
-SELECT * FROM public."status_inves" order by status_id asc;

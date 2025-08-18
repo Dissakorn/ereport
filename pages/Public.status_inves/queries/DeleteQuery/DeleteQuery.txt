@@ -1,2 +1,0 @@
-DELETE FROM public."status_inves"
-  WHERE "status_id" = {{data_table.triggeredRow.status_id}};

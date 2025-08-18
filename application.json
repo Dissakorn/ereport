@@ -51,10 +51,6 @@
       "isDefault": true
     },
     {
-      "id": "All Cases 1",
-      "isDefault": false
-    },
-    {
       "id": "Submit new order",
       "isDefault": false
     },
@@ -64,14 +60,6 @@
     },
     {
       "id": "Public.case",
-      "isDefault": false
-    },
-    {
-      "id": "Public.status_inves",
-      "isDefault": false
-    },
-    {
-      "id": "Public.status_prelim",
       "isDefault": false
     },
     {

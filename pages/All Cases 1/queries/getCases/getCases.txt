@@ -1,7 +1,0 @@
-SELECT *
-FROM public.case
-WHERE (
-  (prelim_result != 2 AND prelim_deadline <= CURRENT_DATE + prelim_warning_days::int)
-  OR
-  (prelim_result = 2 AND inves_deadline <= CURRENT_DATE + inves_warning_days::int)
-)

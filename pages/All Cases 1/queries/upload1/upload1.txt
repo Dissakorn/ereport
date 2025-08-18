@@ -1,3 +1,0 @@
-UPDATE public."case"
-SET file_1 = {{Inp_Prelim_Letter_File.files[0].data}}
-WHERE case_id = {{data_table.selectedRow.case_id}};

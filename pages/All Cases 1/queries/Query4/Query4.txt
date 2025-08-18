@@ -1,2 +1,0 @@
-ALTER TABLE "public"."case"
-ADD COLUMN "inves_round" varchar(50);
