@@ -1,0 +1,27 @@
+SELECT 
+    d.name AS division_name,
+    -- Prelim Status Counts
+    COUNT(CASE WHEN c.prelim_status = 1 THEN 1 END) AS "ระหว่างมอบหมายเขตปราบ",
+    COUNT(CASE WHEN c.prelim_status = 2 THEN 1 END) AS "ระหว่างมอบหมายนักสืบ",
+    COUNT(CASE WHEN c.prelim_status = 3 THEN 1 END) AS "ระหว่างไต่สวนเบื้องต้น",
+    COUNT(CASE WHEN c.prelim_status = 4 THEN 1 END) AS "ระหว่างเสนอเลขาลงนาม 213",
+    COUNT(CASE WHEN c.prelim_status = 5 THEN 1 END) AS "เสนอคณะอนุฯสนับสนุน",
+    COUNT(CASE WHEN c.prelim_status = 6 THEN 1 END) AS "แล้วเสร็จเลขาลงนาม 213",
+    COUNT(CASE WHEN c.prelim_status = 7 THEN 1 END) AS "เสนอคณะอนุฯกลั่นกรองชั้นไต่สวนเบื้องต้น",
+    COUNT(CASE WHEN c.prelim_status = 8 THEN 1 END) AS "ระหว่างรอเสนอคณะกรรมการชั้นไต่สวนเบื้องต้น",
+    COUNT(CASE WHEN c.prelim_status = 9 THEN 1 END) AS "มีมติชั้นไต่สวนเบื้องต้นแล้ว",
+    -- Investigation Status Counts  
+    COUNT(CASE WHEN c.inves_status = 1 THEN 1 END) AS "รอคำสั่งไต่สวนชี้มูล",
+    COUNT(CASE WHEN c.inves_status = 2 THEN 1 END) AS "ระหว่างไต่สวนชี้มูล",
+    COUNT(CASE WHEN c.inves_status = 3 THEN 1 END) AS "เสนอรายงานไต่สวน 644",
+    COUNT(CASE WHEN c.inves_status = 5 THEN 1 END) AS "เสนอคณะอนุฯกลั่นกรองชั้นไต่ฯ (บห.กบค.)",
+    COUNT(CASE WHEN c.inves_status = 6 THEN 1 END) AS "ระหว่างรอเสนอคณะกรรมการชั้นไต่สวนชี้มูล",
+    COUNT(CASE WHEN c.inves_status = 7 THEN 1 END) AS "มีมติชั้นไต่สวนชี้มูลแล้ว",
+    -- Totals
+    COUNT(CASE WHEN c.prelim_status IS NOT NULL AND c.prelim_status != 0 THEN 1 END) AS "รวมเบื้องต้น",
+    COUNT(CASE WHEN c.inves_status IS NOT NULL AND c.inves_status != 0 THEN 1 END) AS "รวมชี้มูล"
+FROM 
+    public.division d
+LEFT JOIN public."case" c ON c.responsible_district = d.division_id::TEXT
+GROUP BY d.division_id, d.name
+ORDER BY d.division_id;

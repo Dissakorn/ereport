@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "0.375rem",
   "borderWidth": "1",
-  "bottomRow": 70,
+  "bottomRow": 69,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "cachedTableData": {},
   "canFreezeColumn": true,
@@ -66,10 +66,10 @@
       "key": "primaryColumns.count.computedValue"
     },
     {
-      "key": "cellBackground"
+      "key": "primaryColumns.status_name.cellBackground"
     },
     {
-      "key": "primaryColumns.status_name.cellBackground"
+      "key": "cellBackground"
     },
     {
       "key": "primaryColumns.count.cellBackground"
@@ -95,17 +95,15 @@
   "isVisibleSearch": false,
   "key": "rieumki08q",
   "label": "Data",
-  "leftColumn": 1,
+  "leftColumn": 32,
   "minWidth": 450,
   "mobileBottomRow": 30,
   "mobileLeftColumn": 1,
   "mobileRightColumn": 35,
   "mobileTopRow": 2,
   "needsErrorInfo": false,
-  "originalBottomRow": 71,
-  "originalTopRow": 10,
   "parentColumnSpace": 15.4755859375,
-  "parentId": "ykrdf3a4f0",
+  "parentId": "a3uqowrqc7",
   "parentRowSpace": 10,
   "primaryColumns": {
     "count": {
@@ -114,7 +112,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
       "columnType": "number",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"count\"])) : count })()}}",
+      "computedValue": "{{(() => { const tableData = Table1CopyCopy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"count\"])) : count })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -146,11 +144,12 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table1.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"status_name\"])) : status_name })()}}",
+      "computedValue": "{{(() => { const tableData = Table1CopyCopy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"status_name\"])) : status_name })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "",
       "horizontalAlignment": "CENTER",
       "id": "status_name",
       "index": 0,
@@ -175,15 +174,15 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 32,
+  "rightColumn": 63,
   "searchKey": "",
-  "tableData": "{{prelim.data}}",
+  "tableData": "{{inves.data}}",
   "textSize": "1rem",
-  "topRow": 9,
+  "topRow": 8,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",
-  "widgetId": "od1uedqwrz",
-  "widgetName": "Table1"
+  "widgetId": "ec4gnm1930",
+  "widgetName": "Table1CopyCopy"
 }

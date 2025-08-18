@@ -23,7 +23,7 @@
   "mobileRightColumn": 19,
   "mobileTopRow": 100,
   "needsErrorInfo": false,
-  "onClick": "{{R_DIVISION.run().then(() => {\n  inves.run();\n  prelim.run();\n  total.run();\n});}}",
+  "onClick": "{{R_DIVISION.run().then(() => {\n  inves.run();\n  prelim.run();\n  total.run();\n  comparing_division.run();\n});}}",
   "parentColumnSpace": 19.8125,
   "parentId": "hyg51toi9b",
   "parentRowSpace": 10,
