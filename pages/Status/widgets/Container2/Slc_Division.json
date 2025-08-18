@@ -33,7 +33,7 @@
       "key": "onOptionChange"
     }
   ],
-  "isDisabled": "{{appsmith.store.division_id != 0 || appsmith.store.division_id != 99}}",
+  "isDisabled": "{{appsmith.store.division_id != 0 || appsmith.store.user_type_id != 99}}",
   "isFilterable": false,
   "isLoading": false,
   "isRequired": true,
