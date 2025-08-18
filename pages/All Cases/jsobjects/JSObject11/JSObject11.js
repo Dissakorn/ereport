@@ -6,9 +6,9 @@ export default {
 		try {
 			await R_DIVISION.run();
 			await R_CASES.run();
-			showAlert("ยินดีต้อนรับ", "success");
+			// showAlert("ยินดีต้อนรับ", "success");
 		} catch (error) {
-			showAlert("Error running queries: " + error.message, "การโหลดข้อมูลล้มเหลว");
+			showAlert("Error running queries: " + error.message, "การโหลดข้อมูลล้มเหลวโปรดลองใหม่");
 		}
 	}
 }
