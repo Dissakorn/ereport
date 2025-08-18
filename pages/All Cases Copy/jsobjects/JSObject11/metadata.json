@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "686e46c8f052af62894e37fb_7e14a7c0-3daf-4001-9461-ad4268ba1b5a",
+  "id": "All Cases Copy_JSObject11",
+  "unpublishedCollection": {
+    "name": "JSObject11",
+    "pageId": "All Cases Copy",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

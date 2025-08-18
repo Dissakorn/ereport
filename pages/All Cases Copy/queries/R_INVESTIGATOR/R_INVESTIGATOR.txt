@@ -1,0 +1,1 @@
+SELECT investigator_id, name FROM public."investigator";

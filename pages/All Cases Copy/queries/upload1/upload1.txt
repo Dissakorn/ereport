@@ -1,0 +1,7 @@
+UPDATE public."case"
+SET 
+    file_1 = {{ Inp_Prelim_Letter_File.selectedFiles.length > 0 ? "'" + Inp_Prelim_Letter_File.selectedFiles[0].data + "'" : "NULL" }},
+    file_1_name = {{ Inp_Prelim_Letter_File.selectedFiles.length > 0 ? "'" + Inp_Prelim_Letter_File.selectedFiles[0].name + "'" : "NULL" }},
+    file_1_type = {{ Inp_Prelim_Letter_File.selectedFiles.length > 0 ? "'" + Inp_Prelim_Letter_File.selectedFiles[0].type + "'" : "NULL" }},
+    file_1_size = {{ Inp_Prelim_Letter_File.selectedFiles.length > 0 ? Inp_Prelim_Letter_File.selectedFiles[0].size : "NULL" }}
+WHERE case_id = {{ data_table.selectedRow.case_id }};

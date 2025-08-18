@@ -1,0 +1,2 @@
+DELETE FROM public."budget"
+  WHERE "id" = {{tbl_inves_budget.triggeredRow.id}};

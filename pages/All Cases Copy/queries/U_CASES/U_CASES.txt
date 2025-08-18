@@ -1,0 +1,56 @@
+SELECT set_config('app.current_user', '{{appsmith.store.name}}', true);
+
+UPDATE public."case" 
+SET
+  "prelim_status" = {{ Sel_Prelim_Status.selectedOptionValue || 0 }},
+  "prelim_result" = {{ Sel_Prelim_Result.selectedOptionValue || 0 }},
+  "book_num_213" = '{{ Inp_213_Book_Num.text || '' }}',
+  "book_date_213" = {{ Inp_213_Book_Date.selectedDate 
+    ? "'" + moment(Inp_213_Book_Date.selectedDate).format("YYYY-MM-DD") + "'" 
+    : null }},
+  "book_sign_date_213" = {{ Inp_213_Book_Sign_Date.selectedDate 
+    ? "'" + moment(Inp_213_Book_Sign_Date.selectedDate).format("YYYY-MM-DD") + "'" 
+    : null }},
+  "prelim_round" = '{{ Inp_Prelim_Round.text || 0 }}',
+  "prelim_session" = '{{ Inp_Prelim_Session.text || '' }}',
+  "prelim_letter" = '{{ Inp_Prelim_Letter.text || '' }}',
+  "prelim_evidence" = '{{ Inp_Prelim_Evidence.text || '' }}',
+  "prelim_investigator" = {{ Sel_Prelim_Respon.selectedOptionValue || 0 }},
+  "prelim_result_date" = {{ Inp_Prelim_Result_Date.selectedDate 
+    ? "'" + moment(Inp_Prelim_Result_Date.selectedDate).format("YYYY-MM-DD") + "'" 
+    : null }},
+  "command_type" = {{ Sel_Order_Type.selectedOptionValue || 0 }},
+  "command_number" = '{{ Inp_Order_Num.text || '' }}',
+  "command_year" = '{{ Inp_Order_Year.text || null }}',
+  "book_num_644" = '{{ Inp_644_Book_Num.text || '' }}',
+	"book_date_644" = {{ Inp_644_Book_Date.selectedDate 
+  ? "'" + moment(Inp_644_Book_Date.selectedDate).format("YYYY-MM-DD") + "'" 
+  : null }},
+  "inves_status" = {{ Sel_Inves_Status.selectedOptionValue || 0 }},
+  "inves_result" = {{ Sel_Inves_Result.selectedOptionValue || 0 }},
+  "inves_round" = {{ Inp_Inves_Round.text || 0 }},
+	"inves_result_date" = {{ Inp_Inves_Result_Date.selectedDate 
+    ? "'" + moment(Inp_Inves_Result_Date.selectedDate).format("YYYY-MM-DD") + "'" 
+    : null }},
+  "inves_session" = '{{ Inp_Inves_Session.text || '' }}',
+  "inves_letter" = '{{ Inp_Inves_Letter.text || '' }}',
+  "inves_prosecutor_letter" = '{{ Inp_Inevs_Prosecutor.text || '' }}',
+  "inves_evidence" = '{{ Inp_Inves_Evidence.text || '' }}',
+  "judgment" = '{{ '' }}',
+	"note_prelim" = '{{ Inp_Note1.text || '' }}',
+	"note_inves" = '{{ Inp_Note2.text || '' }}',
+  "inves_investigator" = {{ Sel_Inves_Respon.selectedOptionValue || 0 }},
+  "prelim_done" = CASE 
+    WHEN {{ Sel_Prelim_Status.selectedOptionValue || 0 }} = 8 
+         AND "prelim_done" IS NULL 
+    THEN NOW() 
+    ELSE "prelim_done" 
+  END,
+  "inves_done" = CASE 
+    WHEN {{ Sel_Inves_Status.selectedOptionValue || 0 }} = 7 
+         AND "inves_done" IS NULL 
+    THEN NOW() 
+    ELSE "inves_done" 
+  END
+WHERE 
+  case_id = {{ data_table.selectedRow.case_id || 0 }};

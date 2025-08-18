@@ -9,15 +9,10 @@ export default {
 		const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
 		return luminance > 0.5 ? '#000000' : '#ffffff';
 	},
-	
+
 	getBackgroundColor: (row) => {
 		const currentTime = new Date();
-		
-		// Use static values to avoid reactive dependency issues
-		const settings = {
-			prelim_warning: 15,    // From your table
-			invest_warning: 180    // From your table
-		};
+		const settings = R_SETTING.data[0];
 		
 		// Special Case: Case type is 2
 		if (row.case_type == 2) {
@@ -34,7 +29,7 @@ export default {
 				return '#27ae60'; // Green
 			}
 			
-			// Prelim warning period (15 days)
+			// Prelim warning period
 			if (daysUntilPrelimDeadline <= settings.prelim_warning && daysUntilPrelimDeadline >= 0) {
 				return '#fff3cd'; // Yellow/Warning
 			}
@@ -57,8 +52,8 @@ export default {
 			return '#27ae60'; // Green
 		}
 		
-		// Investigation warning period (180 days)
-		if (daysUntilInvesDeadline <= settings.invest_warning && daysUntilInvesDeadline >= 0) {
+		// Investigation warning period
+		if (daysUntilInvesDeadline <= settings.inves_warning && daysUntilInvesDeadline >= 0) {
 			return '#fff3cd'; // Yellow/Warning
 		}
 		
@@ -70,7 +65,7 @@ export default {
 		// Investigation ongoing
 		return '#ffffff'; // White
 	},
-	
+
 	getRowColors: (row) => {
 		const bgColor = this.getBackgroundColor(row);
 		const textColor = this.getTextColor(bgColor);
@@ -78,5 +73,15 @@ export default {
 			backgroundColor: bgColor,
 			color: textColor
 		};
+	},
+
+	myFun1() {
+		// write code here
+		// this.myVar1 = [1,2,3]
+	},
+	
+	async myFun2() {
+		// use async-await or promises
+		// await storeValue('varName', 'hello world')
 	}
 }

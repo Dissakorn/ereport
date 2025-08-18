@@ -1,0 +1,15 @@
+SELECT 
+    ur.updated_at,
+    ur.user_id,
+    ur.updated_field,
+    ur.old_value,
+    ur.new_value,
+    CASE 
+        WHEN ur.updated_field LIKE 'prelim_%' THEN 'Preliminary'
+        WHEN ur.updated_field LIKE 'inves_%' THEN 'Investigation'
+        WHEN ur.updated_field LIKE 'book_%' THEN 'Documentation'
+        ELSE 'General'
+    END as category
+FROM updating_record ur
+WHERE ur.case_id = {{data_table.selectedRow.case_id}}
+ORDER BY ur.updated_at DESC;
