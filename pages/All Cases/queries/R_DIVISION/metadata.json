@@ -25,7 +25,7 @@
     "dynamicBindingPathList": [],
     "name": "R_DIVISION",
     "pageId": "All Cases",
-    "runBehaviour": "ON_PAGE_LOAD",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }
