@@ -1,0 +1,16 @@
+SELECT 
+    'รวม' AS status_name,
+    (SELECT COUNT(*) FROM public."case" c 
+     WHERE prelim_status IS NOT NULL 
+     AND prelim_status != 0
+     AND CASE 
+        WHEN {{ String(Slc_Division.selectedOptionValue) }} = '0' THEN TRUE
+        ELSE c.responsible_district = {{ String(Slc_Division.selectedOptionValue) }}
+     END) AS prelim_total,
+    (SELECT COUNT(*) FROM public."case" c 
+     WHERE inves_status IS NOT NULL 
+     AND inves_status != 0
+     AND CASE 
+        WHEN {{ String(Slc_Division.selectedOptionValue) }} = '0' THEN TRUE
+        ELSE c.responsible_district = {{ String(Slc_Division.selectedOptionValue) }}
+     END) AS inves_total;

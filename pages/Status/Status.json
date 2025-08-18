@@ -1,22 +1,23 @@
 {
-  "gitSyncId": "686e46c8f052af62894e37fb_074fa1a6-1197-4b45-9699-9d31995a8d75",
+  "gitSyncId": "686e46c8f052af62894e37fb_7bf0131b-eefd-4374-bf30-12ce3dda882f",
   "unpublishedPage": {
+    "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 1370,
+          "bottomRow": 860,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
-          "minHeight": 990,
+          "minHeight": 1070,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
           "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 97,
+          "snapRows": 105,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 94,
@@ -25,7 +26,7 @@
         }
       }
     ],
-    "name": "Page2",
-    "slug": "page2"
+    "name": "Status",
+    "slug": "status"
   }
 }

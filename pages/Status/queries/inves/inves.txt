@@ -1,0 +1,19 @@
+SELECT 
+    s.name AS status_name,
+    COALESCE(COUNT(c.case_id), 0) AS count
+FROM (
+    VALUES 
+        (1, 'รอคำสั่งไต่สวนชี้มูล'),
+        (2, 'ระหว่างไต่สวนชี้มูล'),
+        (3, 'เสนอรายงานไต่สวน 644'),
+        (5, 'เสนอคณะอนุฯกลั่นกรองชั้นไต่ฯ (บห.กบค.)'),
+        (6, 'ระหว่างรอเสนอคณะกรรมการชั้นไต่สวนชี้มูล'),
+        (7, 'มีมติชั้นไต่สวนชี้มูลแล้ว')
+) AS s(status_id, name)
+LEFT JOIN public."case" c ON c.inves_status = s.status_id
+    AND CASE 
+        WHEN {{ String(Slc_Division.selectedOptionValue) }} = '0' THEN TRUE
+        ELSE c.responsible_district = {{ String(Slc_Division.selectedOptionValue) }}
+    END
+GROUP BY s.status_id, s.name
+ORDER BY s.status_id;
