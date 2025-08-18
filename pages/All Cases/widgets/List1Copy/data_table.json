@@ -283,6 +283,15 @@
     },
     {
       "key": "primaryColumns.customColumn11.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn11.cellBackground"
+    },
+    {
+      "key": "primaryColumns.customColumn10.cellBackground"
+    },
+    {
+      "key": "primaryColumns.customColumn11.textColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -357,6 +366,15 @@
     },
     {
       "key": "primaryColumns.customColumn10.isDisabled"
+    },
+    {
+      "key": "primaryColumns.customColumn11.cellBackground"
+    },
+    {
+      "key": "primaryColumns.customColumn10.cellBackground"
+    },
+    {
+      "key": "primaryColumns.customColumn11.textColor"
     }
   ],
   "dynamicTriggerPathList": [
@@ -648,7 +666,7 @@
       "boxShadow": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
       "buttonColor": "#231f20",
       "buttonStyle": "rgb(3, 179, 101)",
-      "cellBackground": "",
+      "cellBackground": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( JSObject8.getBackgroundColor(currentRow) )) :  JSObject8.getBackgroundColor(currentRow)  })()}}",
       "columnType": "iconButton",
       "computedValue": "",
       "currencyCode": "USD",
@@ -687,7 +705,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "buttonStyle": "rgb(3, 179, 101)",
-      "cellBackground": "",
+      "cellBackground": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( JSObject8.getBackgroundColor(currentRow) )) :  JSObject8.getBackgroundColor(currentRow)  })()}}",
       "columnType": "text",
       "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( R_INVESTIGATOR.data.find(investigator => investigator.investigator_id == currentRow[\"inves_investigator\"])?.name || \"-\"\n)) :  R_INVESTIGATOR.data.find(investigator => investigator.investigator_id == currentRow[\"inves_investigator\"])?.name || \"-\"\n })()}}",
       "currencyCode": "USD",
@@ -710,7 +728,7 @@
       "notation": "standard",
       "originalId": "customColumn11",
       "sticky": "",
-      "textColor": "",
+      "textColor": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( JSObject8.getTextColor(JSObject8.getBackgroundColor(currentRow)) )) :  JSObject8.getTextColor(JSObject8.getBackgroundColor(currentRow))  })()}}",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
