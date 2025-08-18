@@ -2,8 +2,9 @@
   "animateLoading": true,
   "backgroundColor": "#FFFFFF",
   "borderColor": "#E0DEDE",
+  "borderRadius": "0.375rem",
   "borderWidth": "1",
-  "bottomRow": 86,
+  "bottomRow": 85,
   "boxShadow": "NONE",
   "children": [
     {
@@ -75,7 +76,7 @@
     "Layout"
   ],
   "thumbnailSVG": "https://appcdn.appsmith.com/static/media/thumbnail.6cb355b93146b5347bbb048a568ed446.svg",
-  "topRow": 9,
+  "topRow": 8,
   "type": "CONTAINER_WIDGET",
   "version": 1,
   "widgetId": "sm5mjddxs8",

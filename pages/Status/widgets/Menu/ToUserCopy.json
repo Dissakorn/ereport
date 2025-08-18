@@ -24,7 +24,7 @@
   "leftColumn": 2,
   "onClick": "{{navigateTo('Settings', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 4.021484375,
-  "parentId": "uabzmhqf2r",
+  "parentId": "qsqg333wrk",
   "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
@@ -39,6 +39,6 @@
   "topRow": 78,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "rt7934r4vk",
+  "widgetId": "yf0t78r87o",
   "widgetName": "ToUserCopy"
 }

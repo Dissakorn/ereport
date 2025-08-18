@@ -2,7 +2,7 @@
   "animateLoading": true,
   "backgroundColor": "#324479",
   "borderColor": "#E0DEDE",
-  "borderRadius": "0px",
+  "borderRadius": "0.375rem",
   "borderWidth": "1",
   "bottomRow": 85,
   "boxShadow": "none",

@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 18,
+  "bottomRow": 17,
   "boxShadow": "none",
   "defaultImage": "https://s3.us-east-2.amazonaws.com/template.appsmith.com/group-4405.svg",
   "displayName": "Image",
@@ -25,13 +25,13 @@
   "maxZoomLevel": 1,
   "objectFit": "contain",
   "parentColumnSpace": 4.021484375,
-  "parentId": "m9fbxruvqs",
+  "parentId": "zhcbpij3t1",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 18,
-  "topRow": 12,
+  "rightColumn": 17,
+  "topRow": 11,
   "type": "IMAGE_WIDGET",
   "version": 1,
-  "widgetId": "evenim50t6",
+  "widgetId": "i0167n1p8c",
   "widgetName": "Logo_Dashboard"
 }

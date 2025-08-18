@@ -15,7 +15,7 @@
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1rem",
-  "fontStyle": "",
+  "fontStyle": "BOLD",
   "hideCard": false,
   "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
   "isDeprecated": false,
@@ -29,7 +29,7 @@
   "originalTopRow": 43,
   "overflow": "NONE",
   "parentColumnSpace": 19.8125,
-  "parentId": "ve4tsgnr0u",
+  "parentId": "j9yb9j48fv",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 57,
@@ -46,6 +46,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "1dxs1tyf5y",
+  "widgetId": "9hbl703fue",
   "widgetName": "Header_PACC"
 }

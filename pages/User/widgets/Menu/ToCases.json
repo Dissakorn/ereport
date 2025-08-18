@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 23,
+  "bottomRow": 26,
   "boxShadow": "none",
   "buttonColor": "transparent",
   "buttonVariant": "PRIMARY",
@@ -25,24 +25,24 @@
   "isLoading": false,
   "isVisible": true,
   "key": "ea7apjwric",
-  "leftColumn": 18,
+  "leftColumn": 17,
   "onClick": "{{navigateTo('All Cases', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 4.021484375,
-  "parentId": "iiiv5mzrzu",
+  "parentId": "nauaw6hifz",
   "parentRowSpace": 10,
   "placement": "START",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
-  "rightColumn": 62,
+  "rightColumn": 61,
   "searchTags": [
     "click",
     "submit"
   ],
   "text": "คดีทั้งหมด",
-  "topRow": 18,
+  "topRow": 22,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "bbq495velj",
+  "widgetId": "4mqx9g2n01",
   "widgetName": "ToCases"
 }

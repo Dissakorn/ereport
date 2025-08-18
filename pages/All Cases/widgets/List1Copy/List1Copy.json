@@ -4,12 +4,12 @@
   "borderColor": "transparent",
   "borderRadius": "8px",
   "borderWidth": "2",
-  "bottomRow": 86,
+  "bottomRow": 85,
   "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
   "children": [
     {
       "borderRadius": "0px",
-      "bottomRow": 850,
+      "bottomRow": 840,
       "boxShadow": "none",
       "canExtend": false,
       "containerStyle": "none",
