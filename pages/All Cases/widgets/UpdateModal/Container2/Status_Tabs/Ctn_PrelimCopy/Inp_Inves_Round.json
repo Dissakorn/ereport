@@ -35,7 +35,7 @@
   "isDisabled": "{{\n  (() => {\n    return Inp_Prelim_Letter.text.len>0 ? true : false;\n  })()\n}}",
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{\n  (() => {\n    return (Sel_Inves_Status.selectedOptionLabel === 'มีมติแล้ว') ? true : false;\n  })()\n}}\n",
+  "isVisible": "{{\n  (() => {\n    return (Sel_Inves_Status.selectedOptionValue === 7) ? true : false;\n  })()\n}}\n",
   "key": "6pwtqwlmzg",
   "label": "ครั้งที่",
   "labelAlignment": "left",

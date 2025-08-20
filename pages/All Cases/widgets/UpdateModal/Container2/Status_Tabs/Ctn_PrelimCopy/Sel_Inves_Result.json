@@ -39,7 +39,7 @@
   "isFilterable": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{\n  (() => {\n    return (Sel_Inves_Status.selectedOptionLabel === 'มีมติแล้ว') ? true : false;\n  })()\n}}\n",
+  "isVisible": "{{\n  (() => {\n    return (Sel_Inves_Status.selectedOptionValue === 7) ? true : false;\n  })()\n}}\n",
   "key": "b30dtcq19d",
   "labelAlignment": "left",
   "labelPosition": "Top",
