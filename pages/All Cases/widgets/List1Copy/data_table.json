@@ -310,6 +310,18 @@
     },
     {
       "key": "primaryColumns.command_year.computedValue"
+    },
+    {
+      "key": "primaryColumns.command_number.cellBackground"
+    },
+    {
+      "key": "primaryColumns.command_number.textColor"
+    },
+    {
+      "key": "primaryColumns.customColumn12.textColor"
+    },
+    {
+      "key": "primaryColumns.customColumn12.cellBackground"
     }
   ],
   "dynamicPropertyPathList": [
@@ -393,6 +405,18 @@
     },
     {
       "key": "primaryColumns.customColumn11.textColor"
+    },
+    {
+      "key": "primaryColumns.command_number.cellBackground"
+    },
+    {
+      "key": "primaryColumns.command_number.textColor"
+    },
+    {
+      "key": "primaryColumns.customColumn12.textColor"
+    },
+    {
+      "key": "primaryColumns.customColumn12.cellBackground"
     }
   ],
   "dynamicTriggerPathList": [
@@ -645,7 +669,7 @@
       "alias": "command_number",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( JSObject8.getBackgroundColor(currentRow) )) :  JSObject8.getBackgroundColor(currentRow)  })()}}",
       "columnType": "text",
       "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (\n  (() => {\n    const num = currentRow[\"command_number\"];\n    const year = currentRow[\"command_year\"];\n    if (!num) return \"-\";\n    return num + \"/\" + (year || \"\");\n  })()\n)) : \n  (() => {\n    const num = currentRow[\"command_number\"];\n    const year = currentRow[\"command_year\"];\n    if (!num) return \"-\";\n    return num + \"/\" + (year || \"\");\n  })()\n })()}}",
       "currencyCode": "USD",
@@ -668,7 +692,7 @@
       "notation": "standard",
       "originalId": "command_number",
       "sticky": "",
-      "textColor": "",
+      "textColor": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( JSObject8.getTextColor(JSObject8.getBackgroundColor(currentRow)) )) :  JSObject8.getTextColor(JSObject8.getBackgroundColor(currentRow))  })()}}",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -861,7 +885,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "buttonStyle": "rgb(3, 179, 101)",
-      "cellBackground": "",
+      "cellBackground": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( JSObject8.getBackgroundColor(currentRow) )) :  JSObject8.getBackgroundColor(currentRow)  })()}}",
       "columnType": "text",
       "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (\n  (() => {\n    if (!currentRow[\"commmand_number_date\"] || currentRow[\"commmand_number_date\"] === \"\") {\n      return \"-\";\n    }\n    const date = new Date(currentRow[\"commmand_number_date\"]);\n    const day = String(date.getDate()).padStart(2, '0');\n    const month = String(date.getMonth() + 1).padStart(2, '0');\n    const year = date.getFullYear() + 543;\n    return `${day}/${month}/${year}`;\n  })()\n)) : \n  (() => {\n    if (!currentRow[\"commmand_number_date\"] || currentRow[\"commmand_number_date\"] === \"\") {\n      return \"-\";\n    }\n    const date = new Date(currentRow[\"commmand_number_date\"]);\n    const day = String(date.getDate()).padStart(2, '0');\n    const month = String(date.getMonth() + 1).padStart(2, '0');\n    const year = date.getFullYear() + 543;\n    return `${day}/${month}/${year}`;\n  })()\n })()}}",
       "currencyCode": "USD",
@@ -884,7 +908,7 @@
       "notation": "standard",
       "originalId": "customColumn12",
       "sticky": "",
-      "textColor": "",
+      "textColor": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( JSObject8.getTextColor(JSObject8.getBackgroundColor(currentRow)) )) :  JSObject8.getTextColor(JSObject8.getBackgroundColor(currentRow))  })()}}",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
