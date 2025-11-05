@@ -4,26 +4,23 @@
   "borderRadius": "0.375rem",
   "bottomRow": 31,
   "boxShadow": "none",
-  "defaultOptionValue": "0",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( R_CASE.data[0].channel))(Sel_Case_ChannelCopyCopy.options, Sel_Case_ChannelCopyCopy.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
-      "key": "isDisabled"
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
-    },
-    {
-      "key": "isDisabled"
     }
   ],
   "dynamicTriggerPathList": [],
-  "isDisabled": "{{R_CASE.data[0].channel}}",
+  "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
