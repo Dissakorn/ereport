@@ -27,7 +27,8 @@ INSERT INTO "case" (
 	inves_round,
 	inves_session,
 	currency_id,
-	damage_value
+	damage_value,
+	channel
 )
 VALUES (
 	-- Case Type
@@ -131,5 +132,8 @@ VALUES (
 	1,
 	
 	-- Damage Value
-	{{Inp_Damage_Value.text}}
+	{{Inp_Damage_Value.text}},
+	
+	-- channel
+	{{Sel_Case_Channel.selectedOptionValue}}
 );
