@@ -69,10 +69,6 @@
     {
       "id": "Status",
       "isDefault": false
-    },
-    {
-      "id": "All Cases Copy",
-      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

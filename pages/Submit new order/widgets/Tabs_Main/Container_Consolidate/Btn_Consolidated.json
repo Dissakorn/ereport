@@ -28,7 +28,7 @@
     }
   ],
   "isDefaultClickDisabled": true,
-  "isDisabled": "{{Sel_Sub_Case.selectedOptionValue == ''}}",
+  "isDisabled": "{{Sel_Sub_Case.selectedOptionValue == '' || appsmith.store.user_type_id == 4}}",
   "isLoading": false,
   "isVisible": true,
   "key": "7l6id2vjrt",

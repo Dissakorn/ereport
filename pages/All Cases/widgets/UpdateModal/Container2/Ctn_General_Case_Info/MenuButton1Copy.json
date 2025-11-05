@@ -28,7 +28,7 @@
     }
   ],
   "isCompact": false,
-  "isDisabled": "{{data_table.selectedRow.inves_extension === true }}",
+  "isDisabled": "{{data_table.selectedRow.inves_extension === true  || appsmith.store.user_type_id == 4}}",
   "isLoading": false,
   "isVisible": "{{\n  (() => {\n    return (Sel_Prelim_Result.selectedOptionValue == 2) ? true : false;\n  })()\n}}",
   "key": "3smxbeqcx5",

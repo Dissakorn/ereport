@@ -1,5 +1,0 @@
-SELECT b.*, bt.name AS type_name
-FROM public."budget" b
-JOIN public."budget_type" bt ON b.type_id = bt.id
-WHERE CAST(b.case_id AS integer) = {{ data_table.selectedRow.case_id }}
-  AND b.state = 1;

@@ -1,3 +1,0 @@
-SELECT case_number
-FROM public."case" 
-WHERE case_id = {{data_table.selectedRow.reference}};

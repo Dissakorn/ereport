@@ -1,8 +1,0 @@
-UPDATE public."case"
-SET 
-  prelim_deadline = COALESCE(prelim_deadline, CURRENT_DATE) + INTERVAL '60 days',
-  prelim_extension = TRUE,
-  prelim_extension_count = prelim_extension_count + 1
-WHERE 
-  case_id = {{data_table.selectedRow.case_id}} AND
-  (prelim_extension_count IS NULL OR prelim_extension_count < 2);

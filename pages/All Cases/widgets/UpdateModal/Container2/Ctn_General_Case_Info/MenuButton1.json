@@ -22,7 +22,7 @@
     }
   ],
   "isCompact": false,
-  "isDisabled": "{{ R_CASE.data[0].prelim_extension_count >= 2 }}",
+  "isDisabled": "{{ R_CASE.data[0].prelim_extension_count >= 2 || appsmith.store.user_type_id == 4}}",
   "isLoading": false,
   "isVisible": true,
   "key": "3smxbeqcx5",
